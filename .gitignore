@@ -32,3 +32,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Bell-project/Library/shadercompiler-UnityShaderCompiler0.log
+Bell-project/Assets/01.png.meta
+Bell-project/Library/expandedItems
+Bell-project/Library/metadata/00/0000000000000000a100000000000000
+Bell-project/Library/assetDatabase3
+*.dwlt
