@@ -5,6 +5,7 @@ using UnityEngine;
 public class enemyAI : MonoBehaviour {
 
 	Transform player;               // Reference to the player's position.
+	public Games game;
 	UnityEngine.AI.NavMeshAgent nav;               // Reference to the nav mesh agent.
 
 
@@ -23,5 +24,10 @@ public class enemyAI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		nav.SetDestination (player.position);
+		float distance = Vector3.Distance (player.position, transform.position);
+		if (distance < 10) {
+			game.player1.health = game.player1.health-10;
+			Debug.Log ("KKKKKKKKKKKKKKK");
+		}
 	}
 }

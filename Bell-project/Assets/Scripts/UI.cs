@@ -12,8 +12,8 @@ public class UI : MonoBehaviour {
 
 	// Use this for initialization
 	public void SetBar () {
-		energyBar.maxValue = 1000;
-		energyBar.value = 800;
+		energyBar.maxValue = 400;
+		energyBar.value = 500;
 
 	}
 

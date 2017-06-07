@@ -10,18 +10,15 @@ public class Player : MonoBehaviour
 	public int preFace;
 	public Vector3 preAngle;
 	public int id;							//The unique identifier for this player.
-	public int health=1000;						//The current health of the tank.
-	public int maxHealth = 1000;					//The maximum health of this tank.
-	public int energy = 1000;
+	public int health;						//The current health of the tank.
+	public int maxHealth = 500;					//The maximum health of this tank.
+	public int energy = 500;
 	public int damage;						//How much damage this tank can do when shooting a projectile.
 	public float moveSpeed;					//How fast the tank can move.
 	public float turnSpeed;					//How fast the tank can turn.
 	public float projectileSpeed;			//How fast the tank's projectiles can move.
 	public float reloadSpeed;				//How many seconds it takes to reload the tank, so that it can shoot again.
 	private float reloadTimer;				//A timer counting up and resets after shooting.
-
-	AudioSource bulletaudio;
-
 
 	[HideInInspector]
 	public Vector3 direction;				//The direction that the tank is facing. Used for movement direction.
@@ -41,10 +38,9 @@ public class Player : MonoBehaviour
 	{
 		direction = Vector3.zero;	//Sets the tank's direction up, as that is the default rotation of the sprite.
 		bulletDirection = Vector3.zero;
+		energy = 500;
 		preFace = 1;
-		energy = 800;
 		preAngle = new Vector3(0,0,-1);
-		bulletaudio = GetComponent<AudioSource> ();
 	}
 
 	//Called by the Game.cs script when the game starts.
@@ -89,7 +85,7 @@ public class Player : MonoBehaviour
 
 //		transform.Rotate(0,0,angle);
 
-		rig.velocity = direction * 3000 * Time.deltaTime;	
+		rig.velocity = direction * 500 * Time.deltaTime;	
 	}
 
 	//Called by the Controls.cs script. When a player presses their movement keys, it calls this function
@@ -222,14 +218,7 @@ public class Player : MonoBehaviour
 
 //			if(reloadTimer >= reloadSpeed){													//Is the reloadTimer more than or equals to the reloadSpeed? Have we waiting enough time to reload?
 		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-				Projectile projScript = proj.GetComponent<Projectile>();	
-		Destroy(proj,10f);
-		//play udio
-		bulletaudio.Play();  
-
-
-
-		//Gets the Projectile.cs component of the projectile object.
+				Projectile projScript = proj.GetComponent<Projectile>();					//Gets the Projectile.cs component of the projectile object.
 //				projScript.tankId = id;														//Sets the projectile's tankId, so that it knows which tank it was shot by.
 //				projScript.damage = damage;													//Sets the projectile's damage.
 //				projScript.game = game;														
@@ -237,7 +226,7 @@ public class Player : MonoBehaviour
 		if (bulletDirection.magnitude >0) {
 			Debug.Log(bulletDirection);
 
-			projScript.rig.velocity = bulletDirection.normalized * 100;		//Makes the projectile move in the same direction that the tank is facing.
+			projScript.rig.velocity = bulletDirection.normalized * 10;		//Makes the projectile move in the same direction that the tank is facing.
 
 		}
 		Debug.Log(energy);
