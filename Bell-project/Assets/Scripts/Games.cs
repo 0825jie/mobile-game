@@ -7,7 +7,7 @@ public class Games : MonoBehaviour {
 	public Color player1Color = Color.green;
 
 	public UI ui;
-	public int startEnergy = 100;
+	public int startEnergy = 1000;
 
 	// Use this for initialization
 	void Start () {
