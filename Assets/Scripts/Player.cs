@@ -79,7 +79,7 @@ public class Player : MonoBehaviour
 		direction = new Vector3 (x, 0, y);
 //		transform.Rotate(0,0,angle);
 
-		rig.velocity = direction * 100 * Time.deltaTime;	
+		rig.velocity = direction * 5000 * Time.deltaTime;	
 	}
 
 	//Called by the Controls.cs script. When a player presses their movement keys, it calls this function
