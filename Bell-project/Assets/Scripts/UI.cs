@@ -7,14 +7,16 @@ public class UI : MonoBehaviour {
 
 	[Header("bar")]
 	public Slider energyBar;
+	public Slider healthBar;
 
 	public Games game;
 
 	// Use this for initialization
 	public void SetBar () {
-		energyBar.maxValue = 400;
-		energyBar.value = 500;
-
+		energyBar.maxValue = 1000;
+		energyBar.value = 1000;
+		healthBar.maxValue = 1000;
+		healthBar.value = 1000;
 	}
 
 	void Start() {
@@ -23,6 +25,7 @@ public class UI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		energyBar.value = game.player1.energy;
+		healthBar.value = game.player1.health;
 		Debug.Log ("UI");
 		Debug.Log(energyBar.value);
 	}
