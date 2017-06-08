@@ -8,6 +8,8 @@ public class enemyAI : MonoBehaviour {
 	UnityEngine.AI.NavMeshAgent nav;               // Reference to the nav mesh agent.
 	public Games game;
 
+
+
 	void Awake ()
 	{
 		// Set up the references.
@@ -17,14 +19,20 @@ public class enemyAI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+
 		nav.SetDestination (player.position);
 		if (Vector3.Distance (player.position, transform.position) < 10) {
 			game.player1.health = game.player1.health - 10;
 		}
 	}
+
+
 }
+
+		
