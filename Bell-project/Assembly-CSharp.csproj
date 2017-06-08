@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F139FFDD-5496-0B35-90F1-58A49629C6B0}</ProjectGuid>
+    <ProjectGuid>{1F6BB469-4AC7-F031-5EE9-29E41CD767A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,12 +46,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Assets\Scripts\AnimatedTexture.cs" />
+     <Compile Include="Assets\Assets\Scripts\DestroyOffscreen.cs" />
+     <Compile Include="Assets\Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Assets\Scripts\GameObjectUtil.cs" />
+     <Compile Include="Assets\Assets\Scripts\InputState.cs" />
+     <Compile Include="Assets\Assets\Scripts\InstantVelocity.cs" />
+     <Compile Include="Assets\Assets\Scripts\Jump.cs" />
+     <Compile Include="Assets\Assets\Scripts\ObjectPool.cs" />
+     <Compile Include="Assets\Assets\Scripts\Obstacle.cs" />
+     <Compile Include="Assets\Assets\Scripts\PixelPerfectCamera.cs" />
+     <Compile Include="Assets\Assets\Scripts\PlayerAnimationManager.cs" />
+     <Compile Include="Assets\Assets\Scripts\RecycleGameObject.cs" />
+     <Compile Include="Assets\Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Assets\Scripts\TiledBackground.cs" />
+     <Compile Include="Assets\Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\playerController.cs" />
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
@@ -59,8 +71,11 @@
  <Reference Include="nunit.framework">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
