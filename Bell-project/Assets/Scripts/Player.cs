@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour 
 {
+
+	AudioSource bulletaudio;
 	[Header("Stats")]
 
 	public int preFace;
@@ -45,6 +47,10 @@ public class Player : MonoBehaviour
 		energy = 1000;
 		health = 1000;
 		preAngle = new Vector3(0,0,-1);
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8f22b2c3a74c6066a355799d0fde277491de049
 		bulletaudio = GetComponent<AudioSource> ();
 	}
 
@@ -68,8 +74,7 @@ public class Player : MonoBehaviour
 	public void JoyMove (float x, float y) {
 		Vector3 nextAngle = new Vector3 (x, 0, y);
 
-		Debug.Log (x);
-		Debug.Log (y);
+	
 //		float angle = 0;
 		if (x != 0 && y != 0) 
 		{
@@ -164,11 +169,19 @@ public class Player : MonoBehaviour
 		//Gets the Projectile.cs component of the projectile object.
 //				projScript.tankId = id;														//Sets the projectile's tankId, so that it knows which tank it was shot by.
 //				projScript.damage = damage;													//Sets the projectile's damage.
-//				projScript.game = game;														
-		Debug.Log(proj);
-		if (bulletDirection.magnitude >0) {
-			Debug.Log(bulletDirection);
+//				projScript.game = game;	
 
+
+		Destroy (proj,5f);
+
+		bulletaudio.Play ();
+
+		if (bulletDirection.magnitude >0) {
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8f22b2c3a74c6066a355799d0fde277491de049
 			projScript.rig.velocity = bulletDirection.normalized * 100;		//Makes the projectile move in the same direction that the tank is facing.
 
 		}
