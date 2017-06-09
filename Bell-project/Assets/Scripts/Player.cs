@@ -10,9 +10,9 @@ public class Player : MonoBehaviour
 	public int preFace;
 	public Vector3 preAngle;
 	public int id;							//The unique identifier for this player.
-	public int health=1000;						//The current health of the tank.
-	public int maxHealth = 1000;					//The maximum health of this tank.
-	public int energy = 1000;
+	public int health;						//The current health of the tank.
+	public int maxHealth;					//The maximum health of this tank.
+	public int energy;
 	public int damage;						//How much damage this tank can do when shooting a projectile.
 	public float moveSpeed;					//How fast the tank can move.
 	public float turnSpeed;					//How fast the tank can turn.
@@ -42,7 +42,8 @@ public class Player : MonoBehaviour
 		direction = Vector3.zero;	//Sets the tank's direction up, as that is the default rotation of the sprite.
 		bulletDirection = Vector3.zero;
 		preFace = 1;
-		energy = 800;
+		energy = 1000;
+		health = 1000;
 		preAngle = new Vector3(0,0,-1);
 		bulletaudio = GetComponent<AudioSource> ();
 	}
@@ -99,7 +100,7 @@ public class Player : MonoBehaviour
 
 		int nextFace = y;
 //		transform.Rotate(0,0,(preFace - nextFace) * 45);
-		preFace = y;
+
 		switch (y) 
 		{
 		case 1:
@@ -129,77 +130,8 @@ public class Player : MonoBehaviour
 			direction = new Vector3 (-1, 0, 1);
 			break;
 		}
-
-		//		switch (y) 
-		//		{
-		//		case 1: 
-		//
-		//			if (direction == Vector3.up) {
-		//				
-		//			} else if (direction == Vector3.down) {
-		//				transform.Rotate (0, 0, 180);
-		//			
-		//			} else if (direction == Vector3.left) {
-		//				transform.Rotate (0, 0, -90);
-		//			
-		//			} else if (direction == Vector3.right) {
-		//				transform.Rotate (0, 0, 90);
-		//			}
-		//			direction = Vector3.up;
-		//		
-		//
-		//				break;
-		//		case -1: 
-		//				
-		//
-		//			if (direction == Vector3.up) {
-		//				transform.Rotate (0, 0, 180);
-		//			} else if (direction == Vector3.down) {
-		//				
-		//			
-		//			} else if (direction == Vector3.left) {
-		//				transform.Rotate (0, 0, 90);
-		//			
-		//			} else if (direction == Vector3.right) {
-		//				transform.Rotate (0, 0, -90);
-		//			}
-		//			direction = Vector3.down;
-		//				break;
-		//		case 2: 
-		//			if (direction == Vector3.up) {
-		//				transform.Rotate (0, 0, 90);
-		//			} else if (direction == Vector3.down) {
-		//				transform.Rotate (0, 0, -90);
-		//
-		//			} else if (direction == Vector3.left) {
-		//				
-		//
-		//			} else if (direction == Vector3.right) {
-		//				transform.Rotate (0, 0, 180);
-		//			}
-		//			direction = Vector3.left;
-		//				break;
-		//		case -2: 
-		//			if (direction == Vector3.up) {
-		//				transform.Rotate (0, 0, -90);
-		//			} else if (direction == Vector3.down) {
-		//				transform.Rotate (0, 0, 90);
-		//
-		//			} else if (direction == Vector3.left) {
-		//				transform.Rotate (0, 0, 180);
-		//
-		//			} else if (direction == Vector3.right) {
-		//
-		//			}
-		//			direction = Vector3.right;
-		//				break;
-		//			
-		//		
-		//		case 3:
-		//			direction = new Vector3(1,1,0);
-		//			break;
-		//
-		//		}
+		preFace = y;
+	
 
 
 
@@ -223,7 +155,7 @@ public class Player : MonoBehaviour
 //			if(reloadTimer >= reloadSpeed){													//Is the reloadTimer more than or equals to the reloadSpeed? Have we waiting enough time to reload?
 		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 				Projectile projScript = proj.GetComponent<Projectile>();	
-		Destroy(proj,10f);
+		Destroy(proj,5f);
 		//play udio
 		bulletaudio.Play();  
 
@@ -314,4 +246,16 @@ public class Player : MonoBehaviour
 		else  
 			return 360-Vector3.Angle(from_,to_);  
 	} 
+	private void OnCollisionEnter(Collision collision)
+	{
+		if (collision.transform.tag == "healthbox") {
+			Destroy (collision.gameObject);
+			health = health + 200;
+			if (health > 1000) {
+				health = 1000;
+			}
+//			gameObject.SetActive (false);
+		}
+
+	}
 }

@@ -68,7 +68,6 @@ public class Controls : MonoBehaviour
 		//		}
 
 		if (game.player1.canMove) {
-			Debug.Log("LALA LAND");
 //			int a = joystick.Test();
 			//			Debug.Log (a);
 			float posx = joystick.Horizontal();
@@ -128,10 +127,16 @@ public class Controls : MonoBehaviour
 //		}
 		if (game.player1.rig.velocity.magnitude < 0.5 && game.player1.energy < 1000)
 	    {
-			Debug.Log ("1111111111111111111111");
+			
 			Debug.Log (game.player1.rig.velocity.magnitude);
 			Debug.Log (game.player1.energy);
 			game.player1.energy++;
+		}
+		if (game.player1.rig.velocity.magnitude < 0.5) {
+			game.player1.health = game.player1.health -2;
+		}
+		if (game.player1.health <= 5) {
+			game.player1.gameObject.SetActive (false);
 		}
 	}
 }

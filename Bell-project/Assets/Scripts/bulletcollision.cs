@@ -18,9 +18,11 @@ public class bulletcollision : MonoBehaviour {
 
 
 		if (collision.transform.tag == "enemy") {
-			Destroy(collision.gameObject);
-			gameObject.SetActive(false);
-		}	
+			Destroy (collision.gameObject);
+			gameObject.SetActive (false);
+		} else if (collision.transform.tag != "Player"){
+			gameObject.SetActive (false);
+		}
 	}
 
 	void OnTriggerEnter(Collider other) {

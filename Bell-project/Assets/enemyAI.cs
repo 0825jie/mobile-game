@@ -6,10 +6,16 @@ public class enemyAI : MonoBehaviour {
 
 	Transform player;               // Reference to the player's position.
 	UnityEngine.AI.NavMeshAgent nav;               // Reference to the nav mesh agent.
+<<<<<<< HEAD
 	int time;
 	public int frequent = 100;			//The direction that the tank is facing. Used for movement direction.
 	public Vector3 bulletDirection;
 	public GameObject bullet;
+=======
+	public Games game;
+
+
+>>>>>>> master
 
 	void Awake ()
 	{
@@ -21,19 +27,34 @@ public class enemyAI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+<<<<<<< HEAD
 		bulletDirection = Vector3.zero;
 		
+=======
+
+>>>>>>> master
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+
 		nav.SetDestination (player.position);
+<<<<<<< HEAD
 		time += 100;
 		if (time >= 1000) {
 			time = 0;  
 			GameObject proj = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
 		
 			proj.GetComponent<Rigidbody>().velocity = transform.TransformDirection (Vector3.forward * 10);
+=======
+		if (Vector3.Distance (player.position, transform.position) < 10) {
+			game.player1.health = game.player1.health - 10;
+>>>>>>> master
 		}
 	}
+
+
 }
+
+		
