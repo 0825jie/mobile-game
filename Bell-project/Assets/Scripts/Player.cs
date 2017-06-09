@@ -105,7 +105,7 @@ public class Player : MonoBehaviour
 		{
 		case 1:
 			direction = new Vector3 (0, 0, 1);
-			transform.Rotate(0,0,(preFace - nextFace) * 45);
+
 
 			break;
 		case 2:
@@ -118,7 +118,7 @@ public class Player : MonoBehaviour
 			direction = new Vector3 (1, 0, -1);
 			break;
 		case 5:
-			direction = new Vector3 (0, 0, -1);
+			direction = new Vector3 (0, 0, 1);
 			break;
 		case 6:
 			direction = new Vector3 (-1, 0, -1);
@@ -130,6 +130,7 @@ public class Player : MonoBehaviour
 			direction = new Vector3 (-1, 0, 1);
 			break;
 		}
+//		transform.Rotate(0,0,(preFace - nextFace) * 45);
 		preFace = y;
 	
 
