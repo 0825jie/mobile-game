@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bulletcollision : MonoBehaviour {
+public class enemy_bullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,17 +13,12 @@ public class bulletcollision : MonoBehaviour {
 	void Update () {
 		
 	}
-	private void OnCollisionEnter(Collision collision)
-	{
-
-
-		if (collision.transform.tag == "enemy") {
-			Destroy(collision.gameObject);
-			gameObject.SetActive(false);
-		}	
-	}
 
 	void OnTriggerEnter(Collider other) {
+		if (other.transform.tag == "player") {
+			Destroy(other.gameObject);
+			gameObject.SetActive(false);
+		}
 		if (other.transform.tag == "map") {
 			gameObject.SetActive (false);
 		}
