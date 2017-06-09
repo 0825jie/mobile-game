@@ -47,10 +47,6 @@ public class Player : MonoBehaviour
 		energy = 1000;
 		health = 1000;
 		preAngle = new Vector3(0,0,-1);
-<<<<<<< HEAD
-
-=======
->>>>>>> b8f22b2c3a74c6066a355799d0fde277491de049
 		bulletaudio = GetComponent<AudioSource> ();
 	}
 
@@ -178,10 +174,6 @@ public class Player : MonoBehaviour
 
 		if (bulletDirection.magnitude >0) {
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b8f22b2c3a74c6066a355799d0fde277491de049
 			projScript.rig.velocity = bulletDirection.normalized * 100;		//Makes the projectile move in the same direction that the tank is facing.
 
 		}
