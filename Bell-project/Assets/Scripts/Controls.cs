@@ -130,7 +130,7 @@ public class Controls : MonoBehaviour
 			
 			Debug.Log (game.player1.rig.velocity.magnitude);
 			Debug.Log (game.player1.energy);
-			game.player1.energy++;
+			game.player1.energy = game.player1.energy + 2;
 		}
 		if (game.player1.rig.velocity.magnitude < 0.5) {
 			game.player1.health = game.player1.health -2;
