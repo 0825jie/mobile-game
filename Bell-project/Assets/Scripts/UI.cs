@@ -9,6 +9,10 @@ public class UI : MonoBehaviour {
 	public Slider energyBar;
 	public Slider healthBar;
 
+	public SliderUITextUpdate HealthText;
+	public SliderUITextUpdate EnergyText;
+
+
 	public Game game;
 
 	// Use this for initialization
@@ -26,6 +30,8 @@ public class UI : MonoBehaviour {
 	void Update () {
 		energyBar.value = game.player.energy;
 		healthBar.value = game.player.health;
-		Debug.Log (healthBar.value);
+		HealthText.textUpdate(healthBar.value,healthBar.maxValue);
+		EnergyText.textUpdate(energyBar.value,energyBar.maxValue);
+
 	}
 }

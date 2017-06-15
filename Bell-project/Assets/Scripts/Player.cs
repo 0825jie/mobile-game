@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 	public int energy;
 	public int damage;						//How much damage this tank can do when shooting a projectile.
 	public float moveSpeed;					//How fast the tank can move.
-	public float turnSpeed;					//How fast the tank can turn.
+//	public float turnSpeed;					//How fast the tank can turn.
 	public float projectileSpeed;			//How fast the tank's projectiles can move.
 	public float reloadSpeed;				//How many seconds it takes to reload the tank, so that it can shoot again.
 //	private float reloadTimer;				//A timer counting up and resets after shooting.
@@ -67,10 +67,8 @@ public class Player : MonoBehaviour
 	public void JoyMove (float x, float y) {
 		Vector3 nextAngle = new Vector3 (x, 0, y);
 
-//		float angle = 0;
 		if (x != 0 && y != 0) 
 		{
-//			float angle = Vector3.Angle(nextAngle, preAngle);
 			float angle = angle_360(preAngle,nextAngle);
 			transform.Rotate(0,angle,0);
 			preAngle = nextAngle;
@@ -78,10 +76,7 @@ public class Player : MonoBehaviour
 		}
 			
 		direction = new Vector3 (x, 0, y);
-
-//		transform.Rotate(0,0,angle);
-
-		rig.velocity = direction * 3000 * Time.deltaTime;	
+		rig.velocity = direction * 50 * moveSpeed * Time.deltaTime;	
 	}
 
 	//Called by the Controls.cs script. When a player presses their movement keys, it calls this function
@@ -146,7 +141,7 @@ public class Player : MonoBehaviour
 
 //			if(reloadTimer >= reloadSpeed){													//Is the reloadTimer more than or equals to the reloadSpeed? Have we waiting enough time to reload?
 		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-				Projectile projScript = proj.GetComponent<Projectile>();	
+		Projectile projScript = proj.GetComponent<Projectile>();	
 		Destroy(proj,5f);
 		//play udio
 		bulletaudio.Play();  
@@ -159,7 +154,7 @@ public class Player : MonoBehaviour
 
 		if (bulletDirection.magnitude >0) {
 
-			projScript.rig.velocity = bulletDirection.normalized * 100;		//Makes the projectile move in the same direction that the tank is facing.
+			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
 		}
 //				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.

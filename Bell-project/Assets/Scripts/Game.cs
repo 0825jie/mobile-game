@@ -43,17 +43,10 @@ public class Game : MonoBehaviour
 
 
 		//Tank Start Values
-		player.SetStartValues();
+		player.SetStartValues ();
 
-		ui.SetBars();
+		ui.SetBars ();
 
-//		//Tank Color
-//		player1Tank.GetComponent<SpriteRenderer>().color = player1Color;
-//		player2Tank.GetComponent<SpriteRenderer>().color = player2Color;
-//
-//		//Set Tank Spawn Position
-//		player1Tank.transform.position = spawnPoints[0].transform.position;
-//		player2Tank.transform.position = spawnPoints[1].transform.position;
 	}
 
 	void Update ()
