@@ -6,7 +6,7 @@ public class enemyAI : MonoBehaviour {
 
 	Transform player;               // Reference to the player's position.
 	UnityEngine.AI.NavMeshAgent nav;               // Reference to the nav mesh agent.
-	public Games game;
+	public Game game;
 
 
 
@@ -28,7 +28,7 @@ public class enemyAI : MonoBehaviour {
 
 		nav.SetDestination (player.position);
 		if (Vector3.Distance (player.position, transform.position) < 10) {
-			game.player1.health = game.player1.health - 10;
+			game.player.health = game.player.health - 10;
 		}
 	}
 

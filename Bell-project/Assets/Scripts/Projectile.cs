@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour
 	[Header("Components / Objects")]
 	public GameObject hitParticleEffect;	//The particle effect prefab that will spawn when the projectile hits something.
 	public Rigidbody rig;					//The Rigidbody2D component of the projectile.
-	public Games game;
+	public Game game;
 
 	private int bounces;					//The amount of times the projectile has bounced off a wall.
 

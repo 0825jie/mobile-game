@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
 	public float turnSpeed;					//How fast the tank can turn.
 	public float projectileSpeed;			//How fast the tank's projectiles can move.
 	public float reloadSpeed;				//How many seconds it takes to reload the tank, so that it can shoot again.
-	private float reloadTimer;				//A timer counting up and resets after shooting.
+//	private float reloadTimer;				//A timer counting up and resets after shooting.
 
 	AudioSource bulletaudio;
 
@@ -35,57 +35,48 @@ public class Player : MonoBehaviour
 	public GameObject projectile;			//The projectile prefab of which the tank can shoot.
 	public GameObject deathParticleEffect;	//The particle effect prefab that plays when the tank dies.
 	public Transform muzzle;				//The muzzle of the tank. This is where the projectile will spawn.
-	public Games game;						//The Game.cs script, located on the GameManager game object.
+	public Game game;						//The Game.cs script, located on the GameManager game object.
 
 	void Start ()
 	{
 		direction = Vector3.zero;	//Sets the tank's direction up, as that is the default rotation of the sprite.
 		bulletDirection = Vector3.zero;
 		preFace = 1;
-		energy = 1000;
-		health = 1000;
+
 		preAngle = new Vector3(0,0,-1);
 		bulletaudio = GetComponent<AudioSource> ();
 	}
 
-	//Called by the Game.cs script when the game starts.
-	//	public void SetStartValues ()
-	//	{
-	//		//Sets the tank's stats based on the Game.cs start values.
-	//		health = game.tankStartHealth;
-	//		maxHealth = game.tankStartHealth;
-	//		damage = game.tankStartDamage;
-	//		moveSpeed = game.tankStartMoveSpeed;
-	//		turnSpeed = game.tankStartTurnSpeed;
-	//		projectileSpeed = game.tankStartProjectileSpeed;
-	//		reloadSpeed = game.tankStartReloadSpeed;
-	//	}
+//	Called by the Game.cs script when the game starts.
+		public void SetStartValues ()
+		{
+			//Sets the tank's stats based on the Game.cs start values.
+			health = game.playerStartHealth;
+			maxHealth = game.playerStartHealth;
+//			damage = game.tankStartDamage;
+			moveSpeed = game.playerStartMoveSpeed;
+//			turnSpeed = game.tankStartTurnSpeed;
+			projectileSpeed = game.playerStartProjectileSpeed;
+//			reloadSpeed = game.tankStartReloadSpeed;
+		}
 	//
 	void Update ()
 	{
-		reloadTimer += Time.deltaTime;
+//		reloadTimer += Time.deltaTime;
 	}
 	public void JoyMove (float x, float y) {
 		Vector3 nextAngle = new Vector3 (x, 0, y);
 
-		Debug.Log (x);
-		Debug.Log (y);
 //		float angle = 0;
 		if (x != 0 && y != 0) 
 		{
 //			float angle = Vector3.Angle(nextAngle, preAngle);
 			float angle = angle_360(preAngle,nextAngle);
-			Debug.Log (360); 
-			Debug.Log (angle);
-
 			transform.Rotate(0,angle,0);
 			preAngle = nextAngle;
-			Debug.Log (angle);
 			bulletDirection = new Vector3 (x, 0, y);
 		}
-
-
-		//		Debug.Log (angle);
+			
 		direction = new Vector3 (x, 0, y);
 
 //		transform.Rotate(0,0,angle);
@@ -165,16 +156,13 @@ public class Player : MonoBehaviour
 		//Gets the Projectile.cs component of the projectile object.
 //				projScript.tankId = id;														//Sets the projectile's tankId, so that it knows which tank it was shot by.
 //				projScript.damage = damage;													//Sets the projectile's damage.
-//				projScript.game = game;														
-		Debug.Log(proj);
+
 		if (bulletDirection.magnitude >0) {
-			Debug.Log(bulletDirection);
 
 			projScript.rig.velocity = bulletDirection.normalized * 100;		//Makes the projectile move in the same direction that the tank is facing.
 
 		}
-		Debug.Log(energy);
-				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
+//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
 //			}
 		if (energy - 25 < 0) {
 			energy = 0;

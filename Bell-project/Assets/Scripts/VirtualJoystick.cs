@@ -36,8 +36,6 @@ public class VirtualJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler,IP
 			inputVector = (inputVector.magnitude > 1.0f) ? inputVector.normalized : inputVector;
 
 
-			Debug.Log(inputVector);
-
 			//move
 			joystickImg.rectTransform.anchoredPosition = new Vector3(inputVector.x * (bgImg.rectTransform.sizeDelta.x/3),inputVector.y * (bgImg.rectTransform.sizeDelta.y/3));
 

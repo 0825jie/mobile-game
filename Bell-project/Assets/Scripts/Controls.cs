@@ -7,22 +7,16 @@ public class Controls : MonoBehaviour
 {
 	public VirtualJoystick joystick;
 
-	[Header("Player 1 Controls")]
-	public KeyCode p1MoveForward;
-	public KeyCode p1MoveBackwards;
-	public KeyCode p1TurnLeft;
-	public KeyCode p1TurnRight;
+	[Header("Player  Controls")]
+	public KeyCode p1MoveUp;
+	public KeyCode p1MoveDown;
+	public KeyCode p1MoveLeft;
+	public KeyCode p1MoveRight;
 	public KeyCode p1Shoot;
 
-	[Header("Player 2 Controls")]
-	public KeyCode p2MoveForward;
-	public KeyCode p2MoveBackwards;
-	public KeyCode p2TurnLeft;
-	public KeyCode p2TurnRight;
-	public KeyCode p2Shoot;
 
 	[Header("Components")]
-	public Games game;
+	public Game game;
 
 	void Update ()
 	{
@@ -33,7 +27,7 @@ public class Controls : MonoBehaviour
 //		}
 
 		//Player 1
-		game.player1.rig.velocity = Vector3.zero;
+		game.player.rig.velocity = Vector3.zero;
 
 
 		//		if(game.player1Tank.canMove){
@@ -67,7 +61,7 @@ public class Controls : MonoBehaviour
 		//
 		//		}
 
-		if (game.player1.canMove) {
+		if (game.player.canMove) {
 //			int a = joystick.Test();
 			//			Debug.Log (a);
 			float posx = joystick.Horizontal();
@@ -75,68 +69,27 @@ public class Controls : MonoBehaviour
 			//			int a = joystick.Test;
 			//			Debug.Log ("heyheyhey");
 			//			Debug.Log (posx);
-			game.player1.JoyMove(posx,posy);
+			game.player.JoyMove(posx,posy);
 		}
 
 
-		if(game.player1.canShoot && game.player1.energy >= 25){
+		if(game.player.canShoot && game.player.energy >= 25){
 			if(Input.GetKeyDown(p1Shoot)){
-				game.player1.Shoot();
+				game.player.Shoot();
 			}
 
 		}
-
-//		//Player 2
-//		game.player2Tank.rig.velocity = Vector2.zero;
-//
-//
-//		if(game.player2Tank.canMove){
-//			if (Input.GetKey (p2TurnRight) && Input.GetKey (p2MoveForward)) {
-//				game.player2Tank.Move(2);
-//			}
-//			else if (Input.GetKey (p2TurnRight) && Input.GetKey (p2MoveBackwards)) {
-//				game.player2Tank.Move(4);
-//
-//			}
-//			else if (Input.GetKey (p2TurnLeft) && Input.GetKey (p2MoveBackwards)) {
-//				game.player2Tank.Move(6);
-//
-//			}
-//			else if (Input.GetKey (p2TurnLeft) && Input.GetKey (p2MoveForward)) {
-//				game.player2Tank.Move(8);
-//
-//			}
-//			else if(Input.GetKey(p2MoveForward)){
-//				game.player2Tank.Move(1);
-//			}
-//			else if(Input.GetKey(p2MoveBackwards)){
-//				game.player2Tank.Move(5);
-//			}
-//			else if(Input.GetKey(p2TurnLeft)){
-//				game.player2Tank.Move(7);
-//			}
-//			else if(Input.GetKey(p2TurnRight)){
-//				game.player2Tank.Move(3);
-//			}
-//
-//		}
-//		if(game.player2Tank.canShoot){
-//			if(Input.GetKeyDown(p2Shoot)){
-//				game.player2Tank.Shoot();
-//			}
-//		}
-		if (game.player1.rig.velocity.magnitude < 0.5 && game.player1.energy < 1000)
-	    {
 			
-			Debug.Log (game.player1.rig.velocity.magnitude);
-			Debug.Log (game.player1.energy);
-			game.player1.energy = game.player1.energy + 2;
+		if (game.player.rig.velocity.magnitude < 0.5 && game.player.energy < 1000)
+	    {
+
+			game.player.energy = game.player.energy + 2;
 		}
-		if (game.player1.rig.velocity.magnitude < 0.5) {
-			game.player1.health = game.player1.health -2;
+		if (game.player.rig.velocity.magnitude < 0.5) {
+			game.player.health = game.player.health -2;
 		}
-		if (game.player1.health <= 5) {
-			game.player1.gameObject.SetActive (false);
+		if (game.player.health <= 5) {
+			game.player.gameObject.SetActive (false);
 		}
 	}
 }
