@@ -20,6 +20,9 @@ public class Game : MonoBehaviour
 	public float playerStartMoveSpeed = 70;				//The move speed the player tanks will get when the game starts.
 	public float playerStartProjectileSpeed = 13;			//The projectile speed the player tanks will get when the game starts.
 //	public float playerStartReloadSpeed = 1;				//The reload speed the player tanks will get when the game starts.
+	public int playerStartProjectileComsume = 20;
+	public int playerEnergyRecoverSpeed = 10;
+	public int playerHealthRecoverSpeed = 10;
 
 	[Header("Player")]
 	public Player player;							//Player 1's tank. 

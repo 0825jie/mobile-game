@@ -17,8 +17,14 @@ public class Player : MonoBehaviour
 	public float moveSpeed;					//How fast the tank can move.
 //	public float turnSpeed;					//How fast the tank can turn.
 	public float projectileSpeed;			//How fast the tank's projectiles can move.
-	public float reloadSpeed;				//How many seconds it takes to reload the tank, so that it can shoot again.
+//	public float reloadSpeed;				//How many seconds it takes to reload the tank, so that it can shoot again.
 //	private float reloadTimer;				//A timer counting up and resets after shooting.
+	public int healthRecoverSpeed;
+	public int energyRecoverSpeed;
+	public int projectileConsume;			//How fast the tank's projectiles can move.
+
+
+
 
 	AudioSource bulletaudio;
 
@@ -48,21 +54,26 @@ public class Player : MonoBehaviour
 	}
 
 //	Called by the Game.cs script when the game starts.
-		public void SetStartValues ()
-		{
-			//Sets the tank's stats based on the Game.cs start values.
-			health = game.playerStartHealth;
-			maxHealth = game.playerStartHealth;
+	public void SetStartValues ()
+	{
+		//Sets the tank's stats based on the Game.cs start values.
+		health = game.playerStartHealth;
+		maxHealth = game.playerStartHealth;
 //			damage = game.tankStartDamage;
-			moveSpeed = game.playerStartMoveSpeed;
+		moveSpeed = game.playerStartMoveSpeed;
 //			turnSpeed = game.tankStartTurnSpeed;
-			projectileSpeed = game.playerStartProjectileSpeed;
+		projectileSpeed = game.playerStartProjectileSpeed;
+		projectileConsume = game.playerStartProjectileComsume;
+		energyRecoverSpeed = game.playerEnergyRecoverSpeed;
+		healthRecoverSpeed = game.playerHealthRecoverSpeed;
+
 //			reloadSpeed = game.tankStartReloadSpeed;
-		}
+	}
 	//
 	void Update ()
 	{
 //		reloadTimer += Time.deltaTime;
+
 	}
 	public void JoyMove (float x, float y) {
 		Vector3 nextAngle = new Vector3 (x, 0, y);
@@ -159,11 +170,11 @@ public class Player : MonoBehaviour
 		}
 //				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
 //			}
-		if (energy - 25 < 0) {
+		if (energy - projectileConsume < 0) {
 			energy = 0;
 		}
 		else {
-			energy-=25;
+			energy -= projectileConsume;
 		}
 	}
 
