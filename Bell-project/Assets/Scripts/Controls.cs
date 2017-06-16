@@ -17,6 +17,7 @@ public class Controls : MonoBehaviour
 	public KeyCode p1State1;
 	public KeyCode p1State2;
 	public KeyCode p1State3;
+	public KeyCode p1Super;
 
 	public KeyCode p1State0;
 	public KeyCode p1Recover;
@@ -36,6 +37,7 @@ public class Controls : MonoBehaviour
 		game.player.rig.velocity = Vector3.zero;
 	
 		if (Input.GetKeyDown (p1State1)) {
+			
 			game.player.moveSpeed = game.player.moveSpeed * (float)1.2;
 		}
 		if (Input.GetKeyDown (p1State2)) {
@@ -47,6 +49,9 @@ public class Controls : MonoBehaviour
 		if (Input.GetKeyDown (p1Recover)) {
 			game.player.health = game.playerStartHealth;
 			game.player.energy = game.playerStartEnergy;
+		}
+		if (Input.GetKeyDown (p1Super)) {
+			game.player.superShoot();
 		}
 
 		if (game.player.canMove) {

@@ -75,6 +75,11 @@ public class Player : MonoBehaviour
 //		reloadTimer += Time.deltaTime;
 
 	}
+	public void ChangeState1 () {
+		health -= 100;
+		
+	}
+
 	public void JoyMove (float x, float y) {
 		Vector3 nextAngle = new Vector3 (x, 0, y);
 
@@ -146,11 +151,11 @@ public class Player : MonoBehaviour
 	//	}
 	//
 //	Called by the Contols.cs script. When a player presses their shoot key, it calls this function, making the tank shoot.
-		public void Shoot ()
-		{
+	public void Shoot ()
+	{
 		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x,muzzle.transform.position.y,-muzzle.transform.position.z);
 
-//			if(reloadTimer >= reloadSpeed){													//Is the reloadTimer more than or equals to the reloadSpeed? Have we waiting enough time to reload?
+	//			if(reloadTimer >= reloadSpeed){													//Is the reloadTimer more than or equals to the reloadSpeed? Have we waiting enough time to reload?
 		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		Projectile projScript = proj.GetComponent<Projectile>();	
 		Destroy(proj,5f);
@@ -175,6 +180,29 @@ public class Player : MonoBehaviour
 		}
 		else {
 			energy -= projectileConsume;
+		}
+	}
+	public void superShoot () {
+//		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x,muzzle.transform.position.y,-muzzle.transform.position.z);
+		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		Projectile projScript = proj.GetComponent<Projectile>();	
+
+		Destroy(proj,5f);
+		//play udio
+		bulletaudio.Play();  
+	
+
+		if (bulletDirection.magnitude >0) {
+
+			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+
+		}
+
+		if (energy - projectileConsume < 0) {
+			energy = 0;
+		}
+		else {
+			energy -= (projectileConsume * 3);
 		}
 	}
 

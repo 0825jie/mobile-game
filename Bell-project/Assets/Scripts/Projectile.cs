@@ -12,9 +12,9 @@ public class Projectile : MonoBehaviour
 	[Header("Components / Objects")]
 	public GameObject hitParticleEffect;	//The particle effect prefab that will spawn when the projectile hits something.
 	public Rigidbody rig;					//The Rigidbody2D component of the projectile.
-	public Game game;
-
+	public GameObject player;
 	private int bounces;					//The amount of times the projectile has bounced off a wall.
+
 
 	//Called when the projectile's CircleCollider2D component enters a another collider or trigger. 
 	//The "col" parameter is the collider that it enters.
@@ -44,7 +44,28 @@ public class Projectile : MonoBehaviour
 //	}
 
 
+	private void OnCollisionEnter(Collision collision)
+	{
+		
 
+
+		if (collision.transform.tag == "enemy") {
+
+
+			GameObject player = GameObject.FindWithTag("Player");
+			player.GetComponent<Player>().health = player.GetComponent<Player>().health + 200;
+
+
+			Destroy (collision.gameObject);
+			gameObject.SetActive (false);
+//			game.player.moveSpeed = game.player.moveSpeed * (float)1.2;
+
+		
+
+		} else if (collision.transform.tag != "Player"){
+			gameObject.SetActive (false);
+		}
+	}
 
 
 
