@@ -24,6 +24,7 @@ public class Controls : MonoBehaviour
 
 	[Header("Components")]
 	public Game game;
+	public DrawTool draw;
 
 	void Update ()
 	{
@@ -52,6 +53,8 @@ public class Controls : MonoBehaviour
 		}
 		if (Input.GetKeyDown (p1Super)) {
 			game.player.superShoot();
+
+
 		}
 
 		if (game.player.canMove) {

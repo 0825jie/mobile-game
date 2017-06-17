@@ -39,6 +39,8 @@ public class Player : MonoBehaviour
 	[Header("Components / Objects")]
 	public Rigidbody rig;					//The tank's Rigidbody2D component. 
 	public GameObject projectile;			//The projectile prefab of which the tank can shoot.
+	public GameObject lighting;			//The projectile prefab of which the tank can shoot.
+
 	public GameObject deathParticleEffect;	//The particle effect prefab that plays when the tank dies.
 	public Transform muzzle;				//The muzzle of the tank. This is where the projectile will spawn.
 	public Game game;						//The Game.cs script, located on the GameManager game object.
@@ -183,27 +185,40 @@ public class Player : MonoBehaviour
 		}
 	}
 	public void superShoot () {
-//		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x,muzzle.transform.position.y,-muzzle.transform.position.z);
-		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-		Projectile projScript = proj.GetComponent<Projectile>();	
+////		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x,muzzle.transform.position.y,-muzzle.transform.position.z);
+//		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+//		Projectile projScript = proj.GetComponent<Projectile>();	
+//
+//		Destroy(proj,5f);
+//		//play udio
+//		bulletaudio.Play();  
+//	
+//
+//		if (bulletDirection.magnitude >0) {
+//
+//			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+//
+//		}
+//
+//		if (energy - projectileConsume < 0) {
+//			energy = 0;
+//		}
+//		else {
+//			energy -= (projectileConsume * 3);
+//		}
+//		DrawTool.DrawCircleSolid(game.player.transform, game.player.transform.localPosition, 30); 
+		GameObject light = Instantiate(lighting, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		Projectile lightScript = lighting.GetComponent<Projectile>();	
 
-		Destroy(proj,5f);
-		//play udio
-		bulletaudio.Play();  
-	
+		GameObject[] enermy = GameObject.FindGameObjectsWithTag("enemy");
 
-		if (bulletDirection.magnitude >0) {
-
-			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
-
+		foreach (GameObject eachEnermy in enermy) {
+			if (Vector3.Distance (game.player.transform.position, eachEnermy.transform.position) < 40) {
+				Destroy (eachEnermy);
+			}
 		}
 
-		if (energy - projectileConsume < 0) {
-			energy = 0;
-		}
-		else {
-			energy -= (projectileConsume * 3);
-		}
+
 	}
 
 	//Called when the tank gets hit by a projectile. It sends over a "dmg" value, which is how much health the tank will lose. 
