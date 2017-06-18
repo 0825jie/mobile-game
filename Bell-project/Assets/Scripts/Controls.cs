@@ -18,6 +18,7 @@ public class Controls : MonoBehaviour
 	public KeyCode p1State2;
 	public KeyCode p1State3;
 	public KeyCode p1Super;
+	public KeyCode p1FireShoot;
 
 	public KeyCode p1State0;
 	public KeyCode p1Recover;
@@ -53,8 +54,9 @@ public class Controls : MonoBehaviour
 		}
 		if (Input.GetKeyDown (p1Super)) {
 			game.player.superShoot();
-
-
+		}
+		if (Input.GetKeyDown (p1FireShoot)) {
+			game.player.fireShoot();
 		}
 
 		if (game.player.canMove) {

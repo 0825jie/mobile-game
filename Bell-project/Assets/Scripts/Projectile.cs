@@ -52,12 +52,13 @@ public class Projectile : MonoBehaviour
 		if (collision.transform.tag == "enemy") {
 
 
-			GameObject player = GameObject.FindWithTag("Player");
-			player.GetComponent<Player>().health = player.GetComponent<Player>().health + 200;
+//			GameObject player = GameObject.FindWithTag("Player");
+//			player.GetComponent<Player>().health = player.GetComponent<Player>().health - 200;
+//
 
 
 			Destroy (collision.gameObject);
-			gameObject.SetActive (false);
+//			gameObject.SetActive (false);
 //			game.player.moveSpeed = game.player.moveSpeed * (float)1.2;
 
 		

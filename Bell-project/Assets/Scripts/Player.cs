@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
 	public Rigidbody rig;					//The tank's Rigidbody2D component. 
 	public GameObject projectile;			//The projectile prefab of which the tank can shoot.
 	public GameObject lighting;			//The projectile prefab of which the tank can shoot.
+	public GameObject fire;
 
 	public GameObject deathParticleEffect;	//The particle effect prefab that plays when the tank dies.
 	public Transform muzzle;				//The muzzle of the tank. This is where the projectile will spawn.
@@ -226,6 +227,18 @@ public class Player : MonoBehaviour
 		}
 
 
+	}
+
+	public void fireShoot() {
+		GameObject fires = Instantiate(fire, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		Projectile projScript = fires.GetComponent<Projectile>();	
+
+
+		if (bulletDirection.magnitude >0) {
+
+			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+
+		}
 	}
 
 	//Called when the tank gets hit by a projectile. It sends over a "dmg" value, which is how much health the tank will lose. 

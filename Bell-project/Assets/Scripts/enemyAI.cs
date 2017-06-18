@@ -46,6 +46,9 @@ public class enemyAI : MonoBehaviour
 		if (Vector3.Distance (player.position, transform.position) < 10) {
 			game.player.health = game.player.health - 10;
 		}
+
+
+
 	}
 
 	void shoot ()
@@ -61,6 +64,11 @@ public class enemyAI : MonoBehaviour
 
 			Debug.Log ("enermyshoot");
 			Debug.Log (projScript.rig.velocity);
+		}
+	}
+	public void OnTriggerEnter (Collider other) {
+		if (other.transform.tag == "p_fire") {
+			gameObject.SetActive (false);
 		}
 	}
 
