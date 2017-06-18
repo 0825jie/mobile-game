@@ -218,6 +218,13 @@ public class Player : MonoBehaviour
 			}
 		}
 
+		if (energy - projectileConsume < 0) {
+			energy = 0;
+		}
+		else {
+			energy -= projectileConsume * 3;
+		}
+
 
 	}
 
@@ -288,9 +295,25 @@ public class Player : MonoBehaviour
 	{
 		if (collision.transform.tag == "healthbox") {
 			Destroy (collision.gameObject);
-			health = health + 200;
-			if (health > 1000) {
-				health = 1000;
+			float curNumber = Random.Range (0f, 10f);
+			if (curNumber < 3) {
+				health = health + 300;
+			}
+			else if (curNumber < 5) {
+				energy = energy + 500;
+			}
+			else if (curNumber < 7) {
+				moveSpeed = moveSpeed * 2;
+			}
+			else if (curNumber < 9) {
+				moveSpeed = moveSpeed / 2;
+			}
+			else if (curNumber < 10) {
+				health = health - 500;
+			}
+
+			if (health > game.player.maxHealth) {
+				health = game.player.maxHealth;
 			}
 //			gameObject.SetActive (false);
 		}
