@@ -250,7 +250,7 @@ public class Player : MonoBehaviour
 	{
 		if (collision.transform.tag == "healthbox") {
 			Destroy (collision.gameObject);
-			health = health + 200;
+			health = health + 500;
 			if (health > 1000) {
 				health = 1000;
 			}
