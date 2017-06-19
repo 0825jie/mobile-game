@@ -210,7 +210,7 @@ public class Player : MonoBehaviour
 //		DrawTool.DrawCircleSolid(game.player.transform, game.player.transform.localPosition, 30); 
 		GameObject light = Instantiate(lighting, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		Projectile lightScript = lighting.GetComponent<Projectile>();	
-
+		Destroy (light, 2f);
 		GameObject[] enermy = GameObject.FindGameObjectsWithTag("enemy");
 
 		foreach (GameObject eachEnermy in enermy) {

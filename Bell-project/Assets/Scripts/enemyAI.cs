@@ -43,8 +43,7 @@ public class enemyAI : MonoBehaviour
 		}
 
 		nav.SetDestination (player.position);
-		if (Vector3.Distance (player.position, transform.position) < 10) {
-			game.player.health = game.player.health - 10;
+		if (Vector3.Distance (player.position, transform.position) < 15) {
 		}
 
 
