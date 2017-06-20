@@ -46,13 +46,30 @@ public class Player : MonoBehaviour
 	public Transform muzzle;				//The muzzle of the tank. This is where the projectile will spawn.
 	public Game game;						//The Game.cs script, located on the GameManager game object.
 
+	public Transform partTorotate;
 
 
 	public Transform target;
-	public float range = 15f;
+	public float range ;
 
 	public string enemytag = "enemy";
-	public float turnspeed = 15f;
+	public float turnspeed = 10f;
+
+	void lockontaget()
+	{
+		Vector3 dir = target.position - transform.position;
+		Quaternion lookRotation = Quaternion.LookRotation (dir);
+		Vector3 rotation = Quaternion.Lerp (partTorotate.rotation, lookRotation, Time.deltaTime * turnspeed).eulerAngles;
+		partTorotate.rotation = Quaternion.Euler (0f,rotation.y,0f);
+	
+	}
+
+
+
+
+
+
+
 
 	void Start ()
 	{
@@ -115,7 +132,8 @@ public class Player : MonoBehaviour
 	//
 	void Update ()
 	{
-//		reloadTimer += Time.deltaTime;
+		//reloadTimer += Time.deltaTime;
+		lockontaget();
 
 	}
 	public void ChangeState1 () {
@@ -135,9 +153,16 @@ public class Player : MonoBehaviour
 			animator.SetTrigger ("run");
 		}
 			
-		if (x == 0 && y == 0) {
-			animator.SetTrigger ("stopfcosll");}
+		if (x == 0 || y == 0) {
+			animator.SetTrigger ("stop");
+		}
 
+
+		if (game.player.health <= 5) {
+			animator.SetTrigger ("dead");	
+
+
+		}
 
 
 		direction = new Vector3 (x, 0, y);
@@ -148,7 +173,7 @@ public class Player : MonoBehaviour
 	//sending over a "y" value, set to either 1 or 0, depending if they are moving forward or backwards.
 	public void Move (int y)
 	{
-		health += 100;
+		
 		int nextFace = y;
 //		transform.Rotate(0,0,(preFace - nextFace) * 45);
 
@@ -211,7 +236,10 @@ public class Player : MonoBehaviour
 		//play udio
 		bulletaudio.Play();  
 
-
+		if (projScript != null) {
+		
+			projScript.seek (target);
+		}
 
 		//Gets the Projectile.cs component of the projectile object.
 //				projScript.tankId = id;														//Sets the projectile's tankId, so that it knows which tank it was shot by.
@@ -219,7 +247,7 @@ public class Player : MonoBehaviour
 
 		if (bulletDirection.magnitude >0) {
 
-			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+			//projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
 		}
 //				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.

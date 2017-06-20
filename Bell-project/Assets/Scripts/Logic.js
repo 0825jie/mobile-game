@@ -22,7 +22,7 @@ function Update () {
 	}
 
 	if (Input.GetKeyDown ("escape")) {
-		Screen.lockCursor = false;
+//		Screen.lockCursor = false;
 		Cursor.visible = true;
 	}	
 }
