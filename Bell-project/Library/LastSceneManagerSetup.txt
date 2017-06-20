@@ -1,4 +1,4 @@
 sceneSetups:
-- path: F:/cs526/526-bell-map2/526-bell-map2/Bell-project/Assets/Scenes/Games.unity
+- path: Assets/Scenes/Games.unity
   isLoaded: 1
   isActive: 1

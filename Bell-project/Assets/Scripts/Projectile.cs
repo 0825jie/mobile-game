@@ -44,29 +44,12 @@ public class Projectile : MonoBehaviour
 //	}
 
 
-	private void OnCollisionEnter(Collision collision)
-	{
-		
 
-
-		if (collision.transform.tag == "enemy") {
-
-
-//			GameObject player = GameObject.FindWithTag("Player");
-//			player.GetComponent<Player>().health = player.GetComponent<Player>().health - 200;
-//
-
-
-			Destroy (collision.gameObject);
-//			gameObject.SetActive (false);
-//			game.player.moveSpeed = game.player.moveSpeed * (float)1.2;
-
-		
-
-		} else if (collision.transform.tag != "Player"){
-			gameObject.SetActive (false);
-		}
+	public void OnTriggerEnter(Collision collision) {
+		Debug.Log ("aaaaaaa");
+		gameObject.SetActive (false);
 	}
+
 
 
 

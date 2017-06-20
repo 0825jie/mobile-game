@@ -22,6 +22,7 @@ public class enemy_bullet_collision : MonoBehaviour
 	{ 
 		        
 		if (collision.transform.tag != "e_bullet" && collision.transform.tag != "enemy") {
+
 			gameObject.SetActive (false);
 			Destroy (gameObject);
 		}

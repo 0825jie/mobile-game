@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour 
 {
 	[Header("Stats")]
-
+	public Animator animator;
 	public int preFace;
 	public Vector3 preAngle;
 	public int id;							//The unique identifier for this player.
@@ -46,6 +46,14 @@ public class Player : MonoBehaviour
 	public Transform muzzle;				//The muzzle of the tank. This is where the projectile will spawn.
 	public Game game;						//The Game.cs script, located on the GameManager game object.
 
+
+
+	public Transform target;
+	public float range = 15f;
+
+	public string enemytag = "enemy";
+	public float turnspeed = 15f;
+
 	void Start ()
 	{
 		direction = Vector3.zero;	//Sets the tank's direction up, as that is the default rotation of the sprite.
@@ -54,7 +62,39 @@ public class Player : MonoBehaviour
 
 		preAngle = new Vector3(0,0,-1);
 		bulletaudio = GetComponent<AudioSource> ();
+		InvokeRepeating ("Updatetarget",0f,0.5f);
 	}
+
+	void Updatetarget()
+	{
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag (enemytag);
+		float shortest = Mathf.Infinity;
+		GameObject neartest = null;
+		foreach (GameObject enemy in enemies) {
+		
+			float distanceToenemy = Vector3.Distance (transform.position, enemy.transform.position);
+			if (distanceToenemy < shortest) {
+				shortest = distanceToenemy;
+				neartest = enemy;
+			}
+		
+		
+		}
+		if (neartest != null && shortest <= range) {
+			target = neartest.transform;
+		} else {
+		
+			target = null;
+		}
+	}
+
+	private void onDrawGizmosSelected()
+	{
+		Gizmos.color = Color.red;
+		Gizmos.DrawSphere (transform.position, range);
+	}
+
+
 
 //	Called by the Game.cs script when the game starts.
 	public void SetStartValues ()
@@ -87,13 +127,19 @@ public class Player : MonoBehaviour
 		Vector3 nextAngle = new Vector3 (x, 0, y);
 
 		if (x != 0 && y != 0) 
-		{
+		{    
 			float angle = angle_360(preAngle,nextAngle);
 			transform.Rotate(0,angle,0);
 			preAngle = nextAngle;
 			bulletDirection = new Vector3 (x, 0, y);
+			animator.SetTrigger ("run");
 		}
 			
+		if (x == 0 && y == 0) {
+			animator.SetTrigger ("stopfcosll");}
+
+
+
 		direction = new Vector3 (x, 0, y);
 		rig.velocity = direction * 50 * moveSpeed * Time.deltaTime;	
 	}
@@ -102,7 +148,7 @@ public class Player : MonoBehaviour
 	//sending over a "y" value, set to either 1 or 0, depending if they are moving forward or backwards.
 	public void Move (int y)
 	{
-
+		health += 100;
 		int nextFace = y;
 //		transform.Rotate(0,0,(preFace - nextFace) * 45);
 
@@ -210,7 +256,7 @@ public class Player : MonoBehaviour
 //		DrawTool.DrawCircleSolid(game.player.transform, game.player.transform.localPosition, 30); 
 		GameObject light = Instantiate(lighting, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		Projectile lightScript = lighting.GetComponent<Projectile>();	
-
+		Destroy (light, 2f);
 		GameObject[] enermy = GameObject.FindGameObjectsWithTag("enemy");
 
 		foreach (GameObject eachEnermy in enermy) {

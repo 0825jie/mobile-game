@@ -182,7 +182,20 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'CATRigSpine1' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'CATRigSpine4' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'CATRigPalmBone001'
+      has translation animation that will be discarded.\n\t'CATRigPalmBone001Bone001'
+      has translation animation that will be discarded.\n\t'CATRigPalmBone002' has
+      translation animation that will be discarded.\n\t'CATRigPalmBone002Bone001'
+      has translation animation that will be discarded.\n\t'CATRigPalmBone001 1' has
+      translation animation that will be discarded.\n\t'CATRigPalmBone001Bone001 1'
+      has translation animation that will be discarded.\n\t'CATRigPalmBone001Bone001
+      1' has scale animation that will be discarded.\n\t'CATRigPalmBone002 1' has
+      translation animation that will be discarded.\n\t'CATRigPalmBone002Bone001 1'
+      has translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 1
@@ -196,15 +209,15 @@ ModelImporter:
       name: RunFront
       takeName: Fantasy_01_Warrior_29_max2011
       firstFrame: 0
-      lastFrame: 30
+      lastFrame: 26
       wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -231,8 +244,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
