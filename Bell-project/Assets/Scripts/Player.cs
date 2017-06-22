@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
 
 	[HideInInspector]
 	public Vector3 direction;				//The direction that the tank is facing. Used for movement direction.
-	public Vector3 bulletDirection;
+
 	[Header("Bools")]
 	public bool canMove;					//Can the tank move if it wants to?
 	public bool canShoot;					//Can the tank shoot if it wants to?
@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
 	void Start ()
 	{
 		direction = Vector3.zero;	//Sets the tank's direction up, as that is the default rotation of the sprite.
-		bulletDirection = Vector3.zero;
+
 		preFace = 1;
 
 		preAngle = new Vector3(0,0,-1);
@@ -155,7 +155,7 @@ public class Player : MonoBehaviour
 			float angle = angle_360(preAngle,nextAngle);
 			transform.Rotate(0,angle,0);
 			preAngle = nextAngle;
-			bulletDirection = new Vector3 (x, 0, y);
+
 			animator.SetTrigger ("run");
 		}
 			
@@ -233,28 +233,21 @@ public class Player : MonoBehaviour
 //	Called by the Contols.cs script. When a player presses their shoot key, it calls this function, making the tank shoot.
 	public void Shoot ()
 	{
-		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x, muzzle.transform.position.y, -muzzle.transform.position.z);
-
+		
 	//			if(reloadTimer >= reloadSpeed){													//Is the reloadTimer more than or equals to the reloadSpeed? Have we waiting enough time to reload?
 		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		Projectile projScript = proj.GetComponent<Projectile>();	
-		Destroy(proj,3f);
+		Destroy(proj,5f);
 		//play udio
 		bulletaudio.Play();  
-		if (projScript != null) {
-			projScript.seek (target);
-		
-		}
+	
 
 		//Gets the Projectile.cs component of the projectile object.
 //				projScript.tankId = id;														//Sets the projectile's tankId, so that it knows which tank it was shot by.
 //				projScript.damage = damage;													//Sets the projectile's damage.
 
-		if (bulletDirection.magnitude >0) {
+		projScript.rig.velocity = transform.forward.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
-			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
-
-		}
 //				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
 //			}
 		if (energy - projectileConsume < 0) {
@@ -312,12 +305,9 @@ public class Player : MonoBehaviour
 		GameObject fires = Instantiate(fire, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		Projectile projScript = fires.GetComponent<Projectile>();	
 
+		projScript.rig.velocity = transform.forward.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
-		if (bulletDirection.magnitude >0) {
-
-			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
-
-		}
+	
 	}
 
 	//Called when the tank gets hit by a projectile. It sends over a "dmg" value, which is how much health the tank will lose. 

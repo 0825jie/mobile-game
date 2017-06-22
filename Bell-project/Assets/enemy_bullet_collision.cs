@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class enemy_bullet_collision : MonoBehaviour
 {
-<<<<<<< HEAD
-	float lifetime = 50;
-	int time =0;
-=======
+
 
 	float lifetime = 10;
 	int time=0;
->>>>>>> 2a5a6664baa3a960b365e4e4160931acb962248a
+
 	// Use this for initialization
 	void Start ()
 	{

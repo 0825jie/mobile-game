@@ -20,10 +20,7 @@ public class Projectile : MonoBehaviour
 	public float explosion=2f;
 	public float speed=70f;
 	public GameObject impactEffect;
-	public void seek(Transform _target)
-	{
-		target = _target;
-	}
+
 //
 	void Update()
 	{
@@ -35,22 +32,22 @@ public class Projectile : MonoBehaviour
 
 
 	//
-		void Hittarget()
-		{
-			GameObject effectins = (GameObject)Instantiate (impactEffect, transform.position, transform.rotation);
-		    Destroy (effectins, 5f);
-			if (explosion > 0f) {
-			
-				Explode ();
-			} else
-		{
-			
-				Damage (target);
-			}
-
-			Destroy (gameObject);
-
-		}
+//		void Hittarget()
+//		{
+//			GameObject effectins = (GameObject)Instantiate (impactEffect, transform.position, transform.rotation);
+//		    Destroy (effectins, 5f);
+//			if (explosion > 0f) {
+//			
+//				Explode ();
+//			} else
+//		{
+//			
+//				Damage (target);
+//			}
+//
+//			Destroy (gameObject);
+//
+//		}
 
 		void Explode()
 		{
@@ -60,29 +57,22 @@ public class Projectile : MonoBehaviour
 				if (collider.tag == "enemy") 
 				
 				{
-					Damage (collider.transform);
+			//	Damage (colliders.gameObject);
 				}
 			}
 
 		}
 
 
-		void Damage(Transform enemy)
+	void Damage(GameObject enemy)
 		{
-		Enemy e = enemy.GetComponent<Enemy>();
-
-			e.TakeDamage (damage);
+		 Enemy e = enemy.GetComponent<Enemy>();
+         e.TakeDamage (damage);
 		
 
-		}
+	}
 
-		void onDrawGizmosSelected()
-		{
-			Gizmos.color = Color.red;
-			Gizmos.DrawWireSphere (transform.position, explosion);
-
-
-		}
+		
 
 
 //
@@ -126,12 +116,18 @@ public class Projectile : MonoBehaviour
 //		}
 //	}
 	private void OnCollisionEnter(Collision collison)
-	{
+	{	
+		if (collison.transform.tag != "Player") {
+			Destroy (gameObject);
+
+
+		} 
 		if (collison.transform.tag == "enemy") {
-			Damage (target);
-		} else if (collison.transform.tag != "Player") {
-			gameObject.SetActive (false);
+		
+			Damage (collison.gameObject);
 		}
+
+
 
 	}
 
@@ -139,21 +135,6 @@ public class Projectile : MonoBehaviour
 	public void OnTriggerEnter(Collision collision) {
 		//Debug.Log ("aaaaaaa");
 		gameObject.SetActive (false);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

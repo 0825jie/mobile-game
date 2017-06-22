@@ -47,7 +47,7 @@ public class EnemyBlackAI : MonoBehaviour
 		if (LocateTime >= 10) {
 			LocateTime = 0;
 
-			shoot ();
+			//shoot ();
 		}
 
 

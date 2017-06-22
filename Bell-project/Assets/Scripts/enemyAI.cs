@@ -16,12 +16,12 @@ public class enemyAI : MonoBehaviour
 
 	float ShootingNeedTime = 0.5f;
 	float LocateTime = 0;
-<<<<<<< HEAD
 
-=======
+
+
 	float LocateNeedTime = 3;
 	public int health;
->>>>>>> 2a5a6664baa3a960b365e4e4160931acb962248a
+
 	void Awake ()
 	{
 		// Set up the references.
@@ -38,8 +38,7 @@ public class enemyAI : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-<<<<<<< HEAD
-=======
+
 		float dist = Vector3.Distance(player.position, transform.position);
 		if (dist < shootDis) {
 			LocateTime += ShootingNeedTime;
@@ -49,7 +48,6 @@ public class enemyAI : MonoBehaviour
 				shoot ();
 			}
 		}
->>>>>>> 2a5a6664baa3a960b365e4e4160931acb962248a
 
 		nav.SetDestination (player.position);
 		if (Vector3.Distance (player.position, transform.position) < 15) {
@@ -58,9 +56,9 @@ public class enemyAI : MonoBehaviour
 		}
 	}
 
-<<<<<<< HEAD
 
-=======
+
+
 	void shoot ()
 	{
 		if (player != null) {
@@ -74,7 +72,7 @@ public class enemyAI : MonoBehaviour
 		}
 	}
 
->>>>>>> 2a5a6664baa3a960b365e4e4160931acb962248a
+
 	public void OnTriggerEnter (Collider other) {
 		if (other.transform.tag == "p_fire") {
 			gameObject.SetActive (false);

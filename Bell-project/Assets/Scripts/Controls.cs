@@ -92,7 +92,7 @@ public class Controls : MonoBehaviour
 		if (game.player.rig.velocity.magnitude < 0.5 && game.player.energy < game.playerStartEnergy)
 	    {
 
-			game.player.energy = game.player.energy + game.player.energyRecoverSpeed / 10;
+			game.player.energy = game.player.energy + game.player.energyRecoverSpeed*10;
 		}
 		if (game.player.rig.velocity.magnitude < 0.5) {
 			game.player.health = game.player.health - game.player.healthRecoverSpeed / 10;
