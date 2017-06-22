@@ -12,11 +12,15 @@ public class enemyAI : MonoBehaviour
 	public Game game;
 
 	public GameObject BulletB;
+	public float shootDis;
 
-	float ShootingTime = 0.5f;
 	float ShootingNeedTime = 0.5f;
 	float LocateTime = 0;
+
+
+
 	float LocateNeedTime = 3;
+	public int health;
 
 	void Awake ()
 	{
@@ -35,42 +39,43 @@ public class enemyAI : MonoBehaviour
 	void Update ()
 	{
 
-		LocateTime += ShootingNeedTime;
-		if (LocateTime >= 10) {
-			LocateTime = 0;
+		float dist = Vector3.Distance(player.position, transform.position);
+		if (dist < shootDis) {
+			LocateTime += ShootingNeedTime;
+			if (LocateTime >= 10) {
+				LocateTime = 0;
 
-			shoot ();
+				shoot ();
+			}
 		}
 
 		nav.SetDestination (player.position);
 		if (Vector3.Distance (player.position, transform.position) < 15) {
+			Destroy (gameObject);
+			game.player.health = game.player.health - 200;
 		}
-
-
-
 	}
+
+
+
 
 	void shoot ()
 	{
 		if (player != null) {
 			Vector3 relativePos = player.position;
-			//GameObject bullet = (GameObject)Instantiate(BulletB,transform.position, new Quaternion(0, 0, 0, 0));
-			GameObject proj = Instantiate (BulletB, transform.position, Quaternion.LookRotation (relativePos)) as GameObject;    
-			Projectile projScript = proj.GetComponent<Projectile> ();
-			Vector3 bulletDirection = player.position - transform.position;    
+			GameObject proj = Instantiate (BulletB, transform.position, Quaternion.LookRotation (relativePos)) as GameObject; 
+			Rigidbody rig = proj.GetComponent<Rigidbody> ();
 
-			projScript.rig.velocity = bulletDirection.normalized * 100;
+			Vector3 bulletDirection = player.position - transform.position;
+			rig.velocity= bulletDirection.normalized * 500;
 
-			Debug.Log ("enermyshoot");
-			Debug.Log (projScript.rig.velocity);
 		}
 	}
+
+
 	public void OnTriggerEnter (Collider other) {
 		if (other.transform.tag == "p_fire") {
 			gameObject.SetActive (false);
 		}
 	}
-
 }
-
-		

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour 
 {
 	[Header("Stats")]
-
+	public Animator animator;
 	public int preFace;
 	public Vector3 preAngle;
 	public int id;							//The unique identifier for this player.
@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
 
 	[HideInInspector]
 	public Vector3 direction;				//The direction that the tank is facing. Used for movement direction.
-	public Vector3 bulletDirection;
+
 	[Header("Bools")]
 	public bool canMove;					//Can the tank move if it wants to?
 	public bool canShoot;					//Can the tank shoot if it wants to?
@@ -46,15 +46,78 @@ public class Player : MonoBehaviour
 	public Transform muzzle;				//The muzzle of the tank. This is where the projectile will spawn.
 	public Game game;						//The Game.cs script, located on the GameManager game object.
 
+	public Transform partTorotate;
+	public GameObject healthIcon;
+	public GameObject energyIcon;
+
+
+
+	public Transform target;
+	public float range ;
+
+	public string enemytag = "enemy";
+	public float turnspeed = 10f;
+
+	void lockontaget()
+	{
+
+		Vector3 dir = target.position - transform.position;
+		transform.forward = dir;
+
+		//		Quaternion lookRotation = Quaternion.LookRotation (dir);
+//		Vector3 rotation = Quaternion.Lerp (partTorotate.rotation, lookRotation, Time.deltaTime * turnspeed).eulerAngles;
+//		partTorotate.rotation = Quaternion.Euler (0f,rotation.y,0f);
+	
+	}
+
+
+
+
+
+
+
+
 	void Start ()
 	{
 		direction = Vector3.zero;	//Sets the tank's direction up, as that is the default rotation of the sprite.
-		bulletDirection = Vector3.zero;
+
 		preFace = 1;
 
 		preAngle = new Vector3(0,0,-1);
 		bulletaudio = GetComponent<AudioSource> ();
+		InvokeRepeating ("Updatetarget",0f,0.5f);
 	}
+
+	void Updatetarget()
+	{
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag (enemytag);
+		float shortest = Mathf.Infinity;
+		GameObject neartest = null;
+		foreach (GameObject enemy in enemies) {
+		
+			float distanceToenemy = Vector3.Distance (transform.position, enemy.transform.position);
+			if (distanceToenemy < shortest) {
+				shortest = distanceToenemy;
+				neartest = enemy;
+			}
+		
+		
+		}
+		if (neartest != null && shortest <= range) {
+			target = neartest.transform;
+		} else {
+		
+			target = null;
+		}
+	}
+
+	private void onDrawGizmosSelected()
+	{
+		Gizmos.color = Color.red;
+		Gizmos.DrawSphere (transform.position, range);
+	}
+
+
 
 //	Called by the Game.cs script when the game starts.
 	public void SetStartValues ()
@@ -75,7 +138,8 @@ public class Player : MonoBehaviour
 	//
 	void Update ()
 	{
-//		reloadTimer += Time.deltaTime;
+		//reloadTimer += Time.deltaTime;
+		lockontaget();
 
 	}
 	public void ChangeState1 () {
@@ -87,13 +151,26 @@ public class Player : MonoBehaviour
 		Vector3 nextAngle = new Vector3 (x, 0, y);
 
 		if (x != 0 && y != 0) 
-		{
+		{    
 			float angle = angle_360(preAngle,nextAngle);
 			transform.Rotate(0,angle,0);
 			preAngle = nextAngle;
-			bulletDirection = new Vector3 (x, 0, y);
+
+			animator.SetTrigger ("run");
 		}
 			
+		if (x == 0 || y == 0) {
+			animator.SetTrigger ("stop");
+		}
+
+
+		if (game.player.health <= 5) {
+			animator.SetTrigger ("dead");	
+
+
+		}
+
+
 		direction = new Vector3 (x, 0, y);
 		rig.velocity = direction * 50 * moveSpeed * Time.deltaTime;	
 	}
@@ -102,7 +179,7 @@ public class Player : MonoBehaviour
 	//sending over a "y" value, set to either 1 or 0, depending if they are moving forward or backwards.
 	public void Move (int y)
 	{
-
+		
 		int nextFace = y;
 //		transform.Rotate(0,0,(preFace - nextFace) * 45);
 
@@ -156,26 +233,21 @@ public class Player : MonoBehaviour
 //	Called by the Contols.cs script. When a player presses their shoot key, it calls this function, making the tank shoot.
 	public void Shoot ()
 	{
-		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x,muzzle.transform.position.y,-muzzle.transform.position.z);
-
+		
 	//			if(reloadTimer >= reloadSpeed){													//Is the reloadTimer more than or equals to the reloadSpeed? Have we waiting enough time to reload?
 		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		Projectile projScript = proj.GetComponent<Projectile>();	
 		Destroy(proj,5f);
 		//play udio
 		bulletaudio.Play();  
-
-
+	
 
 		//Gets the Projectile.cs component of the projectile object.
 //				projScript.tankId = id;														//Sets the projectile's tankId, so that it knows which tank it was shot by.
 //				projScript.damage = damage;													//Sets the projectile's damage.
 
-		if (bulletDirection.magnitude >0) {
+		projScript.rig.velocity = transform.forward.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
-			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
-
-		}
 //				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
 //			}
 		if (energy - projectileConsume < 0) {
@@ -233,12 +305,9 @@ public class Player : MonoBehaviour
 		GameObject fires = Instantiate(fire, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		Projectile projScript = fires.GetComponent<Projectile>();	
 
+		projScript.rig.velocity = transform.forward.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
-		if (bulletDirection.magnitude >0) {
-
-			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
-
-		}
+	
 	}
 
 	//Called when the tank gets hit by a projectile. It sends over a "dmg" value, which is how much health the tank will lose. 
@@ -307,27 +376,32 @@ public class Player : MonoBehaviour
 	private void OnCollisionEnter(Collision collision)
 	{
 		if (collision.transform.tag == "healthbox") {
-			Destroy (collision.gameObject);
+			
 			float curNumber = Random.Range (0f, 10f);
-			if (curNumber < 3) {
-				health = health + 300;
+			if (curNumber < 6) {
+				health = health + 500;
+				GameObject g1 = Instantiate (healthIcon, collision.transform.position, collision.transform.rotation);
+				Destroy (g1, 0.1f);
 			}
-			else if (curNumber < 5) {
+			else{
 				energy = energy + 500;
+				GameObject g2 = Instantiate (energyIcon, collision.transform.position, collision.transform.rotation);
+				Destroy (g2, 0.1f);
 			}
-			else if (curNumber < 7) {
-				moveSpeed = moveSpeed * 2;
-			}
-			else if (curNumber < 9) {
-				moveSpeed = moveSpeed / 2;
-			}
-			else if (curNumber < 10) {
-				health = health - 500;
-			}
+//			else if (curNumber < 7) {
+//				moveSpeed = moveSpeed * 2;
+//			}
+//			else if (curNumber < 9) {
+//				moveSpeed = moveSpeed / 2;
+//			}
+//			else if (curNumber < 10) {
+//				health = health - 500;
+//			}
 
 			if (health > game.player.maxHealth) {
 				health = game.player.maxHealth;
 			}
+			Destroy (collision.gameObject);
 //			gameObject.SetActive (false);
 		}
 

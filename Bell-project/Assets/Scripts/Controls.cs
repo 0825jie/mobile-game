@@ -6,6 +6,7 @@ using UnityEngine;
 public class Controls : MonoBehaviour 
 {
 	public VirtualJoystick joystick;
+	public VirtualJoystick joystick2;
 
 	[Header("Player  Controls")]
 	public KeyCode p1MoveUp;
@@ -26,7 +27,7 @@ public class Controls : MonoBehaviour
 	[Header("Components")]
 	public Game game;
 	public DrawTool draw;
-
+	public Animator animator;
 	void Update ()
 	{
 
@@ -39,16 +40,18 @@ public class Controls : MonoBehaviour
 		game.player.rig.velocity = Vector3.zero;
 	
 		if (Input.GetKeyDown (p1State1)) {
-			
-			game.player.moveSpeed = game.player.moveSpeed * (float)1.2;
+		game.player.moveSpeed = game.player.moveSpeed * (float)1.2;
 		}
 		if (Input.GetKeyDown (p1State2)) {
+			
 			game.player.moveSpeed = game.player.moveSpeed / (float)1.2;
 		}
 		if (Input.GetKeyDown (p1State3)) {
+
 			game.player.moveSpeed = game.player.moveSpeed / (float)1.2;
 		}
 		if (Input.GetKeyDown (p1Recover)) {
+			
 			game.player.health = game.playerStartHealth;
 			game.player.energy = game.playerStartEnergy;
 		}
@@ -77,17 +80,27 @@ public class Controls : MonoBehaviour
 			}
 
 		}
+
+		if (game.player.rig.velocity.magnitude > 0.5 && game.player.health<game.playerStartHealth)
+		{
+
+			game.player.health = game.player.health + game.player.healthRecoverSpeed / 5;
+		}
+
+
 			
 		if (game.player.rig.velocity.magnitude < 0.5 && game.player.energy < game.playerStartEnergy)
 	    {
 
-			game.player.energy = game.player.energy + game.player.energyRecoverSpeed / 10;
+			game.player.energy = game.player.energy + game.player.energyRecoverSpeed*10;
 		}
 		if (game.player.rig.velocity.magnitude < 0.5) {
 			game.player.health = game.player.health - game.player.healthRecoverSpeed / 10;
 		}
 		if (game.player.health <= 5) {
-			game.player.gameObject.SetActive (false);
+			animator.SetTrigger ("dead");	
+
+
 		}
 	}
 }

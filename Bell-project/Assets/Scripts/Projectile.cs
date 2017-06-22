@@ -7,13 +7,86 @@ public class Projectile : MonoBehaviour
 {
 	[Header("Stats")]
 	public int tankId;						//The tank which shot this projectile.
-	public int damage;						//How much damage this projectile will deal on impact.
+	public int damage=30;						//How much damage this projectile will deal on impact.
 
 	[Header("Components / Objects")]
 	public GameObject hitParticleEffect;	//The particle effect prefab that will spawn when the projectile hits something.
 	public Rigidbody rig;					//The Rigidbody2D component of the projectile.
 	public GameObject player;
 	private int bounces;					//The amount of times the projectile has bounced off a wall.
+
+
+	public Transform target;
+	public float explosion=2f;
+	public float speed=70f;
+	public GameObject impactEffect;
+
+//
+	void Update()
+	{
+		
+		
+	
+
+	}
+
+
+	//
+//		void Hittarget()
+//		{
+//			GameObject effectins = (GameObject)Instantiate (impactEffect, transform.position, transform.rotation);
+//		    Destroy (effectins, 5f);
+//			if (explosion > 0f) {
+//			
+//				Explode ();
+//			} else
+//		{
+//			
+//				Damage (target);
+//			}
+//
+//			Destroy (gameObject);
+//
+//		}
+
+		void Explode()
+		{
+			Collider[] colliders = Physics.OverlapSphere (transform.position, explosion);
+			foreach (Collider collider in colliders) 
+			{
+				if (collider.tag == "enemy") 
+				
+				{
+			//	Damage (colliders.gameObject);
+				}
+			}
+
+		}
+
+
+	void Damage(GameObject enemy)
+		{
+		 Enemy e = enemy.GetComponent<Enemy>();
+         e.TakeDamage (damage);
+		
+
+	}
+
+		
+
+
+//
+//
+
+
+
+
+
+
+
+
+
+
 
 
 	//Called when the projectile's CircleCollider2D component enters a another collider or trigger. 
@@ -42,35 +115,29 @@ public class Projectile : MonoBehaviour
 //			Destroy(gameObject);		//Destroy the projectile.
 //		}
 //	}
+	private void OnCollisionEnter(Collision collison)
+	{	
+		if (collison.transform.tag != "Player") {
+			Destroy (gameObject);
 
 
-	public void OnCollisionEnter(Collision collision)
-	{
-		
-		Debug.Log ("aaaaaaa");
-
-		if (collision.transform.tag == "enemy") {
-
-
-//			GameObject player = GameObject.FindWithTag("Player");
-//			player.GetComponent<Player>().health = player.GetComponent<Player>().health - 200;
-//
-
-
-			Destroy (collision.gameObject);
-//			gameObject.SetActive (false);
-//			game.player.moveSpeed = game.player.moveSpeed * (float)1.2;
-
-		} else if (collision.gameObject.tag == "Terrain") {
-			gameObject.SetActive (false);
-
-		} else if (collision.transform.tag != "Player"){
-			gameObject.SetActive (false);
 		} 
+		if (collison.transform.tag == "enemy") {
+		
+			Damage (collison.gameObject);
+		}
+
+
+
 	}
+
+
 	public void OnTriggerEnter(Collision collision) {
-		Debug.Log ("aaaaaaa");
+		//Debug.Log ("aaaaaaa");
 		gameObject.SetActive (false);
+
+
+
 	}
 
 
