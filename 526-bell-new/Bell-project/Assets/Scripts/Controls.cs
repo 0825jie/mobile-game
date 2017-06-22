@@ -80,6 +80,14 @@ public class Controls : MonoBehaviour
 			}
 
 		}
+
+		if (game.player.rig.velocity.magnitude > 0.5 && game.player.health<game.playerStartHealth)
+		{
+
+			game.player.health = game.player.health + game.player.healthRecoverSpeed / 5;
+		}
+
+
 			
 		if (game.player.rig.velocity.magnitude < 0.5 && game.player.energy < game.playerStartEnergy)
 	    {

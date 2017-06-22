@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
 {
 	[Header("Stats")]
 	public int tankId;						//The tank which shot this projectile.
-	public int damage;						//How much damage this projectile will deal on impact.
+	public int damage=30;						//How much damage this projectile will deal on impact.
 
 	[Header("Components / Objects")]
 	public GameObject hitParticleEffect;	//The particle effect prefab that will spawn when the projectile hits something.
@@ -15,84 +15,78 @@ public class Projectile : MonoBehaviour
 	public GameObject player;
 	private int bounces;					//The amount of times the projectile has bounced off a wall.
 
-	private Transform target;
 
-	public float explosion=0f;
+	public Transform target;
+	public float explosion=2f;
 	public float speed=70f;
 	public GameObject impactEffect;
 	public void seek(Transform _target)
 	{
 		target = _target;
-	
-	
 	}
-
+//
 	void Update()
 	{
 		
-
-		Vector3 dir = target.position - transform.position;
-		float distancethisFrame = speed * Time.deltaTime;
-		if (dir.magnitude <= distancethisFrame) {
-			Hittarget ();
-			return;
 		
-		}
-		transform.Translate(dir.normalized*distancethisFrame,Space.World);
-		transform.LookAt(target);
+	
+
 	}
 
 
-
-	void Hittarget()
-	{
-		GameObject effectins = (GameObject)Instantiate (impactEffect, transform.position, transform.rotation);
-		Destroy (effectins, 6f);
-		if (explosion > 0f) {
-		
-			Explode ();
-		} else {
-		
-			Damage (target);
-		}
-	
-		Destroy (gameObject);
-	
-	}
-
-	void Explode()
-	{
-		Collider[] colliders = Physics.OverlapSphere (transform.position, explosion);
-		foreach (Collider collider in colliders) 
+	//
+		void Hittarget()
 		{
-			if (collider.tag == "enemy") 
+			GameObject effectins = (GameObject)Instantiate (impactEffect, transform.position, transform.rotation);
+		    Destroy (effectins, 5f);
+			if (explosion > 0f) {
 			
-			{
-				Damage (collider.transform);
+				Explode ();
+			} else
+		{
+			
+				Damage (target);
 			}
+
+			Destroy (gameObject);
+
 		}
-	
-	}
+
+		void Explode()
+		{
+			Collider[] colliders = Physics.OverlapSphere (transform.position, explosion);
+			foreach (Collider collider in colliders) 
+			{
+				if (collider.tag == "enemy") 
+				
+				{
+					Damage (collider.transform);
+				}
+			}
+
+		}
 
 
-	void Damage(Transform enemy)
-	{
-	
-	
-	
-	}
+		void Damage(Transform enemy)
+		{
+		Enemy e = enemy.GetComponent<Enemy>();
 
-	void onDrawGizmosSelected()
-	{
-		Gizmos.color = Color.red;
-		Gizmos.DrawWireSphere (transform.position, explosion);
-	
-	
-	}
+			e.TakeDamage (damage);
+		
 
+		}
+
+		void onDrawGizmosSelected()
+		{
+			Gizmos.color = Color.red;
+			Gizmos.DrawWireSphere (transform.position, explosion);
 
 
+		}
 
+
+//
+//
 
 
 
@@ -134,18 +128,35 @@ public class Projectile : MonoBehaviour
 	private void OnCollisionEnter(Collision collison)
 	{
 		if (collison.transform.tag == "enemy") {
-		
-			Destroy (collison.gameObject);
+			Damage (target);
 		} else if (collison.transform.tag != "Player") {
-			//gameObject.SetActive (false);
+			gameObject.SetActive (false);
 		}
 
 	}
 
 
 	public void OnTriggerEnter(Collision collision) {
-		Debug.Log ("aaaaaaa");
+		//Debug.Log ("aaaaaaa");
 		gameObject.SetActive (false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 
 

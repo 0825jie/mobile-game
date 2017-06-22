@@ -47,6 +47,9 @@ public class Player : MonoBehaviour
 	public Game game;						//The Game.cs script, located on the GameManager game object.
 
 	public Transform partTorotate;
+	public GameObject healthIcon;
+	public GameObject energyIcon;
+
 
 
 	public Transform target;
@@ -57,10 +60,13 @@ public class Player : MonoBehaviour
 
 	void lockontaget()
 	{
+
 		Vector3 dir = target.position - transform.position;
-		Quaternion lookRotation = Quaternion.LookRotation (dir);
-		Vector3 rotation = Quaternion.Lerp (partTorotate.rotation, lookRotation, Time.deltaTime * turnspeed).eulerAngles;
-		partTorotate.rotation = Quaternion.Euler (0f,rotation.y,0f);
+		transform.forward = dir;
+
+		//		Quaternion lookRotation = Quaternion.LookRotation (dir);
+//		Vector3 rotation = Quaternion.Lerp (partTorotate.rotation, lookRotation, Time.deltaTime * turnspeed).eulerAngles;
+//		partTorotate.rotation = Quaternion.Euler (0f,rotation.y,0f);
 	
 	}
 
@@ -227,18 +233,17 @@ public class Player : MonoBehaviour
 //	Called by the Contols.cs script. When a player presses their shoot key, it calls this function, making the tank shoot.
 	public void Shoot ()
 	{
-		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x,muzzle.transform.position.y,-muzzle.transform.position.z);
+		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x, muzzle.transform.position.y, -muzzle.transform.position.z);
 
 	//			if(reloadTimer >= reloadSpeed){													//Is the reloadTimer more than or equals to the reloadSpeed? Have we waiting enough time to reload?
 		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		Projectile projScript = proj.GetComponent<Projectile>();	
-		Destroy(proj,5f);
+		Destroy(proj,3f);
 		//play udio
 		bulletaudio.Play();  
-
 		if (projScript != null) {
-		
 			projScript.seek (target);
+		
 		}
 
 		//Gets the Projectile.cs component of the projectile object.
@@ -247,7 +252,7 @@ public class Player : MonoBehaviour
 
 		if (bulletDirection.magnitude >0) {
 
-			//projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+			projScript.rig.velocity = bulletDirection.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
 		}
 //				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
@@ -381,27 +386,32 @@ public class Player : MonoBehaviour
 	private void OnCollisionEnter(Collision collision)
 	{
 		if (collision.transform.tag == "healthbox") {
-			Destroy (collision.gameObject);
+			
 			float curNumber = Random.Range (0f, 10f);
-			if (curNumber < 3) {
-				health = health + 300;
+			if (curNumber < 6) {
+				health = health + 500;
+				GameObject g1 = Instantiate (healthIcon, collision.transform.position, collision.transform.rotation);
+				Destroy (g1, 0.1f);
 			}
-			else if (curNumber < 5) {
+			else{
 				energy = energy + 500;
+				GameObject g2 = Instantiate (energyIcon, collision.transform.position, collision.transform.rotation);
+				Destroy (g2, 0.1f);
 			}
-			else if (curNumber < 7) {
-				moveSpeed = moveSpeed * 2;
-			}
-			else if (curNumber < 9) {
-				moveSpeed = moveSpeed / 2;
-			}
-			else if (curNumber < 10) {
-				health = health - 500;
-			}
+//			else if (curNumber < 7) {
+//				moveSpeed = moveSpeed * 2;
+//			}
+//			else if (curNumber < 9) {
+//				moveSpeed = moveSpeed / 2;
+//			}
+//			else if (curNumber < 10) {
+//				health = health - 500;
+//			}
 
 			if (health > game.player.maxHealth) {
 				health = game.player.maxHealth;
 			}
+			Destroy (collision.gameObject);
 //			gameObject.SetActive (false);
 		}
 
