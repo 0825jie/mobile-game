@@ -23,6 +23,8 @@ public class WaveSpawner : MonoBehaviour {
 
 	public Transform[] spawnPoints;
 
+	AudioSource bellaudio;
+
 	public float timeBetweenWaves = 5f;
 	private float waveCountdown;
 	public float WaveCountdown
@@ -40,6 +42,7 @@ public class WaveSpawner : MonoBehaviour {
 
 	void Start()
 	{
+		bellaudio = GetComponent<AudioSource> ();
 		if (spawnPoints.Length == 0)
 		{
 			Debug.LogError("No spawn points referenced.");
@@ -67,6 +70,7 @@ public class WaveSpawner : MonoBehaviour {
 		{
 			if (state != SpawnState.SPAWNING)
 			{
+				bellaudio.Play();
 				StartCoroutine( SpawnWave ( waves[nextWave] ) );
 			}
 		}

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class enemy_bullet_collision : MonoBehaviour
 {
-
+	float lifetime = 50;
+	int time =0;
 	// Use this for initialization
 	void Start ()
 	{
@@ -14,7 +15,10 @@ public class enemy_bullet_collision : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		
+		time += 1;
+		if (time >= lifetime) {
+			Destroy (gameObject);
+		}
 	}
 
 

@@ -5,8 +5,9 @@ using UnityEngine;
 public class BoxGenerator : MonoBehaviour {
 
 	public GameObject box;                // The enemy prefab to be spawned.
-	public float spawnTime = 3f;            // How long between each spawn.
-	public Transform[] spawnPoints;    
+	public float spawnTime = 20f;            // How long between each spawn.
+	public Transform[] spawnPoints;  
+	public float destoryTime = 10f;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +24,9 @@ public class BoxGenerator : MonoBehaviour {
 		// Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
 		if(checkIfPosEmpty(spawnPoints[spawnPointIndex].position))
 		{
-			Instantiate (box, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+			GameObject g = Instantiate (box, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+			Destroy (g, destoryTime);
+
 		}
 //		Instantiate (box, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
 	}
