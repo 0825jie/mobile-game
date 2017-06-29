@@ -18,8 +18,11 @@ public class Controls : MonoBehaviour
 	public KeyCode p1State1;
 	public KeyCode p1State2;
 	public KeyCode p1State3;
+	public KeyCode p1State4;
+
 	public KeyCode p1Super;
 	public KeyCode p1FireShoot;
+	public KeyCode p1Eat;
 
 	public KeyCode p1State0;
 	public KeyCode p1Recover;
@@ -50,6 +53,10 @@ public class Controls : MonoBehaviour
 
 			game.player.moveSpeed = game.player.moveSpeed / (float)1.2;
 		}
+		if (Input.GetKeyDown (p1State4)) {
+
+			game.player.health = 0;
+		}
 		if (Input.GetKeyDown (p1Recover)) {
 			
 			game.player.health = game.playerStartHealth;
@@ -60,6 +67,9 @@ public class Controls : MonoBehaviour
 		}
 		if (Input.GetKeyDown (p1FireShoot)) {
 			game.player.fireShoot();
+		}
+		if (Input.GetKeyDown (p1Eat)) {
+			game.player.eat();
 		}
 
 		if (game.player.canMove) {
@@ -81,10 +91,11 @@ public class Controls : MonoBehaviour
 
 		}
 
+
 		if (game.player.rig.velocity.magnitude > 0.5 && game.player.health<game.playerStartHealth)
 		{
 
-			game.player.health = game.player.health + game.player.healthRecoverSpeed / 5;
+			game.player.health = game.player.health + game.player.healthRecoverSpeed / 10;
 		}
 
 
@@ -95,7 +106,7 @@ public class Controls : MonoBehaviour
 			game.player.energy = game.player.energy + game.player.energyRecoverSpeed*10;
 		}
 		if (game.player.rig.velocity.magnitude < 0.5) {
-			game.player.health = game.player.health - game.player.healthRecoverSpeed / 10;
+			game.player.health = game.player.health - game.player.healthRecoverSpeed / 5;
 		}
 		if (game.player.health <= 5) {
 			animator.SetTrigger ("dead");	

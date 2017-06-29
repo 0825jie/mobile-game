@@ -16,14 +16,17 @@ public class Player : MonoBehaviour
 	public int damage;						//How much damage this tank can do when shooting a projectile.
 	public float moveSpeed;					//How fast the tank can move.
 //	public float turnSpeed;					//How fast the tank can turn.
-	public float projectileSpeed;			//How fast the tank's projectiles can move.
+	public float proNormalSpeed;			//How fast the tank's projectiles can move.
+	public float proFireSpeed;
+	public float proLightingSpeed;
+	public float proEatSpeed;
 //	public float reloadSpeed;				//How many seconds it takes to reload the tank, so that it can shoot again.
 //	private float reloadTimer;				//A timer counting up and resets after shooting.
 	public int healthRecoverSpeed;
 	public int energyRecoverSpeed;
 	public int projectileConsume;			//How fast the tank's projectiles can move.
 
-
+	public int shootState;
 
 
 	AudioSource bulletaudio;
@@ -38,9 +41,10 @@ public class Player : MonoBehaviour
 	//	public VirtualJoystick joystick;
 	[Header("Components / Objects")]
 	public Rigidbody rig;					//The tank's Rigidbody2D component. 
-	public GameObject projectile;			//The projectile prefab of which the tank can shoot.
+	public GameObject pronormal;			//The projectile prefab of which the tank can shoot.
 	public GameObject lighting;			//The projectile prefab of which the tank can shoot.
 	public GameObject fire;
+	public GameObject eatBullet;
 
 	public GameObject deathParticleEffect;	//The particle effect prefab that plays when the tank dies.
 	public Transform muzzle;				//The muzzle of the tank. This is where the projectile will spawn.
@@ -86,6 +90,7 @@ public class Player : MonoBehaviour
 		preAngle = new Vector3(0,0,-1);
 		bulletaudio = GetComponent<AudioSource> ();
 		InvokeRepeating ("Updatetarget",0f,0.5f);
+		shootState = 0;
 	}
 
 	void Updatetarget()
@@ -128,7 +133,10 @@ public class Player : MonoBehaviour
 //			damage = game.tankStartDamage;
 		moveSpeed = game.playerStartMoveSpeed;
 //			turnSpeed = game.tankStartTurnSpeed;
-		projectileSpeed = game.playerStartProjectileSpeed;
+		proNormalSpeed = game.playerStartProNormalSpeed;
+		proFireSpeed = game.playerStartProFireSpeed;
+		proLightingSpeed = game.playerStartProLightingSpeed;
+		proEatSpeed = game.playerStartProEatSpeed;
 		projectileConsume = game.playerStartProjectileComsume;
 		energyRecoverSpeed = game.playerEnergyRecoverSpeed;
 		healthRecoverSpeed = game.playerHealthRecoverSpeed;
@@ -233,29 +241,26 @@ public class Player : MonoBehaviour
 //	Called by the Contols.cs script. When a player presses their shoot key, it calls this function, making the tank shoot.
 	public void Shoot ()
 	{
-		
-	//			if(reloadTimer >= reloadSpeed){													//Is the reloadTimer more than or equals to the reloadSpeed? Have we waiting enough time to reload?
-		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-		Projectile projScript = proj.GetComponent<Projectile>();	
-		Destroy(proj,5f);
-		//play udio
-		bulletaudio.Play();  
-	
+		if (shootState == 1) {
+			superShoot ();
+		} else {
+			GameObject proj = Instantiate(pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+			ProNormal projScript = proj.GetComponent<ProNormal>();	
+			Destroy(proj,5f);
+			//play udio
+			bulletaudio.Play();  
+			projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
-		//Gets the Projectile.cs component of the projectile object.
-//				projScript.tankId = id;														//Sets the projectile's tankId, so that it knows which tank it was shot by.
-//				projScript.damage = damage;													//Sets the projectile's damage.
-
-		projScript.rig.velocity = transform.forward.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
-
-//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
-//			}
-		if (energy - projectileConsume < 0) {
-			energy = 0;
+			//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
+			//			}
+			if (energy - projectileConsume < 0) {
+				energy = 0;
+			}
+			else {
+				energy -= projectileConsume;
+			}
 		}
-		else {
-			energy -= projectileConsume;
-		}
+
 	}
 	public void superShoot () {
 ////		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x,muzzle.transform.position.y,-muzzle.transform.position.z);
@@ -281,13 +286,15 @@ public class Player : MonoBehaviour
 //		}
 //		DrawTool.DrawCircleSolid(game.player.transform, game.player.transform.localPosition, 30); 
 		GameObject light = Instantiate(lighting, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-		Projectile lightScript = lighting.GetComponent<Projectile>();	
+		ProLighting lightScript = lighting.GetComponent<ProLighting>();	
 		Destroy (light, 2f);
 		GameObject[] enermy = GameObject.FindGameObjectsWithTag("enemy");
 
 		foreach (GameObject eachEnermy in enermy) {
 			if (Vector3.Distance (game.player.transform.position, eachEnermy.transform.position) < 40) {
-				Destroy (eachEnermy);
+//				Destroy (eachEnermy);
+				Enemy enemy = eachEnermy.GetComponent<Enemy> ();
+				enemy.TakeDamage (50);
 			}
 		}
 
@@ -303,11 +310,17 @@ public class Player : MonoBehaviour
 
 	public void fireShoot() {
 		GameObject fires = Instantiate(fire, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-		Projectile projScript = fires.GetComponent<Projectile>();	
-
-		projScript.rig.velocity = transform.forward.normalized * projectileSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+		ProFire projScript = fires.GetComponent<ProFire>();	
+		Destroy(fires,5f);
+		projScript.rig.velocity = transform.forward.normalized * proFireSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
 	
+	}
+
+	public void eat() {
+		GameObject eatBullets = Instantiate(eatBullet, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProEat projScript = eatBullets.GetComponent<ProEat>();
+		projScript.rig.velocity = transform.forward.normalized * proEatSpeed;
 	}
 
 	//Called when the tank gets hit by a projectile. It sends over a "dmg" value, which is how much health the tank will lose. 
