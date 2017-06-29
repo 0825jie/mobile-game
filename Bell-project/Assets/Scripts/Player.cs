@@ -61,6 +61,8 @@ public class Player : MonoBehaviour
 
 	public string enemytag = "enemy";
 	public float turnspeed = 10f;
+	public string bulletType = "shoot";
+	public float time;
 
 	void lockontaget()
 	{
@@ -90,6 +92,7 @@ public class Player : MonoBehaviour
 		preAngle = new Vector3(0,0,-1);
 		bulletaudio = GetComponent<AudioSource> ();
 		InvokeRepeating ("Updatetarget",0f,0.5f);
+		time = 0.0f;
 		shootState = 0;
 	}
 
@@ -148,6 +151,13 @@ public class Player : MonoBehaviour
 	{
 		//reloadTimer += Time.deltaTime;
 		lockontaget();
+		time += Time.deltaTime;
+
+		if (time > 5f && shootState ==1) {
+			shootState = 8;
+			time = 0;
+		}
+
 
 	}
 	public void ChangeState1 () {
@@ -242,7 +252,9 @@ public class Player : MonoBehaviour
 	public void Shoot ()
 	{
 		if (shootState == 1) {
-			superShoot ();
+			superShoot();
+
+
 		} else {
 			GameObject proj = Instantiate(pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 			ProNormal projScript = proj.GetComponent<ProNormal>();	
@@ -318,6 +330,7 @@ public class Player : MonoBehaviour
 	}
 
 	public void eat() {
+		
 		GameObject eatBullets = Instantiate(eatBullet, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		ProEat projScript = eatBullets.GetComponent<ProEat>();
 		projScript.rig.velocity = transform.forward.normalized * proEatSpeed;
@@ -389,7 +402,6 @@ public class Player : MonoBehaviour
 	private void OnCollisionEnter(Collision collision)
 	{
 		if (collision.transform.tag == "healthbox") {
-			
 			float curNumber = Random.Range (0f, 10f);
 			if (curNumber < 6) {
 				health = health + 500;

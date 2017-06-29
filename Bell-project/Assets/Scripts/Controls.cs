@@ -31,6 +31,9 @@ public class Controls : MonoBehaviour
 	public Game game;
 	public DrawTool draw;
 	public Animator animator;
+
+
+	public float targetTime=80.0f;
 	void Update ()
 	{
 
@@ -86,7 +89,19 @@ public class Controls : MonoBehaviour
 
 		if(game.player.canShoot && game.player.energy >= game.player.projectileConsume){
 			if(Input.GetKeyDown(p1Shoot)){
-				game.player.Shoot();
+				if (game.player.bulletType == "shoot") {
+					game.player.Shoot();
+				}
+
+				if (game.player.bulletType == "cold") {
+					game.player.superShoot();
+					targetTime -= Time.deltaTime;
+					if (targetTime <= 0.0f) {
+						game.player.bulletType = "shoot";
+						 targetTime=80.0f;
+					}
+
+				}
 			}
 
 		}

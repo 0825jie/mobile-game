@@ -19,6 +19,7 @@ public class ProNormal : MonoBehaviour
 	public float explosion=2f;
 	public float speed=70f;
 	public GameObject impactEffect;
+	public Player playerone;
 
 	//
 	void Update()
@@ -52,7 +53,11 @@ public class ProNormal : MonoBehaviour
 	}
 
 
-
+	void Changeweap()
+	{
+		playerone.bulletType="cold";
+	
+	}
 
 	//
 	//
@@ -62,6 +67,9 @@ public class ProNormal : MonoBehaviour
 	private void OnCollisionEnter(Collision collison)
 	{	
 		if (collison.transform.tag == "enemy") {
+
+				
+			Changeweap();
 			Destroy (gameObject);
 			Damage (collison.gameObject);
 		}
