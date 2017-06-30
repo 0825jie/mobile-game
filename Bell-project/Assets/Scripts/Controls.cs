@@ -91,6 +91,7 @@ public class Controls : MonoBehaviour
 			if(Input.GetKeyDown(p1Shoot)){
 				if (game.player.bulletType == "shoot") {
 					game.player.Shoot();
+                    animator.SetTrigger("attack");
 				}
 
 				if (game.player.bulletType == "cold") {

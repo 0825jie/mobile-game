@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour {
 
 	private bool isDead = false;
 	public SliderUITextUpdate Healthbar;
-
+    public Animator  dongzuo;
 	void Start ()
 	{
 		speed = startSpeed;
@@ -32,13 +32,15 @@ public class Enemy : MonoBehaviour {
 	{
 		health -= amount;
 		healthBar.value = health;
-		Debug.Log ("jianxie!!!!!!!!!!!!!!!!");
+		
 		//healthBar.fillAmount = health / startHealth;
 		//Canvas c = gameObject.Find("Canvas"); 
 
 		if (health <= 0 && !isDead)
-		{
-			Die();
+		{  dongzuo.SetTrigger("Die");
+            Destroy(gameObject);
+            Die();
+
 		}
 	}
 
@@ -50,11 +52,10 @@ public class Enemy : MonoBehaviour {
 
 
 
-		GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+        GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(effect, 5f);
 
-
-
+        
 		Destroy(gameObject);
 	}
 

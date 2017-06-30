@@ -197,7 +197,7 @@ public class Player : MonoBehaviour
 	//sending over a "y" value, set to either 1 or 0, depending if they are moving forward or backwards.
 	public void Move (int y)
 	{
-		
+      
 		int nextFace = y;
 //		transform.Rotate(0,0,(preFace - nextFace) * 45);
 
