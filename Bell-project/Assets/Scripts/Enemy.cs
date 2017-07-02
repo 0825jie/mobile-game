@@ -26,37 +26,37 @@ public class Enemy : MonoBehaviour {
 	{
 		speed = startSpeed;
 		health = startHealth;
+		dongzuo.SetTrigger ("Move");
 	}
 
-	public void TakeDamage (float amount)
+
+	void Die ()
 	{
+		isDead = true;
+		GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+		Destroy(effect, 5f);       
+		Destroy(gameObject);
+	}
+
+
+	public void TakeDamage (float amount)
+	{    dongzuo.SetTrigger ("Take Damge");
 		health -= amount;
 		healthBar.value = health;
 		
 		//healthBar.fillAmount = health / startHealth;
 		//Canvas c = gameObject.Find("Canvas"); 
 
-		if (health <= 0 && !isDead)
-		{  dongzuo.SetTrigger("Die");
-            Destroy(gameObject);
-            Die();
+		if (health <= 0)
+		{    
+			dongzuo.SetTrigger("Die");
+			Die();
 
 		}
 	}
 
 
 
-	void Die ()
-	{
-		isDead = true;
 
-
-
-        GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
-		Destroy(effect, 5f);
-
-        
-		Destroy(gameObject);
-	}
 
 }
