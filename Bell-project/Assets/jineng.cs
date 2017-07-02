@@ -6,29 +6,41 @@ using UnityEngine.UI;
 public class jineng: MonoBehaviour {
 	public GameObject m_object;
 	public float calltime=10;
-	private Image filledimage;
+	public Image filledimage;
 	private float timer = 0;
 	private bool isStartTimer;
 	public Player player;
 	public Button yourButton;
+	public KeyCode keycode;
 	// Use this for initialization
 
 	void TaskOnClick()
-	{
-		player.eat();
-
+	{  
+			player.eat ();
 	}
 	// Update is called once per frame
 	void Update() 
-	{
+	{    
+		
+
+
 		if (isStartTimer) {
+			
 			timer += Time.deltaTime;
 			filledimage.fillAmount = (calltime - timer) / calltime;
+
 		}
+
+
+
+
+
 		if (timer >= calltime) {
-			filledimage.fillAmount = 0;
+			filledimage.fillAmount = 1;
 			timer = 0;
 			isStartTimer = false;
+	
+
 		}
 	}
 	public void onclick()
@@ -36,22 +48,23 @@ public class jineng: MonoBehaviour {
 		isStartTimer = true;
 		TaskOnClick ();
 
-	}
-
-
-
-	public void appear()
-	{
-
-		m_object.SetActive (true);
 
 	}
 
-	public void disappear()
-	{
-	
-		m_object.SetActive (false);
-	}
+
+
+//	public void appear()
+//	{
+//
+//		m_object.SetActive (true);
+//
+//	}
+//
+//	public void disappear()
+//	{
+//	
+//		m_object.SetActive (false);
+//	}
 
 
 

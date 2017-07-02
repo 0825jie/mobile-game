@@ -34,8 +34,9 @@ public class Enemy : MonoBehaviour {
 	{
 		isDead = true;
 		GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
-		Destroy(effect, 5f);       
-		Destroy(gameObject);
+		Destroy(effect,3f);       
+		Destroy(gameObject,1f);
+		GetComponent <UnityEngine.AI.NavMeshAgent> ().enabled = false;
 	}
 
 
