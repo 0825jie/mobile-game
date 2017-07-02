@@ -68,10 +68,11 @@ public class ProNormal : MonoBehaviour
 	{	
 		if (collison.transform.tag == "enemy") {
 
-				
-			Changeweap();
+
+            //Changeweap();
+            Damage (collison.gameObject);
 			Destroy (gameObject);
-			Damage (collison.gameObject);
+		
 		}
 		if (collison.transform.tag != "Player") {
 			Destroy (gameObject);
