@@ -12,6 +12,7 @@ public class jineng: MonoBehaviour {
 	public Player player;
 	public Button yourButton;
 	public KeyCode keycode;
+	public float clickstate=1;
 	// Use this for initialization
 
 	void TaskOnClick()
@@ -25,7 +26,7 @@ public class jineng: MonoBehaviour {
 
 
 		if (isStartTimer) {
-			
+			clickstate = 0;
 			timer += Time.deltaTime;
 			filledimage.fillAmount = (calltime - timer) / calltime;
 
@@ -39,6 +40,7 @@ public class jineng: MonoBehaviour {
 			filledimage.fillAmount = 1;
 			timer = 0;
 			isStartTimer = false;
+			clickstate = 1;
 	
 
 		}
@@ -46,8 +48,14 @@ public class jineng: MonoBehaviour {
 	public void onclick()
 	{
 		isStartTimer = true;
-		TaskOnClick ();
-
+		if (clickstate == 0) {
+			player.Shoot ();
+		
+		}
+		if (clickstate == 1) 
+		{
+			TaskOnClick ();
+		}
 
 	}
 
