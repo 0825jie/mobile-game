@@ -18,7 +18,10 @@ public class Game : MonoBehaviour
 	public int playerStartEnergy = 1000;
 	public int playerStartDamage = 1;						//The damage the player tanks will get when the game starts.
 	public float playerStartMoveSpeed = 70;				//The move speed the player tanks will get when the game starts.
-	public float playerStartProjectileSpeed = 13;			//The projectile speed the player tanks will get when the game starts.
+	public float playerStartProNormalSpeed = 13;			//The projectile speed the player tanks will get when the game starts.
+	public float playerStartProFireSpeed = 50;
+	public float playerStartProLightingSpeed = 13;
+	public float playerStartProEatSpeed = 13;
 //	public float playerStartReloadSpeed = 1;				//The reload speed the player tanks will get when the game starts.
 	public int playerStartProjectileComsume = 20;
 	public int playerEnergyRecoverSpeed = 10;
