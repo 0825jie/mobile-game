@@ -93,7 +93,7 @@ public class Player : MonoBehaviour
 		bulletaudio = GetComponent<AudioSource> ();
 		InvokeRepeating ("Updatetarget",0f,0.5f);
 		time = 0.0f;
-		shootState = 0;
+		shootState = 5;
 	}
 
 	void Updatetarget()
@@ -154,7 +154,7 @@ public class Player : MonoBehaviour
 		time += Time.deltaTime;
 
 		if (time > 5f && shootState ==1) {
-			shootState = 8;
+			shootState = 5;
 			time = 0;
 		}
 
@@ -251,29 +251,116 @@ public class Player : MonoBehaviour
 //	Called by the Contols.cs script. When a player presses their shoot key, it calls this function, making the tank shoot.
 	public void Shoot ()
 	{
-		if (shootState == 1) {
-			superShoot();
+		switch (shootState) {
+		case 1:
+			superShoot ();
+			break;
+		case 2:
+			fireShoot ();
+			break;
+		case 3:
+			coldshoot ();
+			break;
+		case 4:
+			lightshoot ();
+			break;
+		case 5:
+			normalshoot ();
+			break;
 
 
-		} else {
-			GameObject proj = Instantiate(pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-			ProNormal projScript = proj.GetComponent<ProNormal>();	
-			Destroy(proj,5f);
-			//play udio
-			bulletaudio.Play();  
-			projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
-			//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
-			//			}
-			if (energy - projectileConsume < 0) {
-				energy = 0;
-			}
-			else {
-				energy -= projectileConsume;
-			}
+
 		}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
+
+
+
+
+
+
+	public void normalshoot(){
+		GameObject proj = Instantiate(pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProNormal projScript = proj.GetComponent<ProNormal>();	
+		Destroy(proj,5f);
+		//play udio
+		bulletaudio.Play();  
+		projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+
+		//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
+		//			}
+		if (energy - projectileConsume < 0) {
+			energy = 0;
+		}
+		else {
+			energy -= projectileConsume;
+		}
+	}
+
+
+	public void coldshoot(){
+		GameObject proj = Instantiate(pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProNormal projScript = proj.GetComponent<ProNormal>();	
+		Destroy(proj,5f);
+		//play udio
+		bulletaudio.Play();  
+		projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+
+		//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
+		//			}
+		if (energy - projectileConsume < 0) {
+			energy = 0;
+		}
+		else {
+			energy -= projectileConsume;
+		}
+	}
+
+
+
+
+	public void lightshoot(){
+		GameObject proj = Instantiate(pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProNormal projScript = proj.GetComponent<ProNormal>();	
+		Destroy(proj,5f);
+		//play udio
+		bulletaudio.Play();  
+		projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+
+		//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
+		//			}
+		if (energy - projectileConsume < 0) {
+			energy = 0;
+		}
+		else {
+			energy -= projectileConsume;
+		}
+	}
+
+
+
+
+
+
+
+
 	public void superShoot () {
 ////		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x,muzzle.transform.position.y,-muzzle.transform.position.z);
 //		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
