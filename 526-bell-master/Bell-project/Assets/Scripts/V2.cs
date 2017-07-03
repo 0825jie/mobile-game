@@ -30,21 +30,21 @@ public class V2: MonoBehaviour, IDragHandler, IPointerUpHandler,IPointerDownHand
 	{
 		Playerone.Shoot ();
 	}
-	public float Horizontal()
-	{
-		if (inputVector.x != 0)
-			return inputVector.x;
-		else
-			return Input.GetAxis ("Horizontal");
-	}
-	public float Vertical()
-	{
-		if (inputVector.y != 0)
-			return inputVector.y;
-		else
-			return Input.GetAxis ("Vertical");
-	}
-	public int Test() {
-		return 8888;	
-	}
+//	public float Horizontal()
+//	{
+//		if (inputVector.x != 0)
+//			return inputVector.x;
+//		else
+//			return Input.GetAxis ("Horizontal");
+//	}
+//	public float Vertical()
+//	{
+//		if (inputVector.y != 0)
+//			return inputVector.y;
+//		else
+//			return Input.GetAxis ("Vertical");
+//	}
+//	public int Test() {
+//		return 8888;	
+//	}
 }

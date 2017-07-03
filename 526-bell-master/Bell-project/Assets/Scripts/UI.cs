@@ -7,6 +7,7 @@ public class UI : MonoBehaviour {
 
 	[Header("bar")]
 	public Slider energyBar;
+	public Image healthFill;
 	public Slider healthBar;
 
 	public SliderUITextUpdate HealthText;
@@ -30,6 +31,16 @@ public class UI : MonoBehaviour {
 	void Update () {
 		energyBar.value = game.player.energy;
 		healthBar.value = game.player.health;
+		if (healthBar.value/healthBar.maxValue <0.15) {
+			healthFill.color = Color.red;
+		}
+		else if (healthBar.value/healthBar.maxValue <0.4) {
+			healthFill.color = Color.yellow;
+		}
+		else {
+			healthFill.color = Color.green;
+		}
+
 		HealthText.textUpdate(healthBar.value,healthBar.maxValue);
 		EnergyText.textUpdate(energyBar.value,energyBar.maxValue);
 
