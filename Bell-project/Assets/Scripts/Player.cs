@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
 	public GameObject pronormal;			//The projectile prefab of which the tank can shoot.
 	public GameObject lighting;			//The projectile prefab of which the tank can shoot.
 	public GameObject fire;
+	public GameObject explode;
 	public GameObject eatBullet;
 
 	public GameObject deathParticleEffect;	//The particle effect prefab that plays when the tank dies.
@@ -273,22 +274,6 @@ public class Player : MonoBehaviour
 
 		}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	}
 
 
@@ -414,6 +399,14 @@ public class Player : MonoBehaviour
 		projScript.rig.velocity = transform.forward.normalized * proFireSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
 	
+	}
+
+	public void explodeShoot() {
+
+		GameObject explodes = Instantiate(explode, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProExplode projScript = explodes.GetComponent<ProExplode>();
+		projScript.rig.velocity = transform.forward.normalized * proFireSpeed;
+
 	}
 
 	public void eat() {

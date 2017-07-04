@@ -25,7 +25,7 @@ public class BoxGenerator : MonoBehaviour {
 		if(checkIfPosEmpty(spawnPoints[spawnPointIndex].position))
 		{
 			GameObject g = Instantiate (box, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
-			Destroy (g, destoryTime);
+//			Destroy (g, destoryTime);
 
 		}
 //		Instantiate (box, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);

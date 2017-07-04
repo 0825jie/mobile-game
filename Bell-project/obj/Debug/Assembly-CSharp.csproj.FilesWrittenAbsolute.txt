@@ -212,3 +212,7 @@
 /Users/cyq/Desktop/newest/526-bell/Bell-project/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/cyq/Desktop/newest/526-bell/Bell-project/Temp/bin/Debug/Assembly-CSharp.dll.mdb
 /Users/cyq/Desktop/newest/526-bell/Bell-project/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/hank/Study/Git/PROTYPE/526-bell/Bell-project/Temp/bin/Debug/Assembly-UnityScript-firstpass.dll
+/Users/hank/Study/Git/PROTYPE/526-bell/Bell-project/Temp/bin/Debug/PKFxManager.dll
+/Users/hank/Study/Git/PROTYPE/526-bell/Bell-project/Temp/bin/Debug/PKFx-Runtime.dll
+/Users/hank/Study/Git/PROTYPE/526-bell/Bell-project/Temp/bin/Debug/PKFx-Helper.dll

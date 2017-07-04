@@ -22,6 +22,7 @@ public class Controls : MonoBehaviour
 
 	public KeyCode p1Super;
 	public KeyCode p1FireShoot;
+	public KeyCode p1ExplodeShoot;
 	public KeyCode p1Eat;
 
 	public KeyCode p1State0;
@@ -70,6 +71,9 @@ public class Controls : MonoBehaviour
 		}
 		if (Input.GetKeyDown (p1FireShoot)) {
 			game.player.fireShoot();
+		}
+		if (Input.GetKeyDown (p1ExplodeShoot)) {
+			game.player.explodeShoot ();
 		}
 		if (Input.GetKeyDown (p1Eat)) {
 			game.player.eat();

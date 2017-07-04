@@ -20,7 +20,7 @@ public class ProNormal : MonoBehaviour
 	public float speed=70f;
 	public GameObject impactEffect;
 	public Player playerone;
-
+	public GameObject egg;
 	//
 	void Update()
 	{
@@ -67,6 +67,7 @@ public class ProNormal : MonoBehaviour
 	private void OnCollisionEnter(Collision collison)
 	{	
 		if (collison.transform.tag == "enemy") {
+			GameObject eggs = Instantiate (egg, collison.transform.position, collison.transform.rotation);
 
 
             //Changeweap();
@@ -84,7 +85,8 @@ public class ProNormal : MonoBehaviour
 //
 //			Damage (collison.gameObject);
 //		}
-//
+
+//	
 
 
 	}
@@ -95,15 +97,5 @@ public class ProNormal : MonoBehaviour
 		gameObject.SetActive (false);
 
 	}
-
-
-
-
-
-
-
-
-
-
-
+		
 }
