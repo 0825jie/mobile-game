@@ -64,6 +64,8 @@ public class ProEat : MonoBehaviour
 
 
 		if (collison.transform.tag == "enemy") {
+			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
+
 			GameObject player1 = GameObject.Find ("Player1");
 			Player player = player1.GetComponent<Player> ();
 			player.shootState = 1;

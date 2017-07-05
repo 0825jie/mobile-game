@@ -63,7 +63,6 @@ public class ProExplode : MonoBehaviour
 	private void OnCollisionEnter(Collision collison)
 	{	
 		if (collison.transform.tag == "enemy") {
-			GameObject eggs = Instantiate (egg, collison.transform.position, collison.transform.rotation);
 			GameObject[] enermy = GameObject.FindGameObjectsWithTag("enemy");
 
 			foreach (GameObject eachEnermy in enermy) {
@@ -73,8 +72,10 @@ public class ProExplode : MonoBehaviour
 					enemy.TakeDamage (50);
 				}
 			}
-			//			Destroy (gameObject);
+						Destroy (gameObject);
 			Damage (collison.gameObject);
+						GameObject eggs = Instantiate (egg, collison.transform.position, collison.transform.rotation);
+
 		}
 		//		if (collison.transform.tag != "Player") {
 		//			Destroy (gameObject);

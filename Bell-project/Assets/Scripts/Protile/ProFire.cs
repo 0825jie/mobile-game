@@ -62,12 +62,12 @@ public class ProFire : MonoBehaviour
 	private void OnCollisionEnter(Collision collison)
 	{	
 		if (collison.transform.tag == "enemy") {
-//			Destroy (gameObject);
+			//			Destroy (gameObject);
 			Damage (collison.gameObject);
 		}
-//		if (collison.transform.tag != "Player") {
-//			Destroy (gameObject);
-//		} 
+		//		if (collison.transform.tag != "Player") {
+		//			Destroy (gameObject);
+		//		} 
 		//		if (collison.transform.tag == "enemy" && collison.transform.tag == "Terrain") {
 		//			GameObject player1 = GameObject.Find ("Player1");
 		//			Player player = player1.GetComponent<Player> ();
@@ -84,8 +84,11 @@ public class ProFire : MonoBehaviour
 	public void OnTriggerEnter(Collider other) {
 
 		if (other.transform.tag == "enemy") {
-//			Destroy (gameObject);
+
+			//			Destroy (gameObject);
 			Damage (other.gameObject);
+			GameObject hitParticleEffects = Instantiate (hitParticleEffect, other.transform.position, other.transform.rotation);
+
 		}
 
 	}
