@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
 
 	void Updatetarget()
 	{
-		GameObject[] enemies = GameObject.FindGameObjectsWithTag (enemytag1);
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("enemy");
 	//	GameObject[] enemies2 = GameObject.FindGameObjectsWithTag (enemytag2);
 //		GameObject[] enemies3 = GameObject.FindGameObjectsWithTag (enemytag3);
 //		GameObject[] enemies4 = GameObject.FindGameObjectsWithTag (enemytag4);
@@ -144,7 +144,8 @@ public class Player : MonoBehaviour
 		}
 		if (neartest != null && shortest <= range) {
 			target = neartest.transform;
-		} else {
+		} 
+		else {
 		
 			target = null;
 		}
@@ -186,13 +187,13 @@ public class Player : MonoBehaviour
 		lockontaget();
 		time += Time.deltaTime;
 
-		if (time > 5f && shootState ==1) {
+		if (time > 8f && shootState ==1) {
 			shootState = 5;
 			time = 0;
 		}
 
 
-		if (time > 5f && shootState ==2) {
+		if (time > 8f && shootState ==2) {
 			shootState = 5;
 			time = 0;
 		}
@@ -203,7 +204,7 @@ public class Player : MonoBehaviour
 		}
 
 
-		if (time > 5f && shootState ==4) {
+		if (time > 8f && shootState ==4) {
 			shootState = 5;
 			time = 0;
 		}
