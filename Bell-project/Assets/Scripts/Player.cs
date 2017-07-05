@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
 	public float proFireSpeed;
 	public float proLightingSpeed;
 	public float proEatSpeed;
+	public float proExplodeSpeed;
 //	public float reloadSpeed;				//How many seconds it takes to reload the tank, so that it can shoot again.
 //	private float reloadTimer;				//A timer counting up and resets after shooting.
 	public int healthRecoverSpeed;
@@ -27,6 +28,9 @@ public class Player : MonoBehaviour
 	public int projectileConsume;			//How fast the tank's projectiles can move.
 
 	public int shootState;
+
+
+
 
 
 	AudioSource bulletaudio;
@@ -55,6 +59,7 @@ public class Player : MonoBehaviour
 	public GameObject healthIcon;
 	public GameObject energyIcon;
 
+	public GameObject lightningShield;
 
 
 	public Transform target;
@@ -141,7 +146,9 @@ public class Player : MonoBehaviour
 		proFireSpeed = game.playerStartProFireSpeed;
 		proLightingSpeed = game.playerStartProLightingSpeed;
 		proEatSpeed = game.playerStartProEatSpeed;
+		proExplodeSpeed = game.playerStartProExplodeSpeed;
 		projectileConsume = game.playerStartProjectileComsume;
+
 		energyRecoverSpeed = game.playerEnergyRecoverSpeed;
 		healthRecoverSpeed = game.playerHealthRecoverSpeed;
 
@@ -297,6 +304,7 @@ public class Player : MonoBehaviour
 		else {
 			energy -= projectileConsume;
 		}
+		changeState ();
 	}
 
 
@@ -370,7 +378,7 @@ public class Player : MonoBehaviour
 //		}
 //		DrawTool.DrawCircleSolid(game.player.transform, game.player.transform.localPosition, 30); 
 		GameObject light = Instantiate(lighting, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-		ProLighting lightScript = lighting.GetComponent<ProLighting>();	
+//		ProLighting lightScript = lighting.GetComponent<ProLighting>();	
 		Destroy (light, 2f);
 		GameObject[] enermy = GameObject.FindGameObjectsWithTag("enemy");
 
@@ -405,7 +413,7 @@ public class Player : MonoBehaviour
 
 		GameObject explodes = Instantiate(explode, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		ProExplode projScript = explodes.GetComponent<ProExplode>();
-		projScript.rig.velocity = transform.forward.normalized * proFireSpeed;
+		projScript.rig.velocity = transform.forward.normalized * proExplodeSpeed * 2;
 
 	}
 
@@ -414,6 +422,14 @@ public class Player : MonoBehaviour
 		GameObject eatBullets = Instantiate(eatBullet, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		ProEat projScript = eatBullets.GetComponent<ProEat>();
 		projScript.rig.velocity = transform.forward.normalized * proEatSpeed;
+	}
+
+	public void changeState() {
+		GameObject lightningShields = Instantiate(lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		lightningShields.transform.parent = gameObject.transform;
+
+		shootState = 1;
+
 	}
 
 	//Called when the tank gets hit by a projectile. It sends over a "dmg" value, which is how much health the tank will lose. 

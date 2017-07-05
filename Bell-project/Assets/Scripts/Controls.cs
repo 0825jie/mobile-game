@@ -45,7 +45,7 @@ public class Controls : MonoBehaviour
 
 		//Player 1
 		game.player.rig.velocity = Vector3.zero;
-	
+		if (game.player.canMove) {
 		if (Input.GetKeyDown (p1State1)) {
 		game.player.moveSpeed = game.player.moveSpeed * (float)1.2;
 		}
@@ -79,19 +79,14 @@ public class Controls : MonoBehaviour
 			game.player.eat();
 		}
 
-		if (game.player.canMove) {
-//			int a = joystick.Test();
-			//			Debug.Log (a);
+
 			float posx = joystick.Horizontal();
 			float posy = joystick.Vertical();
-			//			int a = joystick.Test;
-			//			Debug.Log ("heyheyhey");
-			//			Debug.Log (posx);
 			game.player.JoyMove(posx,posy);
 		}
 
 
-		if(game.player.canShoot && game.player.energy >= game.player.projectileConsume){
+		if(game.player.canMove && game.player.energy >= game.player.projectileConsume){
 			if(Input.GetKeyDown(p1Shoot)){
 				if (game.player.bulletType == "shoot") {
 					game.player.Shoot();
@@ -115,7 +110,7 @@ public class Controls : MonoBehaviour
 		if (game.player.rig.velocity.magnitude > 0.5 && game.player.health<game.playerStartHealth)
 		{
 
-			game.player.health = game.player.health + game.player.healthRecoverSpeed / 10;
+			game.player.health = game.player.health +  (int)(Time.deltaTime *game.player.healthRecoverSpeed) ;
 		}
 
 
@@ -123,12 +118,13 @@ public class Controls : MonoBehaviour
 		if (game.player.rig.velocity.magnitude < 0.5 && game.player.energy < game.playerStartEnergy)
 	    {
 
-			game.player.energy = game.player.energy + game.player.energyRecoverSpeed*10;
+			game.player.energy = game.player.energy +(int)(Time.deltaTime * game.player.energyRecoverSpeed *5 );
 		}
 		if (game.player.rig.velocity.magnitude < 0.5) {
-			game.player.health = game.player.health - game.player.healthRecoverSpeed / 5;
+			game.player.health = game.player.health -   (int)(Time.deltaTime * game.player.healthRecoverSpeed * 4);
 		}
 		if (game.player.health <= 5) {
+			game.player.canMove = false;
 			animator.SetTrigger ("dead");	
 
 

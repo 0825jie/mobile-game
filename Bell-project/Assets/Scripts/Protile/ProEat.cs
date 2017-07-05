@@ -69,6 +69,7 @@ public class ProEat : MonoBehaviour
 			GameObject player1 = GameObject.Find ("Player1");
 			Player player = player1.GetComponent<Player> ();
 			player.shootState = 1;
+			player.changeState ();
 			Destroy (gameObject);
 			Destroy (collison.gameObject);
 		}

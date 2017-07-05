@@ -81,9 +81,14 @@ public class ProLighting : MonoBehaviour
 	}
 
 
-	public void OnTriggerEnter(Collision collision) {
+	public void OnTriggerEnter(Collider collison) {
+		if (collison.transform.tag == "enemy") {
+			Debug.Log ("eeeeeeee");
+			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 
-		gameObject.SetActive (false);
+
+		}
+//		gameObject.SetActive (false);
 
 	}
 
