@@ -65,7 +65,11 @@ public class Player : MonoBehaviour
 	public Transform target;
 	public float range ;
 
-	public string enemytag = "enemy";
+	public string enemytag1 = "enemy";
+	public string enemytag2 = "enemy-fire";
+	public string enemytag3 = "enemy-lighting";
+	public string enemytag4 = "enemy-wind";
+
 	public float turnspeed = 10f;
 	public string bulletType = "shoot";
 	public float time;
@@ -104,7 +108,28 @@ public class Player : MonoBehaviour
 
 	void Updatetarget()
 	{
-		GameObject[] enemies = GameObject.FindGameObjectsWithTag (enemytag);
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag (enemytag1);
+	//	GameObject[] enemies2 = GameObject.FindGameObjectsWithTag (enemytag2);
+//		GameObject[] enemies3 = GameObject.FindGameObjectsWithTag (enemytag3);
+//		GameObject[] enemies4 = GameObject.FindGameObjectsWithTag (enemytag4);
+//
+//		GameObject[] enemies = { };
+//
+//		enemies1.CopyTo(enemies, 0);
+//
+//		enemies2.CopyTo(enemies, enemies1.Length);
+//
+//		enemies3.CopyTo (enemies, enemies1.Length + enemies2.Length);
+//
+//		enemies4.CopyTo (enemies, enemies1.Length + enemies2.Length+enemies3.Length);
+
+	
+
+
+
+
+
+
 		float shortest = Mathf.Infinity;
 		GameObject neartest = null;
 		foreach (GameObject enemy in enemies) {
@@ -165,6 +190,37 @@ public class Player : MonoBehaviour
 			shootState = 5;
 			time = 0;
 		}
+
+
+		if (time > 5f && shootState ==2) {
+			shootState = 5;
+			time = 0;
+		}
+
+		if (time > 5f && shootState ==3) {
+			shootState = 5;
+			time = 0;
+		}
+
+
+		if (time > 5f && shootState ==4) {
+			shootState = 5;
+			time = 0;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	}
@@ -304,7 +360,7 @@ public class Player : MonoBehaviour
 		else {
 			energy -= projectileConsume;
 		}
-		changeState ();
+
 	}
 
 
@@ -424,13 +480,53 @@ public class Player : MonoBehaviour
 		projScript.rig.velocity = transform.forward.normalized * proEatSpeed;
 	}
 
-	public void changeState() {
+	public void changeState1() {
+		GameObject lightningShields = Instantiate(lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		lightningShields.transform.parent = gameObject.transform;
+	
+
+	}
+
+
+
+
+	public void changeState2() {
 		GameObject lightningShields = Instantiate(lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
 		lightningShields.transform.parent = gameObject.transform;
 
-		shootState = 1;
 
 	}
+	public void changeState3() {
+		GameObject lightningShields = Instantiate(lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		lightningShields.transform.parent = gameObject.transform;
+
+
+	}
+	public void changeState4() {
+		GameObject lightningShields = Instantiate(lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		lightningShields.transform.parent = gameObject.transform;
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	//Called when the tank gets hit by a projectile. It sends over a "dmg" value, which is how much health the tank will lose. 
 	//	public void Damage (int dmg)

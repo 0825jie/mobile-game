@@ -93,15 +93,15 @@ public class Controls : MonoBehaviour
                     animator.SetTrigger("attack");
 				}
 
-				if (game.player.bulletType == "cold") {
-					game.player.superShoot();
-					targetTime -= Time.deltaTime;
-					if (targetTime <= 0.0f) {
-						game.player.bulletType = "shoot";
-						 targetTime=80.0f;
-					}
-
-				}
+//				if (game.player.bulletType == "cold") {
+//					game.player.superShoot();
+//					targetTime -= Time.deltaTime;
+//					if (targetTime <= 0.0f) {
+//						game.player.bulletType = "shoot";
+//						 targetTime=80.0f;
+//					}
+//
+//				}
 			}
 
 		}
