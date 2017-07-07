@@ -8,7 +8,7 @@ public class enemy_bullet_collision : MonoBehaviour
 
 	float lifetime = 10;
 	int time=0;
-	public int damage;
+	public int damage = 200;
 	// Use this for initialization
 	void Start ()
 	{
@@ -39,6 +39,15 @@ public class enemy_bullet_collision : MonoBehaviour
 		if(collision.transform.tag == "Player"){		
 			Player e = collision.gameObject.GetComponent<Player>();
 			e.TakeDamage (damage);
+		}
+	}
+	private void OnTriggerEnter (Collider collision) {
+		if (collision.transform.tag == "player") {
+			Player e = collision.gameObject.GetComponent<Player>();
+			e.health = e.health - 3000;
+
+			gameObject.SetActive (false);
+			Destroy (gameObject);
 		}
 	}
 

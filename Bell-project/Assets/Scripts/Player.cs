@@ -460,9 +460,6 @@ public class Player : MonoBehaviour
 		GameObject[] enermy3 = GameObject.FindGameObjectsWithTag ("enemy-wind");
 		GameObject[] enermy4 = GameObject.FindGameObjectsWithTag ("enemy-lighting");
 
-
-
-
 		GameObject[] enermy = new GameObject[enermy1.Length + enermy2.Length + enermy3.Length + enermy4.Length];
 		enermy1.CopyTo (enermy, 0);
 		enermy2.CopyTo (enermy, enermy1.Length);
