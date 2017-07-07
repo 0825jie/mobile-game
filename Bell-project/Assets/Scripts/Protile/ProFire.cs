@@ -61,14 +61,39 @@ public class ProFire : MonoBehaviour
 
 	private void OnCollisionEnter(Collision collison)
 	{	
-		if (collison.transform.tag == "enemy-ice" || 
-			collison.transform.tag == "enemy-fire" ||
-			collison.transform.tag == "enemy-wind"|| 
-			collison.transform.tag == "enemy-lighting") 
-		{
-			//			Destroy (gameObject);
+		if (collison.transform.tag == "enemy-fire") {
+			//Changeweap();
 			Damage (collison.gameObject);
+			Destroy (gameObject);
+
 		}
+
+		if (collison.transform.tag == "enemy-ice") 
+		{
+			Damage (collison.gameObject);
+			Destroy (gameObject);
+		}
+
+
+		if (collison.transform.tag == "enemy-lighting") 
+		{
+			Damage (collison.gameObject);
+			Destroy (gameObject);
+		}
+
+		if (collison.transform.tag == "enemy-wind") 
+		{
+			Damage (collison.gameObject);
+			Destroy (gameObject);
+		}
+
+		if (collison.transform.tag == "enemy") 
+		{
+			Damage (collison.gameObject);
+			Destroy (gameObject);
+		}
+
+
 		//		if (collison.transform.tag != "Player") {
 		//			Destroy (gameObject);
 		//		} 
