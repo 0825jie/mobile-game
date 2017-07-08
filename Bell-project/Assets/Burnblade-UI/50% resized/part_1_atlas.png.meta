@@ -1,0 +1,8118 @@
+fileFormatVersion: 2
+guid: 2017bbd9dfc99436ea614fb8b99a7503
+timeCreated: 1499452794
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Layer 290
+    21300002: Layer 287
+    21300004: 1
+    21300006: 2
+    21300008: 3
+    21300010: Layer 286
+    21300012: Layer 274
+    21300014: BASE COLOR copy
+    21300016: 1 copy 2
+    21300018: 1 copy 3
+    21300020: Layer 131 copy 2
+    21300022: Layer 135 copy
+    21300024: Layer 136 copy
+    21300026: Layer 277
+    21300028: Layer 302
+    21300030: Layer 303
+    21300032: Layer 292
+    21300034: Layer 272
+    21300036: 1
+    21300038: 2
+    21300040: 3
+    21300042: Layer 25
+    21300044: Layer 271
+    21300046: Layer 27
+    21300048: Layer 26
+    21300050: Layer 280
+    21300052: Layer 281
+    21300054: Layer 63 copy 4
+    21300056: Layer 63 copy 5
+    21300058: Layer 64 copy 2
+    21300060: cracks copy
+    21300062: Layer 81 copy 3
+    21300064: Layer 83 copy
+    21300066: Layer 84 copy
+    21300068: Layer 283
+    21300070: Layer 284
+    21300072: Layer 276
+    21300074: BASE COLOR copy 2
+    21300076: 1 copy 4
+    21300078: 1 copy 5
+    21300080: Layer 131 copy 3
+    21300082: Layer 135 copy 2
+    21300084: Layer 136 copy 2
+    21300086: Layer 300
+    21300088: Layer 301
+    21300090: Layer 278
+    21300092: Layer 279
+    21300094: Layer 274
+    21300096: BASE COLOR copy
+    21300098: 1 copy 2
+    21300100: 1 copy 3
+    21300102: Layer 131 copy 2
+    21300104: Layer 135 copy
+    21300106: Layer 136 copy
+    21300108: Layer 298
+    21300110: Layer 299
+    21300112: Layer 277
+    21300114: Layer 113
+    21300116: Layer 158
+    21300118: Layer 113
+    21300120: Layer 113 copy 2
+    21300122: Layer 265
+    21300124: 1
+    21300126: 2
+    21300128: 3
+    21300130: Layer 55
+    21300132: Layer 24
+    21300134: Layer 56
+    21300136: Layer 57
+    21300138: Layer 20
+    21300140: Layer 19
+    21300142: Layer 81 copy
+    21300144: Layer 63
+    21300146: Layer 63 copy
+    21300148: Layer 64 copy
+    21300150: cracks
+    21300152: Layer 81
+    21300154: Layer 83
+    21300156: Layer 84
+    21300158: Layer 21
+    21300160: Layer 21 copy
+    21300162: Layer 21 copy 2
+    21300164: Layer 150
+    21300166: Layer 151
+    21300168: Layer 152
+    21300170: Layer 153
+    21300172: Layer 154
+    21300174: out
+    21300176: 65
+    21300178: 2 copy
+    21300180: BASE COLOR
+    21300182: 2
+    21300184: 2 copy 2
+    21300186: Layer 137
+    21300188: Layer 138
+    21300190: Layer 139
+    21300192: Layer 131 copy
+    21300194: Layer 146
+    21300196: Layer 147
+    21300198: Layer 147 copy
+    21300200: Layer 148
+    21300202: Layer 296
+    21300204: Layer 297
+    21300206: 1
+    21300208: BASE COLOR
+    21300210: 1
+    21300212: 1 copy
+    21300214: Layer 131
+    21300216: Layer 132
+    21300218: Layer 135
+    21300220: Layer 136
+    21300222: Layer 293
+    21300224: Layer 294
+    21300226: Layer 295
+    21300228: Layer 113
+    21300230: Layer 158
+    21300232: Layer 113
+    21300234: Layer 113 copy 2
+    21300236: Layer 307
+    21300238: Layer 308
+    21300240: Layer 309
+    21300242: Layer 310
+    21300244: Layer 311
+    21300246: Layer 264 copy 3
+    21300248: 1
+    21300250: 2
+    21300252: 3
+    21300254: Layer 52
+    21300256: Layer 17
+    21300258: Layer 114
+    21300260: Layer 115
+    21300262: Layer 116
+    21300264: Layer 117
+    21300266: Layer 118
+    21300268: Layer 114 copy
+    21300270: Layer 124
+    21300272: Layer 125
+    21300274: Layer 119
+    21300276: Layer 122
+    21300278: Layer 123
+    21300280: Purple
+    21300282: Layer 264 copy 2
+    21300284: 1
+    21300286: 2
+    21300288: 3
+    21300290: Layer 52
+    21300292: Layer 17
+    21300294: Layer 114
+    21300296: Layer 115
+    21300298: Layer 116
+    21300300: Layer 117
+    21300302: Layer 118
+    21300304: Layer 114 copy
+    21300306: Layer 124
+    21300308: Layer 125
+    21300310: Layer 119
+    21300312: Layer 122
+    21300314: Layer 123
+    21300316: Red
+    21300318: Layer 264 copy
+    21300320: 1
+    21300322: 2
+    21300324: 3
+    21300326: Layer 52
+    21300328: Layer 17
+    21300330: Layer 114
+    21300332: Layer 115
+    21300334: Layer 116
+    21300336: Layer 117
+    21300338: Layer 118
+    21300340: Layer 114 copy
+    21300342: Layer 124
+    21300344: Layer 125
+    21300346: Layer 119
+    21300348: Layer 122
+    21300350: Layer 123
+    21300352: Burning
+    21300354: Layer 264
+    21300356: 1
+    21300358: 2
+    21300360: 3
+    21300362: Layer 52
+    21300364: Layer 17
+    21300366: Layer 114
+    21300368: Layer 115
+    21300370: Layer 116
+    21300372: Layer 117
+    21300374: Layer 118
+    21300376: Layer 114 copy
+    21300378: Layer 124
+    21300380: Layer 125
+    21300382: Layer 119
+    21300384: Layer 122
+    21300386: Layer 123
+    21300388: Blue
+    21300390: Layer 104
+    21300392: Layer 104 copy
+    21300394: Layer 104 copy 2
+    21300396: Layer 106
+    21300398: Layer 105
+    21300400: Layer 109
+    21300402: Layer 110
+    21300404: Layer 112
+    21300406: Layer 108
+    21300408: Layer 126 copy
+    21300410: 5
+    21300412: Layer 104
+    21300414: Layer 104 copy
+    21300416: Layer 104 copy 2
+    21300418: Layer 106
+    21300420: Layer 105
+    21300422: Layer 126
+    21300424: Layer 127
+    21300426: Layer 128
+    21300428: 2
+    21300430: Layer 263
+    21300432: 1
+    21300434: 2
+    21300436: 3
+    21300438: Layer 49
+    21300440: Layer 15
+    21300442: Layer 81 copy
+    21300444: Layer 63
+    21300446: Layer 63 copy
+    21300448: Layer 64 copy
+    21300450: cracks
+    21300452: cracks_2
+    21300454: Layer 64
+    21300456: Layer 65
+    21300458: Layer 66
+    21300460: Layer 67
+    21300462: Layer 69
+    21300464: Layer 70
+    21300466: Layer 71
+    21300468: Layer 81
+    21300470: Layer 83
+    21300472: Layer 84
+    21300474: Layer 113 copy 3
+    21300476: leafs
+    21300478: Layer 113
+    21300480: Layer 113 copy 2
+    21300482: Layer 318
+    21300484: Layer 319
+    21300486: Layer 262
+    21300488: 1
+    21300490: 2
+    21300492: 3
+    21300494: Layer 44
+    21300496: Layer 15
+    21300498: Layer 81 copy
+    21300500: Layer 63
+    21300502: Layer 63 copy
+    21300504: Layer 64 copy
+    21300506: cracks
+    21300508: cracks_2
+    21300510: Layer 64
+    21300512: Layer 65
+    21300514: Layer 66
+    21300516: Layer 67
+    21300518: Layer 69
+    21300520: Layer 70
+    21300522: Layer 71
+    21300524: Layer 81
+    21300526: Layer 83
+    21300528: Layer 84
+    21300530: Layer 113 copy
+    21300532: blade
+    21300534: Layer 113
+    21300536: Layer 113 copy 2
+    21300538: Layer 317
+    21300540: Layer 261
+    21300542: 1
+    21300544: 2
+    21300546: 3
+    21300548: Layer 41
+    21300550: Layer 11 copy 2
+    21300552: Layer 63
+    21300554: Layer 63 copy
+    21300556: Layer 64 copy
+    21300558: cracks
+    21300560: cracks_2
+    21300562: Layer 64
+    21300564: Layer 65
+    21300566: Layer 66
+    21300568: Layer 67
+    21300570: Layer 69
+    21300572: Layer 70
+    21300574: Layer 71
+    21300576: Layer 99
+    21300578: Layer 101
+    21300580: Layer 102
+    21300582: Layer 260
+    21300584: 1
+    21300586: 2
+    21300588: 3
+    21300590: Layer 38
+    21300592: Layer 11 copy
+    21300594: Layer 63
+    21300596: Layer 63 copy
+    21300598: Layer 64 copy
+    21300600: cracks
+    21300602: cracks_2
+    21300604: Layer 64
+    21300606: Layer 65
+    21300608: Layer 66
+    21300610: Layer 67
+    21300612: Layer 69
+    21300614: Layer 70
+    21300616: Layer 71
+    21300618: Layer 98
+    21300620: Layer 100
+    21300622: Layer 103
+    21300624: Layer 316
+    21300626: Layer 104
+    21300628: Layer 104 copy
+    21300630: Layer 104 copy 2
+    21300632: Layer 106
+    21300634: Layer 105
+    21300636: Layer 107
+    21300638: Layer 109
+    21300640: Layer 110
+    21300642: Layer 112
+    21300644: Layer 108
+    21300646: 5
+    21300648: shadow_glow
+    21300650: 1
+    21300652: 2
+    21300654: 3
+    21300656: Layer 35
+    21300658: Layer 11
+    21300660: Layer 63
+    21300662: Layer 63 copy
+    21300664: Layer 64 copy
+    21300666: cracks
+    21300668: cracks_2
+    21300670: Layer 64
+    21300672: Layer 65
+    21300674: Layer 66
+    21300676: Layer 67
+    21300678: Layer 69
+    21300680: Layer 70
+    21300682: Layer 71
+    21300684: Layer 88
+    21300686: Layer 85
+    21300688: Layer 86
+    21300690: Layer 87
+    21300692: Layer 90
+    21300694: Layer 91
+    21300696: Layer 92
+    21300698: Layer 93
+    21300700: Layer 90
+    21300702: Layer 91
+    21300704: Layer 92
+    21300706: Layer 93
+    21300708: Layer 90
+    21300710: Layer 94
+    21300712: Layer 95
+    21300714: Layer 90 copy
+    21300716: Layer 96
+    21300718: shadow_glow
+    21300720: 1
+    21300722: 2
+    21300724: 3
+    21300726: Layer 35
+    21300728: Layer 11
+    21300730: Layer 63
+    21300732: Layer 63 copy
+    21300734: Layer 64 copy
+    21300736: cracks
+    21300738: cracks_2
+    21300740: Layer 64
+    21300742: Layer 65
+    21300744: Layer 66
+    21300746: Layer 67
+    21300748: Layer 69
+    21300750: Layer 70
+    21300752: Layer 71
+    21300754: Layer 88
+    21300756: Layer 85
+    21300758: Layer 86
+    21300760: Layer 87
+    21300762: Layer 90
+    21300764: Layer 91
+    21300766: Layer 92
+    21300768: Layer 93
+    21300770: Layer 90
+    21300772: Layer 91
+    21300774: Layer 92
+    21300776: Layer 93
+    21300778: Layer 90
+    21300780: Layer 94
+    21300782: Layer 95
+    21300784: Layer 90 copy
+    21300786: Layer 96
+    21300788: Layer 266
+    21300790: Layer 267
+    21300792: Layer 320
+    21300794: 1
+    21300796: 2
+    21300798: 3
+    21300800: Layer 62
+    21300802: Layer 174
+    21300804: Layer 175
+    21300806: Layer 176
+    21300808: Layer 177
+    21300810: Layer 178
+    21300812: Layer 179
+    21300814: Layer 180
+    21300816: Layer 181
+    21300818: Layer 183
+    21300820: Layer 184
+    21300822: Layer 185
+    21300824: Layer 186
+    21300826: Layer 187
+    21300828: Layer 188
+    21300830: Layer 189
+    21300832: Layer 190
+    21300834: Layer 192
+    21300836: Layer 193
+    21300838: Layer 194
+    21300840: Layer 195
+    21300842: Layer 196
+    21300844: Layer 197
+    21300846: Layer 198
+    21300848: Layer 199
+    21300850: Layer 174
+    21300852: Layer 175
+    21300854: Layer 176
+    21300856: Layer 177
+    21300858: Layer 178
+    21300860: Layer 179
+    21300862: Layer 180
+    21300864: Layer 181
+    21300866: Layer 183
+    21300868: Layer 184
+    21300870: Layer 185
+    21300872: Layer 186
+    21300874: Layer 187
+    21300876: Layer 188
+    21300878: Layer 189
+    21300880: Layer 190
+    21300882: Layer 191
+    21300884: Layer 192 copy
+    21300886: Layer 193
+    21300888: Layer 194
+    21300890: Layer 195
+    21300892: Layer 196
+    21300894: Layer 197 copy
+    21300896: Layer 198 copy
+    21300898: Layer 199 copy
+    21300900: Layer 170
+    21300902: Layer 159
+    21300904: Rectangle 1
+    21300906: Layer 159 copy
+    21300908: Layer 159 copy 2
+    21300910: Layer 161
+    21300912: Layer 162
+    21300914: Layer 163
+    21300916: Layer 164
+    21300918: Layer 165
+    21300920: gradient
+    21300922: Layer 159 copy 3
+    21300924: Layer 171
+    21300926: Layer 172 copy
+    21300928: inner_glow
+    21300930: noise
+    21300932: Layer 173
+    21300934: h1
+    21300936: h2
+    21300938: h3
+    21300940: Layer 222
+    21300942: Layer 253
+    21300944: Layer 254
+    21300946: Layer 255
+    21300948: Layer 256
+    21300950: Layer 257
+    21300952: Layer 258
+    21300954: Layer 259
+    21300956: frame
+    21300958: play - back
+    21300960: play
+    21300962: play - overlay
+    21300964: Layer 313
+    21300966: Layer 315
+    21300968: Layer 204
+    21300970: Layer 201
+    21300972: Layer 202
+    21300974: Layer 203
+    21300976: Layer 206
+    21300978: Layer 208
+    21300980: Layer 200
+    21300982: Layer 158 copy
+    21300984: Layer 205
+    21300986: Layer 205 copy
+    21300988: Layer 207
+    21300990: Layer 205 copy 2
+    21300992: empty
+    21300994: Rectangle 2
+    21300996: Rectangle 2 copy
+    21300998: Rectangle 2 copy 2
+    21301000: Layer 209
+    21301002: Layer 211
+    21301004: Layer 212
+    21301006: Layer 213
+    21301008: Layer 214
+    21301010: Layer 215
+    21301012: Layer 216
+    21301014: Layer 217
+    21301016: Layer 218
+    21301018: Evilrage
+    21301020: Layer 219
+    21301022: Layer 220
+    21301024: Layer 221
+    21301026: Layer 226
+    21301028: Corner
+    21301030: Layer 234
+    21301032: 500
+    21301034: Layer 227
+    21301036: Layer 228
+    21301038: Layer 229
+    21301040: Layer 230
+    21301042: Layer 231
+    21301044: Layer 232
+    21301046: Layer 233
+    21301048: +
+    21301050: seperator
+    21301052: Swords
+    21301054: 5600
+    21301056: Layer 227
+    21301058: Layer 228
+    21301060: Layer 229
+    21301062: Layer 230
+    21301064: Layer 231
+    21301066: Layer 232
+    21301068: Layer 233
+    21301070: +
+    21301072: seperator copy
+    21301074: Crystal
+    21301076: Layer 235
+    21301078: 242
+    21301080: Layer 236
+    21301082: Layer 237
+    21301084: Layer 238
+    21301086: Layer 236
+    21301088: Layer 237
+    21301090: Layer 238
+    21301092: Layer 236
+    21301094: Layer 237
+    21301096: Layer 238
+    21301098: Layer 236
+    21301100: Layer 237
+    21301102: Layer 238
+    21301104: Layer 236
+    21301106: Layer 237
+    21301108: Layer 238
+    21301110: Layer 236
+    21301112: Layer 237
+    21301114: Layer 239
+    21301116: Layer 238
+    21301118: Layer 240
+    21301120: Profile
+    21301122: Layer 249
+    21301124: Museum
+    21301126: Layer 248
+    21301128: Star
+    21301130: Layer 247
+    21301132: Settings
+    21301134: Layer 246
+    21301136: Cup
+    21301138: Layer 245
+    21301140: $
+    21301142: Layer 244
+    21301144: Layer 250
+    21301146: Layer 314
+    21301148: Layer 314
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Layer 290
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1280
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 287
+      rect:
+        serializedVersion: 2
+        x: 3485
+        y: 486
+        width: 185
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 3827
+        y: 456
+        width: 187
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 3638
+        y: 456
+        width: 187
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 302
+        width: 187
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 286
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 486
+        width: 183
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 274
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 745
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BASE COLOR copy
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 65
+        width: 257
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1 copy 2
+      rect:
+        serializedVersion: 2
+        x: 3657
+        y: 745
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1 copy 3
+      rect:
+        serializedVersion: 2
+        x: 3494
+        y: 745
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 131 copy 2
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 65
+        width: 259
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 135 copy
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1231
+        width: 190
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 136 copy
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 143
+        width: 188
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 277
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 745
+        width: 157
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 302
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 2032
+        width: 121
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 303
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1099
+        width: 121
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 292
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 764
+        width: 139
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 272
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 467
+        width: 241
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 99
+        width: 241
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 191
+        width: 241
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 283
+        width: 241
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 25
+      rect:
+        serializedVersion: 2
+        x: 3697
+        y: 670
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 271
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 375
+        width: 240
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 27
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 780
+        width: 137
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 26
+      rect:
+        serializedVersion: 2
+        x: 2827
+        y: 780
+        width: 147
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 280
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 822
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 281
+      rect:
+        serializedVersion: 2
+        x: 3957
+        y: 670
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63 copy 4
+      rect:
+        serializedVersion: 2
+        x: 4022
+        y: 670
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63 copy 5
+      rect:
+        serializedVersion: 2
+        x: 3827
+        y: 670
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64 copy 2
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1517
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks copy
+      rect:
+        serializedVersion: 2
+        x: 3948
+        y: 253
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 81 copy 3
+      rect:
+        serializedVersion: 2
+        x: 3632
+        y: 670
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 83 copy
+      rect:
+        serializedVersion: 2
+        x: 3502
+        y: 670
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 84 copy
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1772
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 283
+      rect:
+        serializedVersion: 2
+        x: 4037
+        y: 65
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 284
+      rect:
+        serializedVersion: 2
+        x: 4036
+        y: 606
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 276
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 940
+        width: 130
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BASE COLOR copy 2
+      rect:
+        serializedVersion: 2
+        x: 3388
+        y: 65
+        width: 258
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1 copy 4
+      rect:
+        serializedVersion: 2
+        x: 3657
+        y: 764
+        width: 130
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1 copy 5
+      rect:
+        serializedVersion: 2
+        x: 3494
+        y: 764
+        width: 130
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 131 copy 3
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 385
+        width: 258
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 135 copy 2
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 656
+        width: 190
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 136 copy 2
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 286
+        width: 188
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 300
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 883
+        width: 98
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 301
+      rect:
+        serializedVersion: 2
+        x: 3427
+        y: 240
+        width: 97
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 278
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1020
+        width: 119
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 279
+      rect:
+        serializedVersion: 2
+        x: 3907
+        y: 123
+        width: 117
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 274
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 780
+        width: 145
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BASE COLOR copy
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 65
+        width: 258
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1 copy 2
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 780
+        width: 145
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1 copy 3
+      rect:
+        serializedVersion: 2
+        x: 3123
+        y: 780
+        width: 145
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 131 copy 2
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 305
+        width: 258
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 135 copy
+      rect:
+        serializedVersion: 2
+        x: 3556
+        y: 780
+        width: 190
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 136 copy
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 0
+        width: 188
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 298
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 2039
+        width: 117
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 299
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 2028
+        width: 121
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 277
+      rect:
+        serializedVersion: 2
+        x: 3155
+        y: 764
+        width: 138
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 978
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 158
+      rect:
+        serializedVersion: 2
+        x: 2876
+        y: 355
+        width: 92
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 917
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113 copy 2
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 862
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 265
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1773
+        width: 347
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1281
+        width: 348
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1445
+        width: 348
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1609
+        width: 348
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1116
+        width: 348
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 24
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1414
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 56
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1519
+        width: 221
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 57
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1069
+        width: 227
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 20
+      rect:
+        serializedVersion: 2
+        x: 3882
+        y: 486
+        width: 206
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 19
+      rect:
+        serializedVersion: 2
+        x: 3648
+        y: 108
+        width: 213
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 81 copy
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 253
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 253
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63 copy
+      rect:
+        serializedVersion: 2
+        x: 3139
+        y: 253
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64 copy
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 253
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1477
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 81
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1104
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 83
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1000
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 84
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1673
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 21
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1232
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 21 copy
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1196
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 21 copy 2
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1160
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 150
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1388
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 151
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 721
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 152
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1430
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 153
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 2017
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 154
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1423
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: out
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1166
+        width: 58
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 65
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1126
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2 copy
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1222
+        width: 202
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BASE COLOR
+      rect:
+        serializedVersion: 2
+        x: 3648
+        y: 65
+        width: 257
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 3882
+        y: 512
+        width: 202
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2 copy 2
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 606
+        width: 202
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 137
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 630
+        width: 198
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 138
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 2029
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 139
+      rect:
+        serializedVersion: 2
+        x: 3268
+        y: 625
+        width: 196
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 131 copy
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 225
+        width: 259
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 146
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 60
+        width: 189
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 147
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 59
+        width: 170
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 147 copy
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 60
+        width: 170
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 148
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 653
+        width: 186
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 296
+      rect:
+        serializedVersion: 2
+        x: 3268
+        y: 648
+        width: 180
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 297
+      rect:
+        serializedVersion: 2
+        x: 3155
+        y: 745
+        width: 178
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 3130
+        y: 109
+        width: 208
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BASE COLOR
+      rect:
+        serializedVersion: 2
+        x: 2871
+        y: 65
+        width: 257
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 3672
+        y: 486
+        width: 208
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1 copy
+      rect:
+        serializedVersion: 2
+        x: 3672
+        y: 512
+        width: 208
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 131
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 145
+        width: 259
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 132
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 109
+        width: 206
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 135
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 2028
+        width: 190
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 136
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1152
+        width: 238
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 293
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 332
+        width: 173
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 294
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 516
+        width: 172
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 295
+      rect:
+        serializedVersion: 2
+        x: 3485
+        y: 515
+        width: 177
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113
+      rect:
+        serializedVersion: 2
+        x: 3628
+        y: 355
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 158
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 1313
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113
+      rect:
+        serializedVersion: 2
+        x: 3721
+        y: 355
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113 copy 2
+      rect:
+        serializedVersion: 2
+        x: 3814
+        y: 355
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 307
+      rect:
+        serializedVersion: 2
+        x: 3121
+        y: 606
+        width: 71
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 308
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1188
+        width: 80
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 309
+      rect:
+        serializedVersion: 2
+        x: 3194
+        y: 606
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 310
+      rect:
+        serializedVersion: 2
+        x: 3710
+        y: 606
+        width: 71
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 311
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1987
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 264 copy 3
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1716
+        width: 108
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1386
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 1253
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1253
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 52
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 587
+        width: 108
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 17
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1649
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 114
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1898
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 115
+      rect:
+        serializedVersion: 2
+        x: 3177
+        y: 670
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 116
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1589
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 117
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 670
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 118
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 971
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 114 copy
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 855
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 124
+      rect:
+        serializedVersion: 2
+        x: 3567
+        y: 670
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 125
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 670
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 119
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1342
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 122
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1880
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 123
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1956
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Purple
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 501
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 264 copy 2
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1585
+        width: 108
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 587
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 721
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 721
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 52
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 558
+        width: 108
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 17
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1483
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 114
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1400
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 115
+      rect:
+        serializedVersion: 2
+        x: 3307
+        y: 670
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 116
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1655
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 117
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 670
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 118
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 897
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 114 copy
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 689
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 124
+      rect:
+        serializedVersion: 2
+        x: 3892
+        y: 670
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 125
+      rect:
+        serializedVersion: 2
+        x: 3047
+        y: 670
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 119
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1264
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 122
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 746
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 123
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 670
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Red
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 678
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 264 copy
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 1386
+        width: 108
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 854
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 987
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1120
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 52
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1277
+        width: 143
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 17
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1732
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 114
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1317
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 115
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 670
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 116
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1721
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 117
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 670
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 118
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1045
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 114 copy
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1234
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 124
+      rect:
+        serializedVersion: 2
+        x: 3437
+        y: 670
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 125
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1853
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 119
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1498
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 122
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1576
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 123
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1652
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Burning
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 612
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 264
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 1585
+        width: 108
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 1120
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 987
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 854
+        width: 108
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 52
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 1716
+        width: 107
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 17
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1566
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 114
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1815
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 115
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 670
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 116
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1787
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 117
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 670
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 118
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1119
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 114 copy
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 606
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 124
+      rect:
+        serializedVersion: 2
+        x: 3762
+        y: 670
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 125
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1920
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 119
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1420
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 122
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1728
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 123
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1804
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Blue
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 795
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 104
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 912
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 104 copy
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 940
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 104 copy 2
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 987
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 106
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 838
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 105
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1332
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 109
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 1015
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 110
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1385
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 112
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 934
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 108
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 1120
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 126 copy
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 622
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 5
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 501
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 104
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 809
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 104 copy
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 854
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 104 copy 2
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 883
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 106
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 1097
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 105
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1277
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 126
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2017
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 127
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1412
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 128
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 1039
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1996
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 263
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 558
+        width: 129
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 1802
+        width: 129
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 1634
+        width: 129
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 1466
+        width: 129
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 49
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 725
+        width: 122
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 15
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 458
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 81 copy
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 355
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1929
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63 copy
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1826
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64 copy
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1723
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1279
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks_2
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1966
+        width: 98
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1107
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 65
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1457
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 66
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1871
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 67
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1311
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 69
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 253
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 70
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 253
+        width: 97
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 71
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 355
+        width: 99
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 81
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1208
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 83
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1620
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 84
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1179
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113 copy 3
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 355
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leafs
+      rect:
+        serializedVersion: 2
+        x: 3651
+        y: 253
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113
+      rect:
+        serializedVersion: 2
+        x: 3166
+        y: 355
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113 copy 2
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 355
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 318
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 710
+        width: 78
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 319
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1991
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 262
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 978
+        width: 128
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 429
+        width: 130
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 612
+        width: 130
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 795
+        width: 130
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 44
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1689
+        width: 121
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 15
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 561
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 81 copy
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 973
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 664
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63 copy
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 767
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64 copy
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 870
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1575
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks_2
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 456
+        width: 97
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1026
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 65
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1523
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 66
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 355
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 67
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1076
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 69
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 253
+        width: 99
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 70
+      rect:
+        serializedVersion: 2
+        x: 3850
+        y: 253
+        width: 96
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 71
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 355
+        width: 98
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 81
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 794
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 83
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 897
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 84
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1377
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113 copy
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 355
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: blade
+      rect:
+        serializedVersion: 2
+        x: 2779
+        y: 355
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 355
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 113 copy 2
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 355
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 317
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 772
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 261
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1705
+        width: 159
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 671
+        width: 161
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 873
+        width: 161
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1075
+        width: 161
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 41
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1504
+        width: 159
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 11 copy 2
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1909
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1847
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63 copy
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1891
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64 copy
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 136
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks
+      rect:
+        serializedVersion: 2
+        x: 2857
+        y: 136
+        width: 114
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks_2
+      rect:
+        serializedVersion: 2
+        x: 3655
+        y: 136
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 973
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 65
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1325
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 66
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1909
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 67
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1774
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 69
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 136
+        width: 115
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 70
+      rect:
+        serializedVersion: 2
+        x: 3883
+        y: 136
+        width: 104
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 71
+      rect:
+        serializedVersion: 2
+        x: 2709
+        y: 253
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 99
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 429
+        width: 54
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 101
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1143
+        width: 73
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 102
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 938
+        width: 75
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 260
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 448
+        width: 169
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1689
+        width: 169
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 0
+        width: 169
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 224
+        width: 169
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 38
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1689
+        width: 185
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 11 copy
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1904
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1306
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63 copy
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1423
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64 copy
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1540
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 136
+        width: 114
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks_2
+      rect:
+        serializedVersion: 2
+        x: 3427
+        y: 136
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 803
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 65
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1259
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 66
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 685
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 67
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1657
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 69
+      rect:
+        serializedVersion: 2
+        x: 2507
+        y: 136
+        width: 115
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 70
+      rect:
+        serializedVersion: 2
+        x: 3989
+        y: 136
+        width: 104
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 71
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 253
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 98
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1467
+        width: 34
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 100
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1904
+        width: 45
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 103
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1936
+        width: 46
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 316
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 136
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 104
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 780
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 104 copy
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 2015
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 104 copy 2
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 1986
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 106
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 968
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 105
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 1068
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 107
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1556
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 109
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 692
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 110
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1358
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 112
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 855
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 108
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 1145
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 5
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 2010
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadow_glow
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1688
+        width: 223
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1467
+        width: 223
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1246
+        width: 223
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1246
+        width: 223
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 35
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1467
+        width: 217
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 11
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 725
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 253
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63 copy
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 370
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64 copy
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 487
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 136
+        width: 114
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks_2
+      rect:
+        serializedVersion: 2
+        x: 3769
+        y: 136
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1058
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 65
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1391
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 66
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 467
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 67
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 604
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 69
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1936
+        width: 115
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 70
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 360
+        width: 104
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 71
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 253
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 88
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 355
+        width: 101
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 85
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 624
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 86
+      rect:
+        serializedVersion: 2
+        x: 3999
+        y: 355
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 87
+      rect:
+        serializedVersion: 2
+        x: 3316
+        y: 136
+        width: 109
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 90
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1020
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 91
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 959
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 92
+      rect:
+        serializedVersion: 2
+        x: 4027
+        y: 745
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 93
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 680
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 90
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 895
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 91
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1088
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 92
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1651
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 93
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1268
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 90
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 2023
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 94
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 848
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 95
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1576
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 90 copy
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1992
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 96
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1350
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: shadow_glow
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1246
+        width: 223
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1467
+        width: 223
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1688
+        width: 223
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1246
+        width: 223
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 35
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1467
+        width: 217
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 11
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 464
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 721
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 63 copy
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 838
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64 copy
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 955
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks
+      rect:
+        serializedVersion: 2
+        x: 3089
+        y: 136
+        width: 114
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cracks_2
+      rect:
+        serializedVersion: 2
+        x: 3541
+        y: 136
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 64
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 888
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 65
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1193
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 66
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 576
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 67
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1072
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 69
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 136
+        width: 115
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 70
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 253
+        width: 104
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 71
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 253
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 88
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1964
+        width: 103
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 85
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 538
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 86
+      rect:
+        serializedVersion: 2
+        x: 3907
+        y: 355
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 87
+      rect:
+        serializedVersion: 2
+        x: 3205
+        y: 136
+        width: 109
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 90
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2028
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 91
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1069
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 92
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1616
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 93
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 650
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 90
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 1095
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 91
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1107
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 92
+      rect:
+        serializedVersion: 2
+        x: 3983
+        y: 745
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 93
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1313
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 90
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 2017
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 94
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1222
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 95
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 2010
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 90 copy
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1464
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 96
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1390
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 266
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1189
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 267
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1847
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 320
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 464
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 802
+        width: 1121
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 1121
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 881
+        width: 1121
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1039
+        width: 1123
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 174
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 486
+        width: 129
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 175
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1039
+        width: 129
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 176
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 802
+        width: 134
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 177
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 881
+        width: 17
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 178
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 1970
+        width: 129
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 179
+      rect:
+        serializedVersion: 2
+        x: 3982
+        y: 0
+        width: 111
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 180
+      rect:
+        serializedVersion: 2
+        x: 3337
+        y: 543
+        width: 99
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 181
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2018
+        width: 93
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 183
+      rect:
+        serializedVersion: 2
+        x: 2842
+        y: 745
+        width: 104
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 184
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 745
+        width: 101
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 185
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 816
+        width: 86
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 186
+      rect:
+        serializedVersion: 2
+        x: 3721
+        y: 543
+        width: 87
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 187
+      rect:
+        serializedVersion: 2
+        x: 3988
+        y: 543
+        width: 87
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 188
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 543
+        width: 109
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 189
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 486
+        width: 121
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 190
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 543
+        width: 104
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 192
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1298
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 193
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 543
+        width: 103
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 194
+      rect:
+        serializedVersion: 2
+        x: 3196
+        y: 486
+        width: 102
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 195
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 543
+        width: 95
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 196
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 606
+        width: 92
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 197
+      rect:
+        serializedVersion: 2
+        x: 3531
+        y: 543
+        width: 91
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 198
+      rect:
+        serializedVersion: 2
+        x: 2971
+        y: 606
+        width: 73
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 199
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 1222
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 174
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 486
+        width: 130
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 175
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 960
+        width: 129
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 176
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 881
+        width: 133
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 177
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 802
+        width: 18
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 178
+      rect:
+        serializedVersion: 2
+        x: 3907
+        y: 65
+        width: 128
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 179
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 543
+        width: 110
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 180
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1972
+        width: 100
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 181
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 692
+        width: 92
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 183
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 745
+        width: 103
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 184
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 745
+        width: 100
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 185
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 780
+        width: 86
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 186
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 543
+        width: 87
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 187
+      rect:
+        serializedVersion: 2
+        x: 3899
+        y: 543
+        width: 87
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 188
+      rect:
+        serializedVersion: 2
+        x: 3121
+        y: 543
+        width: 109
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 189
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 486
+        width: 122
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 190
+      rect:
+        serializedVersion: 2
+        x: 2693
+        y: 543
+        width: 104
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 191
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 606
+        width: 102
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 192 copy
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1246
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 193
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 543
+        width: 103
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 194
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 486
+        width: 103
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 195
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1981
+        width: 96
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 196
+      rect:
+        serializedVersion: 2
+        x: 3616
+        y: 606
+        width: 92
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 197 copy
+      rect:
+        serializedVersion: 2
+        x: 3438
+        y: 543
+        width: 91
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 198 copy
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 606
+        width: 73
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 199 copy
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 2023
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 170
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 0
+        width: 344
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 159
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1615
+        width: 226
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rectangle 1
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1116
+        width: 259
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 159 copy
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1538
+        width: 226
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 159 copy 2
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1461
+        width: 226
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 161
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 0
+        width: 210
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 162
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 0
+        width: 226
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 163
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 0
+        width: 225
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 164
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1916
+        width: 226
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 165
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1913
+        width: 255
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gradient
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1846
+        width: 241
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 159 copy 3
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1384
+        width: 226
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 171
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1116
+        width: 226
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 172 copy
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 986
+        width: 230
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: inner_glow
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1307
+        width: 228
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: noise
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 0
+        width: 250
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 173
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1909
+        width: 210
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: h1
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 0
+        width: 212
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: h2
+      rect:
+        serializedVersion: 2
+        x: 3558
+        y: 0
+        width: 210
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: h3
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 0
+        width: 210
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 222
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 766
+        width: 149
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 253
+      rect:
+        serializedVersion: 2
+        x: 3127
+        y: 0
+        width: 217
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 254
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 0
+        width: 215
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 255
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 895
+        width: 224
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 256
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1986
+        width: 221
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 257
+      rect:
+        serializedVersion: 2
+        x: 2871
+        y: 109
+        width: 223
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 258
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 861
+        width: 132
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 259
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 253
+        width: 215
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: frame
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1229
+        width: 232
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: play - back
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 848
+        width: 106
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: play
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 2008
+        width: 106
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: play - overlay
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1871
+        width: 106
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 313
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1769
+        width: 226
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 315
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1692
+        width: 226
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 204
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1062
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 201
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1010
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 202
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 253
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 203
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1114
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 206
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 744
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 208
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 958
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 200
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1346
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 158 copy
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 1160
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 205
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1392
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 205 copy
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1438
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 207
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1484
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 205 copy 2
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1530
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: empty
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 456
+        width: 262
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rectangle 2
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 456
+        width: 258
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rectangle 2 copy
+      rect:
+        serializedVersion: 2
+        x: 3388
+        y: 108
+        width: 258
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rectangle 2 copy 2
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 109
+        width: 258
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 209
+      rect:
+        serializedVersion: 2
+        x: 3268
+        y: 606
+        width: 252
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 211
+      rect:
+        serializedVersion: 2
+        x: 3130
+        y: 65
+        width: 256
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 212
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 640
+        width: 250
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 213
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 624
+        width: 251
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 214
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 65
+        width: 194
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 215
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1116
+        width: 441
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 216
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1936
+        width: 346
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 217
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 2018
+        width: 251
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 218
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 606
+        width: 251
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Evilrage
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1141
+        width: 52
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 219
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2017
+        width: 270
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 220
+      rect:
+        serializedVersion: 2
+        x: 2845
+        y: 456
+        width: 263
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 221
+      rect:
+        serializedVersion: 2
+        x: 3370
+        y: 456
+        width: 266
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 226
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 2027
+        width: 102
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Corner
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 751
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 234
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 938
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 500
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1142
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 227
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 986
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 228
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1887
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 229
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1901
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 230
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1983
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 231
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 515
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 232
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1020
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 233
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 537
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: +
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 1514
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: seperator
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1964
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Swords
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1871
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 5600
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1231
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 227
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 999
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 228
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 872
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 229
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 795
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 230
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1970
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 231
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 526
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 232
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 1504
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 233
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 547
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: +
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1030
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: seperator copy
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1936
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1953
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 235
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1099
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 242
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1489
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 236
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1033
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 237
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1855
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 238
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 303
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 236
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1087
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 237
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1908
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 238
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 625
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 236
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1466
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 237
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1970
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 238
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1211
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 236
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1520
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 237
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 852
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 238
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1301
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 236
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1574
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 237
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 905
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 238
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1256
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 236
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1688
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 237
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1802
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 239
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 960
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 238
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 567
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 240
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1909
+        width: 8
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Profile
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1304
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 249
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1913
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Museum
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 1070
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 248
+      rect:
+        serializedVersion: 2
+        x: 2783
+        y: 1576
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Star
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 993
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 247
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1608
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Settings
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 1043
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 246
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1352
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Cup
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1437
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 245
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1951
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: $
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 2027
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 244
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 587
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 250
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 914
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 314
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1742
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Layer 314
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1634
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

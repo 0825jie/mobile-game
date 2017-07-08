@@ -22,6 +22,7 @@ public class Game : MonoBehaviour
 	public float playerStartProFireSpeed = 50;
 	public float playerStartProLightingSpeed = 13;
 	public float playerStartProEatSpeed = 13;
+	public float playerStartProExplodeSpeed = 50;
 //	public float playerStartReloadSpeed = 1;				//The reload speed the player tanks will get when the game starts.
 	public int playerStartProjectileComsume = 20;
 	public int playerEnergyRecoverSpeed = 10;

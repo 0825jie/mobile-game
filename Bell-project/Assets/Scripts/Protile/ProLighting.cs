@@ -61,10 +61,33 @@ public class ProLighting : MonoBehaviour
 
 	private void OnCollisionEnter(Collision collison)
 	{	
-		if (collison.transform.tag == "enemy") {
-			Destroy (gameObject);
+		if (collison.transform.tag == "enemy-fire") {
+			//Changeweap();
 			Damage (collison.gameObject);
+			Destroy (gameObject);
+
 		}
+		if (collison.transform.tag == "enemy-ice") 
+		{
+			Damage (collison.gameObject);
+			Destroy (gameObject);
+		}
+
+
+		if (collison.transform.tag == "enemy-lighting") 
+		{
+			Damage (collison.gameObject);
+			Destroy (gameObject);
+		}
+
+		if (collison.transform.tag == "enemy-wind") 
+		{
+			Damage (collison.gameObject);
+			Destroy (gameObject);
+		}
+
+
+
 		if (collison.transform.tag != "Player") {
 			Destroy (gameObject);
 		} 
@@ -81,9 +104,17 @@ public class ProLighting : MonoBehaviour
 	}
 
 
-	public void OnTriggerEnter(Collision collision) {
+	public void OnTriggerEnter(Collider collison) {
+		if (collison.transform.tag == "enemy-ice" ||
+			collison.transform.tag == "enemy-fire" ||
+			collison.transform.tag == "enemy-lighting"||
+			collison.transform.tag == "enemy-wind"  ) {
+			Debug.Log ("eeeeeeee");
+			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 
-		gameObject.SetActive (false);
+
+		}
+//		gameObject.SetActive (false);
 
 	}
 

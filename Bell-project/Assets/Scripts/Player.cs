@@ -3,68 +3,95 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Player : MonoBehaviour 
+public class Player : MonoBehaviour
 {
-	[Header("Stats")]
+	[Header ("Stats")]
 	public Animator animator;
 	public int preFace;
 	public Vector3 preAngle;
-	public int id;							//The unique identifier for this player.
-	public int health;						//The current health of the tank.
-	public int maxHealth;					//The maximum health of this tank.
+	public int id;
+	//The unique identifier for this player.
+	public int health;
+	//The current health of the tank.
+	public int maxHealth;
+	//The maximum health of this tank.
 	public int energy;
-	public int damage;						//How much damage this tank can do when shooting a projectile.
-	public float moveSpeed;					//How fast the tank can move.
-//	public float turnSpeed;					//How fast the tank can turn.
-	public float proNormalSpeed;			//How fast the tank's projectiles can move.
+	public int damage;
+	//How much damage this tank can do when shooting a projectile.
+	public float moveSpeed;
+	//How fast the tank can move.
+	//	public float turnSpeed;					//How fast the tank can turn.
+	public float proNormalSpeed;
+	//How fast the tank's projectiles can move.
 	public float proFireSpeed;
 	public float proLightingSpeed;
 	public float proEatSpeed;
-//	public float reloadSpeed;				//How many seconds it takes to reload the tank, so that it can shoot again.
-//	private float reloadTimer;				//A timer counting up and resets after shooting.
+	public float proExplodeSpeed;
+	//	public float reloadSpeed;				//How many seconds it takes to reload the tank, so that it can shoot again.
+	//	private float reloadTimer;				//A timer counting up and resets after shooting.
 	public int healthRecoverSpeed;
 	public int energyRecoverSpeed;
-	public int projectileConsume;			//How fast the tank's projectiles can move.
+	public int projectileConsume;
+	//How fast the tank's projectiles can move.
 
 	public int shootState;
+
+
+
 
 
 	AudioSource bulletaudio;
 
 
 	[HideInInspector]
-	public Vector3 direction;				//The direction that the tank is facing. Used for movement direction.
+	public Vector3 direction;
+	//The direction that the tank is facing. Used for movement direction.
 
-	[Header("Bools")]
-	public bool canMove;					//Can the tank move if it wants to?
-	public bool canShoot;					//Can the tank shoot if it wants to?
+	[Header ("Bools")]
+	public bool canMove;
+	//Can the tank move if it wants to?
+	public bool canShoot;
+	//Can the tank shoot if it wants to?
 	//	public VirtualJoystick joystick;
-	[Header("Components / Objects")]
-	public Rigidbody rig;					//The tank's Rigidbody2D component. 
-	public GameObject pronormal;			//The projectile prefab of which the tank can shoot.
-	public GameObject lighting;			//The projectile prefab of which the tank can shoot.
+	[Header ("Components / Objects")]
+	public Rigidbody rig;
+	//The tank's Rigidbody2D component.
+	public GameObject pronormal;
+	//The projectile prefab of which the tank can shoot.
+	public GameObject lighting;
+	//The projectile prefab of which the tank can shoot.
 	public GameObject fire;
+	public GameObject explode;
+	public GameObject wind;
 	public GameObject eatBullet;
 
-	public GameObject deathParticleEffect;	//The particle effect prefab that plays when the tank dies.
-	public Transform muzzle;				//The muzzle of the tank. This is where the projectile will spawn.
-	public Game game;						//The Game.cs script, located on the GameManager game object.
+	public GameObject deathParticleEffect;
+	//The particle effect prefab that plays when the tank dies.
+	public Transform muzzle;
+	//The muzzle of the tank. This is where the projectile will spawn.
+	public Game game;
+	//The Game.cs script, located on the GameManager game object.
 
 	public Transform partTorotate;
 	public GameObject healthIcon;
 	public GameObject energyIcon;
 
+	public GameObject lightningShield;
 
 
 	public Transform target;
-	public float range ;
+	public float range;
 
-	public string enemytag = "enemy";
+	public string enemytag1 = "enemy";
+	public string enemytag2 = "enemy-fire";
+	public string enemytag3 = "enemy-lighting";
+	public string enemytag4 = "enemy-wind";
+
 	public float turnspeed = 10f;
 	public string bulletType = "shoot";
 	public float time;
 
-	void lockontaget()
+	void lockontaget ()
 	{
 
 		Vector3 dir = target.position - transform.position;
@@ -89,16 +116,37 @@ public class Player : MonoBehaviour
 
 		preFace = 1;
 
-		preAngle = new Vector3(0,0,-1);
+		preAngle = new Vector3 (0, 0, -1);
 		bulletaudio = GetComponent<AudioSource> ();
-		InvokeRepeating ("Updatetarget",0f,0.5f);
+		InvokeRepeating ("Updatetarget", 0f, 0.5f);
 		time = 0.0f;
-		shootState = 0;
+		shootState = 5;
 	}
 
-	void Updatetarget()
+	void Updatetarget ()
 	{
-		GameObject[] enemies = GameObject.FindGameObjectsWithTag (enemytag);
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("enemy");
+		//	GameObject[] enemies2 = GameObject.FindGameObjectsWithTag (enemytag2);
+//		GameObject[] enemies3 = GameObject.FindGameObjectsWithTag (enemytag3);
+//		GameObject[] enemies4 = GameObject.FindGameObjectsWithTag (enemytag4);
+//
+//		GameObject[] enemies = { };
+//
+//		enemies1.CopyTo(enemies, 0);
+//
+//		enemies2.CopyTo(enemies, enemies1.Length);
+//
+//		enemies3.CopyTo (enemies, enemies1.Length + enemies2.Length);
+//
+//		enemies4.CopyTo (enemies, enemies1.Length + enemies2.Length+enemies3.Length);
+
+	
+
+
+
+
+
+
 		float shortest = Mathf.Infinity;
 		GameObject neartest = null;
 		foreach (GameObject enemy in enemies) {
@@ -119,7 +167,7 @@ public class Player : MonoBehaviour
 		}
 	}
 
-	private void onDrawGizmosSelected()
+	private void onDrawGizmosSelected ()
 	{
 		Gizmos.color = Color.red;
 		Gizmos.DrawSphere (transform.position, range);
@@ -127,7 +175,7 @@ public class Player : MonoBehaviour
 
 
 
-//	Called by the Game.cs script when the game starts.
+	//	Called by the Game.cs script when the game starts.
 	public void SetStartValues ()
 	{
 		//Sets the tank's stats based on the Game.cs start values.
@@ -140,7 +188,9 @@ public class Player : MonoBehaviour
 		proFireSpeed = game.playerStartProFireSpeed;
 		proLightingSpeed = game.playerStartProLightingSpeed;
 		proEatSpeed = game.playerStartProEatSpeed;
+		proExplodeSpeed = game.playerStartProExplodeSpeed;
 		projectileConsume = game.playerStartProjectileComsume;
+
 		energyRecoverSpeed = game.playerEnergyRecoverSpeed;
 		healthRecoverSpeed = game.playerHealthRecoverSpeed;
 
@@ -150,28 +200,61 @@ public class Player : MonoBehaviour
 	void Update ()
 	{
 		//reloadTimer += Time.deltaTime;
-		lockontaget();
+		lockontaget ();
 		time += Time.deltaTime;
 
-		if (time > 5f && shootState ==1) {
-			shootState = 8;
+		if (time > 8f && shootState == 1) {
+			shootState = 5;
 			time = 0;
 		}
 
 
+		if (time > 8f && shootState == 2) {
+			shootState = 5;
+			time = 0;
+		}
+
+		if (time > 5f && shootState == 3) {
+			shootState = 5;
+			time = 0;
+		}
+
+
+		if (time > 8f && shootState == 4) {
+			shootState = 5;
+			time = 0;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
-	public void ChangeState1 () {
+
+	public void ChangeState1 ()
+	{
 		health -= 100;
 		
 	}
 
-	public void JoyMove (float x, float y) {
+	public void JoyMove (float x, float y)
+	{
 		Vector3 nextAngle = new Vector3 (x, 0, y);
 
-		if (x != 0 && y != 0) 
-		{    
-			float angle = angle_360(preAngle,nextAngle);
-			transform.Rotate(0,angle,0);
+		if (x != 0 && y != 0) {    
+			float angle = angle_360 (preAngle, nextAngle);
+			transform.Rotate (0, angle, 0);
 			preAngle = nextAngle;
 
 			animator.SetTrigger ("run");
@@ -197,12 +280,11 @@ public class Player : MonoBehaviour
 	//sending over a "y" value, set to either 1 or 0, depending if they are moving forward or backwards.
 	public void Move (int y)
 	{
-		
+      
 		int nextFace = y;
 //		transform.Rotate(0,0,(preFace - nextFace) * 45);
 
-		switch (y) 
-		{
+		switch (y) {
 		case 1:
 			direction = new Vector3 (0, 0, 1);
 
@@ -248,33 +330,106 @@ public class Player : MonoBehaviour
 	//		direction = transform.rotation * Vector3.up;
 	//	}
 	//
-//	Called by the Contols.cs script. When a player presses their shoot key, it calls this function, making the tank shoot.
+	//	Called by the Contols.cs script. When a player presses their shoot key, it calls this function, making the tank shoot.
 	public void Shoot ()
 	{
-		if (shootState == 1) {
-			superShoot();
+		switch (shootState) {
+		case 1:
+			superShoot ();
+			break;
+		case 2:
+			fireShoot ();
+			break;
+		case 3:
+			coldshoot ();
+			break;
+		case 4:
+			lightshoot ();
+			break;
+		case 5:
+			normalshoot ();
+			break;
 
 
-		} else {
-			GameObject proj = Instantiate(pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-			ProNormal projScript = proj.GetComponent<ProNormal>();	
-			Destroy(proj,5f);
-			//play udio
-			bulletaudio.Play();  
-			projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
-			//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
-			//			}
-			if (energy - projectileConsume < 0) {
-				energy = 0;
-			}
-			else {
-				energy -= projectileConsume;
-			}
+
 		}
 
 	}
-	public void superShoot () {
+
+
+
+
+
+
+	public void normalshoot ()
+	{
+		GameObject proj = Instantiate (pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProNormal projScript = proj.GetComponent<ProNormal> ();	
+		Destroy (proj, 5f);
+		//play udio
+		bulletaudio.Play ();  
+		projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+
+		//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
+		//			}
+		if (energy - projectileConsume < 0) {
+			energy = 0;
+		} else {
+			energy -= projectileConsume;
+		}
+
+	}
+
+
+	public void coldshoot ()
+	{
+		GameObject proj = Instantiate (pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProNormal projScript = proj.GetComponent<ProNormal> ();	
+		Destroy (proj, 5f);
+		//play udio
+		bulletaudio.Play ();  
+		projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+
+		//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
+		//			}
+		if (energy - projectileConsume < 0) {
+			energy = 0;
+		} else {
+			energy -= projectileConsume;
+		}
+	}
+
+
+
+
+	public void lightshoot ()
+	{
+		GameObject proj = Instantiate (pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProNormal projScript = proj.GetComponent<ProNormal> ();	
+		Destroy (proj, 5f);
+		//play udio
+		bulletaudio.Play ();  
+		projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+
+		//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
+		//			}
+		if (energy - projectileConsume < 0) {
+			energy = 0;
+		} else {
+			energy -= projectileConsume;
+		}
+	}
+
+
+
+
+
+
+
+
+	public void superShoot ()
+	{
 ////		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x,muzzle.transform.position.y,-muzzle.transform.position.z);
 //		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 //		Projectile projScript = proj.GetComponent<Projectile>();	
@@ -297,10 +452,22 @@ public class Player : MonoBehaviour
 //			energy -= (projectileConsume * 3);
 //		}
 //		DrawTool.DrawCircleSolid(game.player.transform, game.player.transform.localPosition, 30); 
-		GameObject light = Instantiate(lighting, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-		ProLighting lightScript = lighting.GetComponent<ProLighting>();	
+		GameObject light = Instantiate (lighting, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+//		ProLighting lightScript = lighting.GetComponent<ProLighting>();	
 		Destroy (light, 2f);
-		GameObject[] enermy = GameObject.FindGameObjectsWithTag("enemy");
+		GameObject[] enermy1 = GameObject.FindGameObjectsWithTag ("enemy-ice");
+
+		GameObject[] enermy2 = GameObject.FindGameObjectsWithTag ("enemy-fire");
+		GameObject[] enermy3 = GameObject.FindGameObjectsWithTag ("enemy-wind");
+		GameObject[] enermy4 = GameObject.FindGameObjectsWithTag ("enemy-lighting");
+
+		GameObject[] enermy = new GameObject[enermy1.Length + enermy2.Length + enermy3.Length + enermy4.Length];
+		enermy1.CopyTo (enermy, 0);
+		enermy2.CopyTo (enermy, enermy1.Length);
+		enermy3.CopyTo (enermy, enermy1.Length + enermy2.Length);
+		enermy4.CopyTo (enermy, enermy1.Length + enermy2.Length + enermy3.Length);
+	
+
 
 		foreach (GameObject eachEnermy in enermy) {
 			if (Vector3.Distance (game.player.transform.position, eachEnermy.transform.position) < 40) {
@@ -312,31 +479,103 @@ public class Player : MonoBehaviour
 
 		if (energy - projectileConsume < 0) {
 			energy = 0;
-		}
-		else {
+		} else {
 			energy -= projectileConsume * 3;
 		}
 
 
 	}
 
-	public void fireShoot() {
-		GameObject fires = Instantiate(fire, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-		ProFire projScript = fires.GetComponent<ProFire>();	
-		Destroy(fires,5f);
+	public void fireShoot ()
+	{
+		GameObject fires = Instantiate (fire, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProFire projScript = fires.GetComponent<ProFire> ();	
+		Destroy (fires, 5f);
 		projScript.rig.velocity = transform.forward.normalized * proFireSpeed;		//Makes the projectile move in the same direction that the tank is facing.
 
 	
 	}
 
-	public void eat() {
+	public void explodeShoot ()
+	{
+
+		GameObject explodes = Instantiate (explode, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProExplode projScript = explodes.GetComponent<ProExplode> ();
+		projScript.rig.velocity = transform.forward.normalized * proExplodeSpeed * 2;
+
+	}
+	public void windShoot() {
+		GameObject winds = Instantiate (wind, transform.position, Quaternion.Euler(90, 0, 0)) as GameObject;
+		transform.position = transform.position + new Vector3 (0,10,0);
+
+//		Destroy (winds, 2f);
+	}
+
+
+
+	public void eat ()
+	{
 		
-		GameObject eatBullets = Instantiate(eatBullet, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-		ProEat projScript = eatBullets.GetComponent<ProEat>();
+		GameObject eatBullets = Instantiate (eatBullet, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		ProEat projScript = eatBullets.GetComponent<ProEat> ();
 		projScript.rig.velocity = transform.forward.normalized * proEatSpeed;
 	}
 
-	//Called when the tank gets hit by a projectile. It sends over a "dmg" value, which is how much health the tank will lose. 
+	public void changeState1 ()
+	{
+		GameObject lightningShields = Instantiate (lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		lightningShields.transform.parent = gameObject.transform;
+	
+
+	}
+
+
+
+
+	public void changeState2 ()
+	{
+		GameObject lightningShields = Instantiate (lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		lightningShields.transform.parent = gameObject.transform;
+
+
+	}
+
+	public void changeState3 ()
+	{
+		GameObject lightningShields = Instantiate (lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		lightningShields.transform.parent = gameObject.transform;
+
+
+	}
+
+	public void changeState4 ()
+	{
+		GameObject lightningShields = Instantiate (lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		lightningShields.transform.parent = gameObject.transform;
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//Called when the tank gets hit by a projectile. It sends over a "dmg" value, which is how much health the tank will lose.
 	//	public void Damage (int dmg)
 	//	{
 	//		if(game.oneHitKill){	//Is the game set to one hit kill?
@@ -392,14 +631,16 @@ public class Player : MonoBehaviour
 	//		Respawn();											//Respawns the tank.
 	//	}
 
-	private float angle_360(Vector3 from_, Vector3 to_){  
-		Vector3 v3 = Vector3.Cross(from_,to_);  
-		if(v3.y > 0)  
-			return Vector3.Angle(from_,to_);  
-		else  
-			return 360-Vector3.Angle(from_,to_);  
-	} 
-	private void OnCollisionEnter(Collision collision)
+	private float angle_360 (Vector3 from_, Vector3 to_)
+	{  
+		Vector3 v3 = Vector3.Cross (from_, to_);  
+		if (v3.y > 0)
+			return Vector3.Angle (from_, to_);
+		else
+			return 360 - Vector3.Angle (from_, to_);  
+	}
+
+	private void OnCollisionEnter (Collision collision)
 	{
 		if (collision.transform.tag == "healthbox") {
 			float curNumber = Random.Range (0f, 10f);
@@ -407,8 +648,7 @@ public class Player : MonoBehaviour
 				health = health + 500;
 				GameObject g1 = Instantiate (healthIcon, collision.transform.position, collision.transform.rotation);
 				Destroy (g1, 0.1f);
-			}
-			else{
+			} else {
 				energy = energy + 500;
 				GameObject g2 = Instantiate (energyIcon, collision.transform.position, collision.transform.rotation);
 				Destroy (g2, 0.1f);
@@ -430,5 +670,10 @@ public class Player : MonoBehaviour
 //			gameObject.SetActive (false);
 		}
 
+	}
+
+	public void TakeDamage (int damage)
+	{
+		health -= damage;
 	}
 }

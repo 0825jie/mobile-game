@@ -17,7 +17,7 @@ public class enemyAI : MonoBehaviour
 	float ShootingNeedTime = 0.5f;
 	float LocateTime = 0;
 
-
+    public bool shoot1 = false;
 
 	float LocateNeedTime = 3;
 	public int health;
@@ -34,21 +34,21 @@ public class enemyAI : MonoBehaviour
 	{
 
 	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
 
-		float dist = Vector3.Distance(player.position, transform.position);
-		if (dist < shootDis) {
-			LocateTime += ShootingNeedTime;
-			if (LocateTime >= 10) {
-				LocateTime = 0;
+    // Update is called once per frame
+    void Update()
+    {
+        if (shoot1) { 
+        float dist = Vector3.Distance(player.position, transform.position);
+        if (dist < shootDis) {
+            LocateTime += ShootingNeedTime;
+            if (LocateTime >= 10) {
+                LocateTime = 0;
 
-				shoot ();
-			}
-		}
-
+                shoot();
+            }
+        }
+    }
 		nav.SetDestination (player.position);
 		if (Vector3.Distance (player.position, transform.position) < 15) {
 			Destroy (gameObject);

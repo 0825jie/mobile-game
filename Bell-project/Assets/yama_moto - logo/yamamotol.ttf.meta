@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: aa4da7fb9cea14a279a2dd40999f1e76
+timeCreated: 1499454617
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Yama Moto Leftalic
+  fontNames:
+  - Yama Moto Leftalic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

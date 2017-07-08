@@ -20,7 +20,7 @@ public class ProNormal : MonoBehaviour
 	public float speed=70f;
 	public GameObject impactEffect;
 	public Player playerone;
-
+	public GameObject egg;
 	//
 	void Update()
 	{
@@ -66,13 +66,41 @@ public class ProNormal : MonoBehaviour
 
 	private void OnCollisionEnter(Collision collison)
 	{	
-		if (collison.transform.tag == "enemy") {
-
-				
-			Changeweap();
+		if (collison.transform.tag == "enemy-fire") {
+	        //Changeweap();
+            Damage (collison.gameObject);
 			Destroy (gameObject);
-			Damage (collison.gameObject);
+		
 		}
+		if (collison.transform.tag == "enemy-ice") 
+		{
+			Damage (collison.gameObject);
+			Destroy (gameObject);
+		}
+
+
+		if (collison.transform.tag == "enemy-lighting") 
+		{
+			Damage (collison.gameObject);
+			Destroy (gameObject);
+		}
+
+		if (collison.transform.tag == "enemy-wind") 
+		{
+			Damage (collison.gameObject);
+			Destroy (gameObject);
+		}
+
+
+
+
+
+
+
+
+
+
+
 		if (collison.transform.tag != "Player") {
 			Destroy (gameObject);
 		} 
@@ -83,7 +111,8 @@ public class ProNormal : MonoBehaviour
 //
 //			Damage (collison.gameObject);
 //		}
-//
+
+//	
 
 
 	}
@@ -94,15 +123,5 @@ public class ProNormal : MonoBehaviour
 		gameObject.SetActive (false);
 
 	}
-
-
-
-
-
-
-
-
-
-
-
+		
 }
