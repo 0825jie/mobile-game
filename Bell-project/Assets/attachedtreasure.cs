@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class attachedtreasure : MonoBehaviour {
 
-	public GameObject healthIcon;
-	private GameObject g1;
+
 
 	// Use this for initialization
 	void Start () {
-		g1 = Instantiate (healthIcon, transform.position + new Vector3(0,10,0), transform.rotation);
+		
 	}
 	
 	// Update is called once per frame
@@ -19,7 +18,15 @@ public class attachedtreasure : MonoBehaviour {
 	}
 	private void OnCollisionEnter(Collision collision) {
 		if (collision.transform.tag == "Player") {
-			g1.SetActive (false);
+		Destroy (gameObject);
+			GameObject hints = GameObject.FindGameObjectWithTag ("hint");
+			Hintcontrol hinttext = hints.GetComponent<Hintcontrol> ();
+			if (gameObject.tag == "box1") {
+				hinttext.setText (hinttext.getCount ().ToString () + "  Health");
+			} else {
+				hinttext.setText (hinttext.getCount ().ToString () + "  Energy");
+			}
+			Destroy (gameObject);
 		}
 	}
 

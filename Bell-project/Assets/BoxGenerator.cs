@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BoxGenerator : MonoBehaviour {
 
-	public GameObject box;                // The enemy prefab to be spawned.
+	public GameObject healthbox;                // The enemy prefab to be spawned.
+	public GameObject energybox; 
 	public float spawnTime = 20f;            // How long between each spawn.
 	public Transform[] spawnPoints;  
 	public float destoryTime = 10f;
@@ -24,7 +25,18 @@ public class BoxGenerator : MonoBehaviour {
 		// Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
 		if(checkIfPosEmpty(spawnPoints[spawnPointIndex].position))
 		{
-			GameObject g = Instantiate (box, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+			float curNumber = Random.Range (0f, 10f);
+			if (curNumber < 5) {
+
+				GameObject g1 = Instantiate (healthbox, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+
+			} else {
+
+				GameObject g2 = Instantiate (energybox, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+	
+			}
+			
+//			GameObject g = Instantiate (box, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
 //			Destroy (g, destoryTime);
 
 		}
@@ -40,7 +52,7 @@ public class BoxGenerator : MonoBehaviour {
 
 	public bool checkIfPosEmpty(Vector3 targetPos)
 	{
-		GameObject[] allMovableThings = GameObject.FindGameObjectsWithTag("healthbox");
+		GameObject[] allMovableThings = GameObject.FindGameObjectsWithTag("box");
 		foreach(GameObject current in allMovableThings)
 		{
 			if(current.transform.position == targetPos)

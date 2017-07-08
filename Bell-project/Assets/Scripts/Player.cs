@@ -14,8 +14,10 @@ public class Player : MonoBehaviour
 	public int health;
 	//The current health of the tank.
 	public int maxHealth;
-	//The maximum health of this tank.
 	public int energy;
+	public int maxEnergy;
+	//The maximum health of this tank.
+
 	public int damage;
 	//How much damage this tank can do when shooting a projectile.
 	public float moveSpeed;
@@ -196,6 +198,8 @@ public class Player : MonoBehaviour
 		//Sets the tank's stats based on the Game.cs start values.
 		health = game.playerStartHealth;
 		maxHealth = game.playerStartHealth;
+		energy = game.playerStartEnergy;
+		maxEnergy = game.playerStartEnergy;
 //			damage = game.tankStartDamage;
 		moveSpeed = game.playerStartMoveSpeed;
 //			turnSpeed = game.tankStartTurnSpeed;
