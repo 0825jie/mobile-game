@@ -81,7 +81,7 @@ public class Player : MonoBehaviour
 
 	public Transform target;
 	public float range;
-
+    public GameObject bureet;
 	public string enemytag1 = "enemy";
 	public string enemytag2 = "enemy-fire";
 	public string enemytag3 = "enemy-lighting";
@@ -91,6 +91,21 @@ public class Player : MonoBehaviour
 	public string bulletType = "shoot";
 	public float time;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 	void lockontaget ()
 	{
 
@@ -257,12 +272,13 @@ public class Player : MonoBehaviour
 			transform.Rotate (0, angle, 0);
 			preAngle = nextAngle;
 
-			animator.SetTrigger ("run");
+            this.bureet.GetComponent<Animation>().CrossFade("Nomal_Run");
 		}
 			
 		if (x == 0 || y == 0) {
-			animator.SetTrigger ("stop");
-		}
+          //  animator.SetBool("run",true);
+            this.bureet.GetComponent<Animation>().CrossFade("dead");
+        }
 
 
 		if (game.player.health <= 5) {
