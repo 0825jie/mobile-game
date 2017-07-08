@@ -1,5 +1,9 @@
 fileFormatVersion: 2
 guid: 0f978050ab15143af8a9aeb875a89dd3
+labels:
+- Road
+- Sky
+- Vehicle
 timeCreated: 1497769717
 licenseType: Free
 NativeFormatImporter:

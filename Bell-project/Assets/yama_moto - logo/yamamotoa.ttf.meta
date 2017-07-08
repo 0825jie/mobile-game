@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5408423ae0c2b435f89ff00f023ca15d
+timeCreated: 1499454617
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Yama Moto Academy
+  fontNames:
+  - Yama Moto Academy
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

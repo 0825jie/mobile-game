@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b0f399a1028544b2faafcc88eb0e25ee
+timeCreated: 1499454617
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Yama Moto Italic
+  fontNames:
+  - Yama Moto Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

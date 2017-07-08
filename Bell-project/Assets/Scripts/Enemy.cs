@@ -21,41 +21,43 @@ public class Enemy : MonoBehaviour {
 
 	private bool isDead = false;
 	public SliderUITextUpdate Healthbar;
-
+    public Animator  dongzuo;
 	void Start ()
 	{
 		speed = startSpeed;
 		health = startHealth;
+		dongzuo.SetTrigger ("Move");
 	}
-
-	public void TakeDamage (float amount)
-	{
-		health -= amount;
-		healthBar.value = health;
-		Debug.Log ("jianxie!!!!!!!!!!!!!!!!");
-		//healthBar.fillAmount = health / startHealth;
-		//Canvas c = gameObject.Find("Canvas"); 
-
-		if (health <= 0 && !isDead)
-		{
-			Die();
-		}
-	}
-
 
 
 	void Die ()
 	{
 		isDead = true;
-
-
-
 		GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
-		Destroy(effect, 5f);
-
-
-
-		Destroy(gameObject);
+		Destroy(effect,3f);       
+		Destroy(gameObject,1f);
+		GetComponent <UnityEngine.AI.NavMeshAgent> ().enabled = false;
 	}
+
+
+	public void TakeDamage (float amount)
+	{    dongzuo.SetTrigger ("Take Damge");
+		health -= amount;
+		healthBar.value = health;
+		
+		//healthBar.fillAmount = health / startHealth;
+		//Canvas c = gameObject.Find("Canvas"); 
+
+		if (health <= 0)
+		{    
+			dongzuo.SetTrigger("Die");
+			Die();
+
+		}
+	}
+
+
+
+
 
 }

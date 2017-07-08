@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 34cf18b21362a4c90abd10b3d68c30e1
+timeCreated: 1499454617
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Yama Moto 3D
+  fontNames:
+  - Yama Moto 3D
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
