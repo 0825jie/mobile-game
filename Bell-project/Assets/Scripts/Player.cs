@@ -110,44 +110,21 @@ public class Player : MonoBehaviour
 	public Sprite imge3;
 	public Sprite imge4;
 	public Sprite imge5;
-
-
-
+	private bool isStartTimer;
+	public float clickstate=1;
+	private float timer = 0;
+	public Image filledimage;
 
 	void Updateweap( int stall)
 	{  
-		weap = GameObject.FindGameObjectWithTag ("ss");
-		if (stall == 5) {
-			weap.GetComponent<Image> ().sprite = imge5;
-		}
-
-		if (stall == 4) {
-           weap.GetComponent<Image> ().sprite = imge4;
-		}
-		if (stall == 3) {
-			weap.GetComponent<Image> ().sprite = imge3;
-		}
-		if (stall== 2) {
-			weap.GetComponent<Image> ().sprite = imge2;
-		}
-
-
-		if (stall == 1) {
-			weap.GetComponent<Image> ().sprite = imge1;
-		}
-
-
-
-
+		
 	}
-
-
-  
-	void lockontaget ()
+			
+	void lockontaget()
 	{
 
-		Vector3 dir = target.position - transform.position;
-		transform.forward = dir;
+					Vector3 dir = target.position - transform.position;
+		           transform.forward = dir;
 
 		//		Quaternion lookRotation = Quaternion.LookRotation (dir);
 //		Vector3 rotation = Quaternion.Lerp (partTorotate.rotation, lookRotation, Time.deltaTime * turnspeed).eulerAngles;
@@ -254,36 +231,119 @@ public class Player : MonoBehaviour
 	}
 	//
 	void Update ( )
-	{    Updateweap (shootState);
+	{   
+		weap = GameObject.FindGameObjectWithTag ("ss");
+		if (shootState== 5) {
+			filledimage.fillAmount = 1;
+			weap.GetComponent<Image> ().sprite = imge5;
+			timer = 0;
+		}
 
+		if (shootState == 4) {
+			
+
+			weap.GetComponent<Image> ().sprite = imge4;
+		
+
+			timer += Time.deltaTime;
+			filledimage.fillAmount = (8f - timer) / 8f;
+
+			if (timer == 8f) {
+				timer = 0;
+
+
+			}
+
+
+		}
+
+
+
+
+		if (shootState == 3) {
+			weap.GetComponent<Image> ().sprite = imge3;
+
+
+			isStartTimer = true;
+			clickstate = 0;
+			timer += Time.deltaTime;
+			filledimage.fillAmount = (8f - timer) / 8f;
+
+			if (timer == 8f) {
+
+
+				timer = 0;
+				isStartTimer = false;
+				clickstate = 1;
+			}
+		}
+		if (shootState == 2) {
+			weap.GetComponent<Image> ().sprite = imge2;
+			isStartTimer = true;
+			clickstate = 0;
+			timer += Time.deltaTime;
+			filledimage.fillAmount = (8f - timer) / 8f;
+
+			if (timer == 8f) {
+
+
+				timer = 0;
+				isStartTimer = false;
+				clickstate = 1;
+
+			}
+
+		}
+		if (shootState == 1) {
+			weap.GetComponent<Image> ().sprite = imge1;
+			isStartTimer = true;
+			clickstate = 0;
+			timer += Time.deltaTime;
+			filledimage.fillAmount = (8f - timer) / 8f;
+
+			if (timer == 8f) {
+				filledimage.fillAmount = 1;
+
+				timer = 0;
+				isStartTimer = false;
+				clickstate = 1;
+			}
+
+		}
 		//reloadTimer += Time.deltaTime;
 		lockontaget ();
-		time += Time.deltaTime;
+
+
+		if (shootState == 1 || shootState == 2 || shootState == 3 ||
+		   shootState == 4) {
+		
+			time += Time.deltaTime;
+		}
 	
-	
+
 
 	
 
-		if (time > 8f && shootState == 1) {
+		if (time > 10f && shootState == 1) {
 			shootState = 5;
 			time = 0;
 		}
 
 
-		if (time > 8f && shootState == 2) {
-			transform.position = transform.position -  new Vector3 (0,10,0);
+		if (time > 10f && shootState == 2) {
+			
 			shootState = 5;
 			time = 0;
 		}
 
-		if (time > 5f && shootState == 3) {
+		if (time > 10f && shootState == 3) {
 
 			shootState = 5;
 			time = 0;
 		}
 
 
-		if (time > 8f && shootState == 4) {
+		if (time > 10f && shootState == 4) {
 
 			shootState = 5;
 			time = 0;
@@ -406,11 +466,13 @@ public class Player : MonoBehaviour
 			windShoot ();
 			break;
 		case 3:
-			iceShoot ();
+//            iceShoot ();
 			break;
-		case 4:
-			lightningShoot ();
+		    case 4:
+		//	lightningShoot();
+
 			break;
+
 		case 5:
 			normalshoot ();
 			break;
@@ -589,16 +651,16 @@ public class Player : MonoBehaviour
 		
 		GameObject eatBullets = Instantiate (eatBullet, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		ProEat projScript = eatBullets.GetComponent<ProEat> ();
-		Destroy (eatBullets, 5f);
+		Destroy (eatBullets, 7f);
 		projScript.rig.velocity = transform.forward.normalized * proEatSpeed;
 	}
 
 	public void changeState1 ()
 	{
-		GameObject lightningShields = Instantiate (lightningShield, bureet.transform.position, Quaternion.identity) as GameObject;
-		lightningShields.transform.parent = gameObject.transform;
-	
-
+		
+		GameObject  fireShields= Instantiate (fireShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		fireShields.transform.parent = gameObject.transform;
+		Destroy (fireShields, 7f);
 	}
 
 
@@ -606,26 +668,26 @@ public class Player : MonoBehaviour
 
 	public void changeState2 ()
 	{
-		GameObject  fireShields= Instantiate (fireShield, bureet.transform.position, Quaternion.identity) as GameObject;
-		fireShields.transform.parent = gameObject.transform;
-
-
+		GameObject windShields = Instantiate (windShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		windShields.transform.parent = gameObject.transform;
+		Destroy (windShields, 7f);
 	}
 
 	public void changeState3 ()
 	{
-		GameObject coldShields = Instantiate (coldShield, bureet.transform.position, Quaternion.identity) as GameObject;
+		GameObject coldShields = Instantiate (coldShield, muzzle.transform.position, Quaternion.identity) as GameObject;
 		coldShields.transform.parent = gameObject.transform;
 
-
+		Destroy (coldShields, 7f);
 	}
 
 	public void changeState4 ()
 	{
-		GameObject windShields = Instantiate (windShield, bureet.transform.position, Quaternion.identity) as GameObject;
-		windShields.transform.parent = gameObject.transform;
 
 
+		GameObject lightningShields = Instantiate (lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		lightningShields.transform.parent = gameObject.transform;
+		Destroy (lightningShields, 7f);
 	}
 
 

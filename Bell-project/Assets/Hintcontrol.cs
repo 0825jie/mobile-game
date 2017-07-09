@@ -8,6 +8,7 @@ public class Hintcontrol : MonoBehaviour {
 	private float displayTime2 = 3f;
 	public Text hint1;
 	public Text hint2;
+
 	private int count;
 	private float timeCount;
 	// Use this for initialization
