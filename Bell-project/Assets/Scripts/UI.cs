@@ -31,6 +31,7 @@ public class UI : MonoBehaviour {
 	void Update () {
 		energyBar.value = game.player.energy;
 		healthBar.value = game.player.health;
+
 		if (healthBar.value/healthBar.maxValue <0.15) {
 			healthFill.color = Color.red;
 		}
