@@ -1,2 +1,0 @@
-choose bg_1 or bg_2
-Reccomend: bg_2
