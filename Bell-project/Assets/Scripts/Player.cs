@@ -269,17 +269,20 @@ public class Player : MonoBehaviour
 
 
 		if (time > 8f && shootState == 2) {
+			transform.position = transform.position -  new Vector3 (0,10,0);
 			shootState = 5;
 			time = 0;
 		}
 
 		if (time > 5f && shootState == 3) {
+
 			shootState = 5;
 			time = 0;
 		}
 
 
 		if (time > 8f && shootState == 4) {
+
 			shootState = 5;
 			time = 0;
 		}
@@ -315,17 +318,17 @@ public class Player : MonoBehaviour
 			float angle = angle_360 (preAngle, nextAngle);
 			transform.Rotate (0, angle, 0);
 			preAngle = nextAngle;
+			animator.SetTrigger("run");
 
-			this.bureet.GetComponent<Animation>().Play("Nomal_Run");
 		}
 			
 		if (x == 0 || y == 0) {
-          //  animator.SetBool("run",true);
-			this.bureet.GetComponent<Animation>().Play("Nomal_idle");
+			
+
         }
 
 
-		if (game.player.health <= 0) {
+		if (game.player.health <= 2) {
 			animator.SetTrigger ("dead");	
 
 
