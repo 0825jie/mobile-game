@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -79,6 +79,9 @@ public class Player : MonoBehaviour
 	public GameObject energyIcon;
 
 	public GameObject lightningShield;
+	public GameObject fireShield;
+	public GameObject coldShield;
+	public GameObject windShield;
 
 
 	public Transform target;
@@ -100,11 +103,41 @@ public class Player : MonoBehaviour
 
 
 
+	public GameObject weap;
+	public Sprite imge1;
+	public Sprite imge2;
+	public Sprite imge3;
+	public Sprite imge4;
+	public Sprite imge5;
 
 
 
 
+	void Updateweap()
+	{
+		if (shootState == 5) {
+			weap.GetComponent<Image> ().sprite = imge5;
+		}
 
+		if (shootState == 4) {
+weap.GetComponent<Image> ().sprite = imge4;
+		}
+		if (shootState == 3) {
+			weap.GetComponent<Image> ().sprite = imge3;
+		}
+		if (shootState == 2) {
+			weap.GetComponent<Image> ().sprite = imge2;
+		}
+
+
+		if (shootState == 1) {
+			weap.GetComponent<Image> ().sprite = imge1;
+		}
+
+
+
+
+	}
 
 
   
@@ -136,6 +169,7 @@ public class Player : MonoBehaviour
 		preAngle = new Vector3 (0, 0, -1);
 		bulletaudio = GetComponent<AudioSource> ();
 		InvokeRepeating ("Updatetarget", 0f, 0.5f);
+		InvokeRepeating ("Updatetaweap", 0f, 0.1f);
 		time = 0.0f;
 		shootState = 5;
 	}
@@ -217,7 +251,7 @@ public class Player : MonoBehaviour
 	}
 	//
 	void Update ()
-	{
+	{Updateweap();
 		//reloadTimer += Time.deltaTime;
 		lockontaget ();
 		time += Time.deltaTime;
@@ -276,16 +310,16 @@ public class Player : MonoBehaviour
 			transform.Rotate (0, angle, 0);
 			preAngle = nextAngle;
 
-            this.bureet.GetComponent<Animation>().CrossFade("Nomal_Run");
+			this.bureet.GetComponent<Animation>().Play("Nomal_Run");
 		}
 			
 		if (x == 0 || y == 0) {
           //  animator.SetBool("run",true);
-            this.bureet.GetComponent<Animation>().CrossFade("dead");
+			this.bureet.GetComponent<Animation>().Play("Nomal_idle");
         }
 
 
-		if (game.player.health <= 5) {
+		if (game.player.health <= 0) {
 			animator.SetTrigger ("dead");	
 
 
@@ -355,7 +389,7 @@ public class Player : MonoBehaviour
 	{
 		switch (shootState) {
 		case 1:
-			superShoot ();
+			fireShoot ();
 			break;
 		case 2:
 			fireShoot ();
