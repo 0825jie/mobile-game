@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class attachedtreasure : MonoBehaviour {
 
-
+	public GameObject hitEffect1;
+	public GameObject hitEffect2;
 
 	// Use this for initialization
 	void Start () {
@@ -23,8 +24,13 @@ public class attachedtreasure : MonoBehaviour {
 			Hintcontrol hinttext = hints.GetComponent<Hintcontrol> ();
 			if (gameObject.tag == "box1") {
 				hinttext.setText (hinttext.getCount ().ToString () + "  Health");
+				GameObject effect = Instantiate (hitEffect1, collision.transform.position, collision.transform.rotation);
+				Destroy (effect, 3f);
+
 			} else {
 				hinttext.setText (hinttext.getCount ().ToString () + "  Energy");
+				GameObject effect = Instantiate (hitEffect2, collision.transform.position, collision.transform.rotation);
+				Destroy (effect, 3f);
 			}
 			Destroy (gameObject);
 		}

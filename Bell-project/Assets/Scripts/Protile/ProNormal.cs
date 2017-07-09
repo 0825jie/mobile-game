@@ -68,6 +68,8 @@ public class ProNormal : MonoBehaviour
 	{	
 		if (collison.transform.tag == "enemy-fire") {
 	        //Changeweap();
+			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
+
             Damage (collison.gameObject);
 			Destroy (gameObject);
 		
@@ -75,6 +77,8 @@ public class ProNormal : MonoBehaviour
 		if (collison.transform.tag == "enemy-ice") 
 		{
 			Damage (collison.gameObject);
+			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
+
 			Destroy (gameObject);
 		}
 
@@ -82,12 +86,16 @@ public class ProNormal : MonoBehaviour
 		if (collison.transform.tag == "enemy-lighting") 
 		{
 			Damage (collison.gameObject);
+			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
+
 			Destroy (gameObject);
 		}
 
 		if (collison.transform.tag == "enemy-wind") 
 		{
 			Damage (collison.gameObject);
+			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
+
 			Destroy (gameObject);
 		}
 

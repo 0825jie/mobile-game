@@ -65,7 +65,7 @@ public class ProEat : MonoBehaviour
 
 		if (collison.transform.tag == "enemy-fire") {
 			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
-
+			Destroy (hitParticleEffects, 3f);
 			GameObject player1 = GameObject.Find ("Player1");
 			Player player = player1.GetComponent<Player> ();
 			player.shootState = 1;
@@ -78,6 +78,7 @@ public class ProEat : MonoBehaviour
 			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 
 			GameObject player1 = GameObject.Find ("Player1");
+			Destroy (hitParticleEffects, 3f);
 			Player player = player1.GetComponent<Player> ();
 			player.shootState = 2;
 			player.changeState2();
@@ -88,6 +89,7 @@ public class ProEat : MonoBehaviour
 			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 
 			GameObject player1 = GameObject.Find ("Player1");
+			Destroy (hitParticleEffects, 3f);
 			Player player = player1.GetComponent<Player> ();
 			player.shootState = 3;
 			player.changeState3();
@@ -96,8 +98,9 @@ public class ProEat : MonoBehaviour
 		}
 		if (collison.transform.tag == "enemy-wind") {
 			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
-
+			Destroy (hitParticleEffects, 3f);
 			GameObject player1 = GameObject.Find ("Player1");
+
 			Player player = player1.GetComponent<Player> ();
 			player.shootState = 4;
 			player.changeState4();

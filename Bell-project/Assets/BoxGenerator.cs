@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class BoxGenerator : MonoBehaviour {
 
@@ -52,7 +53,10 @@ public class BoxGenerator : MonoBehaviour {
 
 	public bool checkIfPosEmpty(Vector3 targetPos)
 	{
-		GameObject[] allMovableThings = GameObject.FindGameObjectsWithTag("box");
+		GameObject[] allMovableThings1 = GameObject.FindGameObjectsWithTag("box1");
+		GameObject[] allMovableThings2 = GameObject.FindGameObjectsWithTag("box2");
+		GameObject[] allMovableThings = allMovableThings1.Concat(allMovableThings2).ToArray ();
+
 		foreach(GameObject current in allMovableThings)
 		{
 			if(current.transform.position == targetPos)
@@ -60,4 +64,5 @@ public class BoxGenerator : MonoBehaviour {
 		}
 		return true;
 	}
+
 }
