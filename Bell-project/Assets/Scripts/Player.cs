@@ -324,26 +324,26 @@ public class Player : MonoBehaviour
 
 	
 
-		if (time > 10f && shootState == 1) {
+		if (time > 8f && shootState == 1) {
 			shootState = 5;
 			time = 0;
 		}
 
 
-		if (time > 10f && shootState == 2) {
+		if (time > 8f && shootState == 2) {
 			
 			shootState = 5;
 			time = 0;
 		}
 
-		if (time > 10f && shootState == 3) {
+		if (time > 8f && shootState == 3) {
 
 			shootState = 5;
 			time = 0;
 		}
 
 
-		if (time > 10f && shootState == 4) {
+		if (time > 8f && shootState == 4) {
 
 			shootState = 5;
 			time = 0;
