@@ -466,10 +466,10 @@ public class Player : MonoBehaviour
 			windShoot ();
 			break;
 		case 3:
-//            iceShoot ();
+            iceShoot ();
 			break;
 		    case 4:
-		//	lightningShoot();
+			lightningShoot();
 
 			break;
 
