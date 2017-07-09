@@ -42,7 +42,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1600
+<<<<<<< HEAD
     height: 958
+=======
+    height: 1006
+>>>>>>> eb8a32f7b57caa135f6513e31d34d7b6c56bd145
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
@@ -424,7 +428,7 @@ MonoBehaviour:
     height: 530
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 5e3b0000
     m_LastClickedID: 0
     m_ExpandedIDs: d42bffff00000000
     m_RenameOverlay:
@@ -483,10 +487,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -592
-    m_HBaseRangeMax: 592
-    m_VBaseRangeMin: -283.5
-    m_VBaseRangeMax: 283.5
+    m_HBaseRangeMin: -296
+    m_HBaseRangeMax: 296
+    m_VBaseRangeMin: -141.75
+    m_VBaseRangeMax: 141.75
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -505,7 +509,7 @@ MonoBehaviour:
       y: 17
       width: 1184
       height: 567
-    m_Scale: {x: 1, y: 1}
+    m_Scale: {x: 2, y: 2}
     m_Translation: {x: 592, y: 283.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -513,15 +517,15 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -592
-      y: -283.5
-      width: 1184
-      height: 567
+      x: -296
+      y: -141.75
+      width: 592
+      height: 283.5
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 2
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1184, y: 584}
+  m_LastWindowPixelSize: {x: 2368, y: 1168}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -597,10 +601,17 @@ MonoBehaviour:
   m_LastProjectPath: "/Users/cyq/Desktop/\u5939/526-bell/Bell-project"
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 111}
     m_SelectedIDs: 80630000
     m_LastClickedID: 25472
     m_ExpandedIDs: 0000000080630000146500004e69000068720000c28a000000960000eaae000000ca9a3bffffff7f
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d64e0000
+    m_LastClickedID: 20182
+    m_ExpandedIDs: 0000000030260000502c0000ea350000045b00002275000000ca9a3bffffff7f
+>>>>>>> eb8a32f7b57caa135f6513e31d34d7b6c56bd145
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
