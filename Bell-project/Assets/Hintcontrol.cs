@@ -8,9 +8,10 @@ public class Hintcontrol : MonoBehaviour {
 	private float displayTime2 = 3f;
 	public Text hint1;
 	public Text hint2;
-
+	public Text hint3;
 	private int count;
 	private float timeCount;
+	public Player game;
 	// Use this for initialization
 	void Start () {
 		count = 1;
@@ -18,6 +19,53 @@ public class Hintcontrol : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		if (game.firetext == 1) {
+
+			hint3.text = "Fire trap is coming!!!!!";
+		}
+
+
+		if (game.windtext == 1) {
+
+			hint3.text = "Wind trap is coming!!!!!";
+		}
+
+
+
+
+
+		if (game.icetext == 1) {
+
+			hint3.text = "ice trap is coming!!!!!";
+		}
+
+
+
+		if (game.lightext == 1) {
+
+			hint3.text = "lighting trap is coming!!!!!";
+		}
+
+
+		if (game.firetext != 1 && game.windtext != 1 && game.icetext != 1 && game.lightext != 1) {
+			hint3.text = "";
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		timeCount += Time.deltaTime;
 		displayTime1 -= Time.deltaTime;
 		displayTime2 -= Time.deltaTime;
@@ -27,6 +75,13 @@ public class Hintcontrol : MonoBehaviour {
 		if (displayTime2 <= 0.1f) {
 			hint2.text = "";
 		}
+
+
+
+
+
+
+
 
 	}
 	public void setText (string word) {
