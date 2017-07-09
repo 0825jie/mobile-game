@@ -66,7 +66,7 @@ public class enemyYellowAI : MonoBehaviour
 			projScript.rig.velocity = bulletDirection.normalized * 100;
 
 			Debug.Log ("enermyshoot");
-			Debug.Log (projScript.rig.velocity);
+			//Debug.Log (projScript.rig.velocity);
 		}
 	}
 	public void OnTriggerEnter (Collider other) {

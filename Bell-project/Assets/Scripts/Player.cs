@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
 
 
 
-	public GameObject weap;
+	private GameObject weap;
 	public Sprite imge1;
 	public Sprite imge2;
 	public Sprite imge3;
@@ -113,24 +113,25 @@ public class Player : MonoBehaviour
 
 
 
-	void Updateweap()
-	{
-		if (shootState == 5) {
+	void Updateweap( int stall)
+	{  
+		weap = GameObject.FindGameObjectWithTag ("ss");
+		if (stall == 5) {
 			weap.GetComponent<Image> ().sprite = imge5;
 		}
 
-		if (shootState == 4) {
-weap.GetComponent<Image> ().sprite = imge4;
+		if (stall == 4) {
+           weap.GetComponent<Image> ().sprite = imge4;
 		}
-		if (shootState == 3) {
+		if (stall == 3) {
 			weap.GetComponent<Image> ().sprite = imge3;
 		}
-		if (shootState == 2) {
+		if (stall== 2) {
 			weap.GetComponent<Image> ().sprite = imge2;
 		}
 
 
-		if (shootState == 1) {
+		if (stall == 1) {
 			weap.GetComponent<Image> ().sprite = imge1;
 		}
 
@@ -169,7 +170,7 @@ weap.GetComponent<Image> ().sprite = imge4;
 		preAngle = new Vector3 (0, 0, -1);
 		bulletaudio = GetComponent<AudioSource> ();
 		InvokeRepeating ("Updatetarget", 0f, 0.5f);
-		InvokeRepeating ("Updatetaweap", 0f, 0.1f);
+	
 		time = 0.0f;
 		shootState = 5;
 	}
@@ -250,11 +251,16 @@ weap.GetComponent<Image> ().sprite = imge4;
 //			reloadSpeed = game.tankStartReloadSpeed;
 	}
 	//
-	void Update ()
-	{Updateweap();
+	void Update ( )
+	{    Updateweap (shootState);
+
 		//reloadTimer += Time.deltaTime;
 		lockontaget ();
 		time += Time.deltaTime;
+	
+	
+
+	
 
 		if (time > 8f && shootState == 1) {
 			shootState = 5;
@@ -577,7 +583,7 @@ weap.GetComponent<Image> ().sprite = imge4;
 
 	public void changeState1 ()
 	{
-		GameObject lightningShields = Instantiate (lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
+		GameObject lightningShields = Instantiate (lightningShield, bureet.transform.position, Quaternion.identity) as GameObject;
 		lightningShields.transform.parent = gameObject.transform;
 	
 
@@ -588,24 +594,24 @@ weap.GetComponent<Image> ().sprite = imge4;
 
 	public void changeState2 ()
 	{
-		GameObject lightningShields = Instantiate (lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
-		lightningShields.transform.parent = gameObject.transform;
+		GameObject  fireShields= Instantiate (fireShield, bureet.transform.position, Quaternion.identity) as GameObject;
+		fireShields.transform.parent = gameObject.transform;
 
 
 	}
 
 	public void changeState3 ()
 	{
-		GameObject lightningShields = Instantiate (lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
-		lightningShields.transform.parent = gameObject.transform;
+		GameObject coldShields = Instantiate (coldShield, bureet.transform.position, Quaternion.identity) as GameObject;
+		coldShields.transform.parent = gameObject.transform;
 
 
 	}
 
 	public void changeState4 ()
 	{
-		GameObject lightningShields = Instantiate (lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
-		lightningShields.transform.parent = gameObject.transform;
+		GameObject windShields = Instantiate (windShield, bureet.transform.position, Quaternion.identity) as GameObject;
+		windShields.transform.parent = gameObject.transform;
 
 
 	}
