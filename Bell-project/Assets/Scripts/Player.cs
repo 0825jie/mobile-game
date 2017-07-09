@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
 	public float proLightingSpeed;
 	public float proEatSpeed;
 	public float proExplodeSpeed;
+	public float proWindSpeed;
 	//	public float reloadSpeed;				//How many seconds it takes to reload the tank, so that it can shoot again.
 	//	private float reloadTimer;				//A timer counting up and resets after shooting.
 	public int healthRecoverSpeed;
@@ -220,6 +221,7 @@ public class Player : MonoBehaviour
 		proLightingSpeed = game.playerStartProLightingSpeed;
 		proEatSpeed = game.playerStartProEatSpeed;
 		proExplodeSpeed = game.playerStartProExplodeSpeed;
+		proWindSpeed = game.playerStartProWindSpeed;
 		projectileConsume = game.playerStartProjectileComsume;
 
 		energyRecoverSpeed = game.playerEnergyRecoverSpeed;
@@ -464,10 +466,17 @@ public class Player : MonoBehaviour
 			windShoot ();
 			break;
 		case 3:
+<<<<<<< HEAD
 			fireShoot ();
 			break;
 		case 4:
 			superShoot ();
+=======
+			iceShoot ();
+			break;
+		case 4:
+			lightningShoot ();
+>>>>>>> 56c2dd5bc9ff62d4891eb396b77d72ed8b6e537d
 			break;
 		case 5:
 			normalshoot ();
@@ -505,53 +514,53 @@ public class Player : MonoBehaviour
 	}
 
 
-	public void coldshoot ()
-	{
-		GameObject proj = Instantiate (pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-		ProNormal projScript = proj.GetComponent<ProNormal> ();	
-		Destroy (proj, 5f);
-		//play udio
-		bulletaudio.Play ();  
-		projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
-
-		//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
-		//			}
-		if (energy - projectileConsume < 0) {
-			energy = 0;
-		} else {
-			energy -= projectileConsume;
-		}
-	}
-
-
+//	public void coldshoot ()
+//	{
+//		GameObject proj = Instantiate (pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+//		ProNormal projScript = proj.GetComponent<ProNormal> ();	
+//		Destroy (proj, 5f);
+//		//play udio
+//		bulletaudio.Play ();  
+//		projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+//
+//		//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
+//		//			}
+//		if (energy - projectileConsume < 0) {
+//			energy = 0;
+//		} else {
+//			energy -= projectileConsume;
+//		}
+//	}
 
 
-	public void lightshoot ()
-	{
-		GameObject proj = Instantiate (pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
-		ProNormal projScript = proj.GetComponent<ProNormal> ();	
-		Destroy (proj, 5f);
-		//play udio
-		bulletaudio.Play ();  
-		projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
-
-		//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
-		//			}
-		if (energy - projectileConsume < 0) {
-			energy = 0;
-		} else {
-			energy -= projectileConsume;
-		}
-	}
 
 
+//	public void lightshoot ()
+//	{
+//		GameObject proj = Instantiate (pronormal, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+//		ProLighting projScript = proj.GetComponent<ProLighting> ();	
+//		Destroy (proj, 5f);
+//		//play udio
+//		bulletaudio.Play ();  
+//		projScript.rig.velocity = transform.forward.normalized * proNormalSpeed;		//Makes the projectile move in the same direction that the tank is facing.
+//
+//		//				reloadTimer = 0.0f;															//Sets the reloadTimer to 0, so that we can't shoot straight away.
+//		//			}
+//		if (energy - projectileConsume < 0) {
+//			energy = 0;
+//		} else {
+//			energy -= projectileConsume;
+//		}
+//	}
 
 
 
 
 
 
-	public void superShoot ()
+
+
+	public void lightningShoot ()
 	{
 ////		Vector3 muzzPos = new Vector3 (muzzle.transform.position.x,muzzle.transform.position.y,-muzzle.transform.position.z);
 //		GameObject proj = Instantiate(projectile, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
@@ -609,7 +618,7 @@ public class Player : MonoBehaviour
 
 	}
 
-	public void fireShoot ()
+	public void iceShoot ()
 	{
 		GameObject fires = Instantiate (fire, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		ProFire projScript = fires.GetComponent<ProFire> ();	
@@ -624,12 +633,18 @@ public class Player : MonoBehaviour
 
 		GameObject explodes = Instantiate (explode, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		ProExplode projScript = explodes.GetComponent<ProExplode> ();
+		Destroy (explodes, 5f);
 		projScript.rig.velocity = transform.forward.normalized * proExplodeSpeed * 2;
 
 	}
 	public void windShoot() {
-		GameObject winds = Instantiate (wind, transform.position, Quaternion.Euler(90, 0, 0)) as GameObject;
-		transform.position = transform.position + new Vector3 (0,10,0);
+//		GameObject winds = Instantiate (wind, transform.position, Quaternion.Euler(90, 0, 0)) as GameObject;
+		GameObject winds = Instantiate (wind, transform.position - new Vector3(0,10,0), Quaternion.Euler(0, 0, 0)) as GameObject;
+		ProWind projScript = winds.GetComponent<ProWind> ();
+		Destroy (winds, 5f);
+		projScript.rig.velocity = transform.forward.normalized * proWindSpeed * 2;
+
+
 
 //		Destroy (winds, 2f);
 	}
@@ -641,6 +656,7 @@ public class Player : MonoBehaviour
 		
 		GameObject eatBullets = Instantiate (eatBullet, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		ProEat projScript = eatBullets.GetComponent<ProEat> ();
+		Destroy (eatBullets, 5f);
 		projScript.rig.velocity = transform.forward.normalized * proEatSpeed;
 	}
 

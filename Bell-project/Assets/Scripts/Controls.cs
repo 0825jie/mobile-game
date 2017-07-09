@@ -20,8 +20,8 @@ public class Controls : MonoBehaviour
 	public KeyCode p1State3;
 	public KeyCode p1State4;
 
-	public KeyCode p1Super;
-	public KeyCode p1FireShoot;
+	public KeyCode p1Lightning;
+	public KeyCode p1iceShoot;
 	public KeyCode p1ExplodeShoot;
 	public KeyCode p1Eat;
 	public KeyCode p1Wind;
@@ -67,11 +67,11 @@ public class Controls : MonoBehaviour
 				game.player.health = game.playerStartHealth;
 				game.player.energy = game.playerStartEnergy;
 			}
-			if (Input.GetKeyDown (p1Super)) {
-				game.player.superShoot();
+			if (Input.GetKeyDown (p1Lightning)) {
+				game.player.lightningShoot();
 			}
-			if (Input.GetKeyDown (p1FireShoot)) {
-				game.player.fireShoot();
+			if (Input.GetKeyDown (p1iceShoot)) {
+				game.player.iceShoot();
 			}
 			if (Input.GetKeyDown (p1ExplodeShoot)) {
 				game.player.explodeShoot ();
@@ -81,6 +81,7 @@ public class Controls : MonoBehaviour
 			}
 			if (Input.GetKeyDown (p1Wind)) {
 				game.player.windShoot (); 
+				transform.position = transform.position + new Vector3 (0,10,0);
 			}
 
 
@@ -110,28 +111,32 @@ public class Controls : MonoBehaviour
 
 		}
 
+		if (game.player.canMove) {
+			if (game.player.rig.velocity.magnitude > 0.5 && game.player.health<game.playerStartHealth)
+			{
 
-		if (game.player.rig.velocity.magnitude > 0.5 && game.player.health<game.playerStartHealth)
-		{
+				game.player.health = game.player.health +  (int)(Time.deltaTime *game.player.healthRecoverSpeed) ;
+			}
 
-			game.player.health = game.player.health +  (int)(Time.deltaTime *game.player.healthRecoverSpeed) ;
+
+				
+			if (game.player.rig.velocity.magnitude < 0.5 && game.player.energy < game.playerStartEnergy)
+		    {
+
+				game.player.energy = game.player.energy +(int)(Time.deltaTime * game.player.energyRecoverSpeed *5 );
+			}
+			if (game.player.rig.velocity.magnitude < 0.5) {
+				game.player.health = game.player.health -  (int)(Time.deltaTime * game.player.healthRecoverSpeed * 4);
+			}
+
+				
 		}
-
-
-			
-		if (game.player.rig.velocity.magnitude < 0.5 && game.player.energy < game.playerStartEnergy)
-	    {
-
-			game.player.energy = game.player.energy +(int)(Time.deltaTime * game.player.energyRecoverSpeed *5 );
-		}
-		if (game.player.rig.velocity.magnitude < 0.5) {
-			game.player.health = game.player.health -   (int)(Time.deltaTime * game.player.healthRecoverSpeed * 4);
-		}
+		game.player.health = Mathf.Min (game.player.health,game.player.maxHealth);
+		game.player.energy = Mathf.Min (game.player.energy,game.player.maxEnergy);
 		if (game.player.health <= 0) {
 			game.player.canMove = false;
+			game.player.health = 0;
 			animator.SetTrigger ("dead");	
-
-
 		}
 	}
 }

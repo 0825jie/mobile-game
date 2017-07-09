@@ -109,9 +109,9 @@ public class ProLighting : MonoBehaviour
 			collison.transform.tag == "enemy-fire" ||
 			collison.transform.tag == "enemy-lighting"||
 			collison.transform.tag == "enemy-wind"  ) {
-			Debug.Log ("eeeeeeee");
-			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 
+			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
+			Destroy (hitParticleEffects, 2f);
 
 		}
 //		gameObject.SetActive (false);
