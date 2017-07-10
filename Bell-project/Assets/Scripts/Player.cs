@@ -724,8 +724,8 @@ public class Player : MonoBehaviour
 	public void changeState1 ()
 	{
 		
-		GameObject  fireShields= Instantiate (fireShield, muzzle.transform.position, Quaternion.identity) as GameObject;
-		fireShields.transform.parent = gameObject.transform;
+		GameObject  fireShields= Instantiate (fireShield, gameObject.transform.Find("trojan").transform.position + new Vector3(0,3,0), Quaternion.identity) as GameObject;
+		fireShields.transform.parent = gameObject.transform.Find("trojan").transform;
 		Destroy (fireShields, 7f);
 	}
 
@@ -734,15 +734,15 @@ public class Player : MonoBehaviour
 
 	public void changeState2 ()
 	{
-		GameObject windShields = Instantiate (windShield, muzzle.transform.position, Quaternion.identity) as GameObject;
-		windShields.transform.parent = gameObject.transform;
+		GameObject windShields = Instantiate (windShield, gameObject.transform.Find("trojan").transform.position + new Vector3(0,3,0), Quaternion.identity) as GameObject;
+		windShields.transform.parent = gameObject.transform.Find("trojan").transform;
 		Destroy (windShields, 7f);
 	}
 
 	public void changeState3 ()
 	{
-		GameObject coldShields = Instantiate (coldShield, muzzle.transform.position, Quaternion.identity) as GameObject;
-		coldShields.transform.parent = gameObject.transform;
+		GameObject coldShields = Instantiate (coldShield, gameObject.transform.Find("trojan").transform.position + new Vector3(0,3,0), Quaternion.identity) as GameObject;
+		coldShields.transform.parent = gameObject.transform.Find("trojan").transform;
 
 		Destroy (coldShields, 7f);
 	}
@@ -751,85 +751,11 @@ public class Player : MonoBehaviour
 	{
 
 
-		GameObject lightningShields = Instantiate (lightningShield, muzzle.transform.position, Quaternion.identity) as GameObject;
-		lightningShields.transform.parent = gameObject.transform;
+		GameObject lightningShields = Instantiate (lightningShield, gameObject.transform.Find("trojan").transform.position + new Vector3(0,3,0), Quaternion.identity) as GameObject;
+		lightningShields.transform.parent = gameObject.transform.Find("trojan").transform;
 		Destroy (lightningShields, 7f);
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	//Called when the tank gets hit by a projectile. It sends over a "dmg" value, which is how much health the tank will lose.
-	//	public void Damage (int dmg)
-	//	{
-	//		if(game.oneHitKill){	//Is the game set to one hit kill?
-	//			Die();				//If so instantly kill the tank.
-	//			return;
-	//		}
-	//
-	//		if(health - dmg <= 0){	//If the tank's health will go under 0 when it gets damaged.
-	//			Die();				//Kill the tank since its health will be under 0.
-	//		}else{					//Otherwise...
-	//			health -= dmg;		//Subtract the dmg from the tank's health.
-	//		}
-	//	}
-
-	//Called when the tank's health is or under 0.
-	//	public void Die ()
-	//	{
-	//		if(id == 0){				//If the tank is player 1.
-	//			game.player2Score++;	//Add 1 to player 2's score.
-	//		}
-	//		if(id == 1){				//If the tank is player 2.
-	//			game.player1Score++;	//Add 1 to player 1's score.
-	//		}
-	//
-	//		canMove = false;			//The tank can now not move.
-	//		canShoot = false;			//The tank can now not shoot.
-	//
-	//		//Particle Effect
-	//		GameObject deathEffect = Instantiate(deathParticleEffect, transform.position, Quaternion.identity) as GameObject;	//Spawn the death particle effect at the tank's position.
-	//		Destroy(deathEffect, 1.5f);						//Destroy that effect in 1.5 seconds.
-	//
-	//		transform.position = new Vector3(0, 100, 0);	//Set the tanks position outside of the map, so that it is not visible when dead.
-	//
-	//		StartCoroutine(RespawnTimer());					//Start the RespawnTimer coroutine.
-	//	}
-
-	//Called when the tank has been dead and is ready to rejoin the game.
-	//	public void Respawn ()
-	//	{
-	//		canMove = true;
-	//		canShoot = true;
-	//
-	//		health = maxHealth;
-	//
-	//		transform.position = game.spawnPoints[Random.Range(0, game.spawnPoints.Count)].transform.position;	//Sets the tank's position to a random spawn point.
-	//	}
-
-	//Called when the tank dies, and needs to wait a certain time before respawning.
-	//	IEnumerator RespawnTimer ()
-	//	{
-	//		yield return new WaitForSeconds(game.respawnDelay);	//Waits how ever long was set in the Game.cs script.
-	//
-	//		Respawn();											//Respawns the tank.
-	//	}
+		
 
 	private float angle_360 (Vector3 from_, Vector3 to_)
 	{  
