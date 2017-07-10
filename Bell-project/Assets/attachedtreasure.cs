@@ -6,7 +6,7 @@ public class attachedtreasure : MonoBehaviour {
 
 	public GameObject hitEffect1;
 	public GameObject hitEffect2;
-
+	public Player game;
 	// Use this for initialization
 	void Start () {
 		
@@ -27,7 +27,13 @@ public class attachedtreasure : MonoBehaviour {
 				GameObject effect = Instantiate (hitEffect1, collision.transform.position, collision.transform.rotation);
 				Destroy (effect, 3f);
 
-			} else {
+			} 
+
+	
+
+
+
+			else {
 				hinttext.setText (hinttext.getCount ().ToString () + "  Energy");
 				GameObject effect = Instantiate (hitEffect2, collision.transform.position, collision.transform.rotation);
 				Destroy (effect, 3f);

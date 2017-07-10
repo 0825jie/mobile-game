@@ -22,13 +22,13 @@ public class Hintcontrol : MonoBehaviour {
 
 		if (game.firetext == 1) {
 
-			hint3.text = "Fire trap is coming!!!!!";
+			setText("Fire trap is coming!!!!!");
 		}
 
 
 		if (game.windtext == 1) {
 
-			hint3.text = "Wind trap is coming!!!!!";
+			setText ("Wind trap is coming!!!!!");
 		}
 
 
@@ -36,20 +36,23 @@ public class Hintcontrol : MonoBehaviour {
 
 
 		if (game.icetext == 1) {
+			setText ("ice trap is coming!!!!");
 
-			hint3.text = "ice trap is coming!!!!!";
 		}
+
+
+
 
 
 
 		if (game.lightext == 1) {
 
-			hint3.text = "lighting trap is coming!!!!!";
+			setText( "lighting trap is coming!!!!!");
 		}
 
 
 		if (game.firetext != 1 && game.windtext != 1 && game.icetext != 1 && game.lightext != 1) {
-			hint3.text = "";
+			setText("");
 		}
 
 

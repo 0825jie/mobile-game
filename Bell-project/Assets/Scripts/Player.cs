@@ -117,6 +117,15 @@ public class Player : MonoBehaviour
 	public float clickstate=1;
 	private float timer = 0;
 	public Image filledimage;
+	public Text num;
+
+
+
+
+
+
+
+
 
 	void Updateweap( int stall)
 	{  
@@ -154,6 +163,9 @@ public class Player : MonoBehaviour
 	
 		time = 0.0f;
 		shootState = 5;
+		if (num.enabled == true) {
+			num.enabled = false;
+		}
 	}
 
 	void Updatetarget ()
@@ -309,11 +321,11 @@ public class Player : MonoBehaviour
 			
 
 			weap.GetComponent<Image> ().sprite = imge4;
-		
+			num.enabled = true;
 
 			timer += Time.deltaTime;
 			filledimage.fillAmount = (8f - timer) / 8f;
-
+			num.text = Mathf.CeilToInt ((filledimage.fillAmount * timer)).ToString ();
 			if (timer == 8f) {
 				timer = 0;
 
@@ -390,26 +402,26 @@ public class Player : MonoBehaviour
 
 	
 
-		if (time > 5f && shootState == 1) {
+		if (time > 8f && shootState == 1) {
 			shootState = 5;
 			time = 0;
 		}
 
 
-		if (time > 5f && shootState == 2) {
+		if (time > 8f && shootState == 2) {
 			
 			shootState = 5;
 			time = 0;
 		}
 
-		if (time > 5f && shootState == 3) {
+		if (time > 8f && shootState == 3) {
 
 			shootState = 5;
 			time = 0;
 		}
 
 
-		if (time > 5f && shootState == 4) {
+		if (time > 8f && shootState == 4) {
 
 			shootState = 5;
 			time = 0;
