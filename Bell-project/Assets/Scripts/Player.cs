@@ -117,6 +117,15 @@ public class Player : MonoBehaviour
 	public float clickstate=1;
 	private float timer = 0;
 	public Image filledimage;
+	public Text num;
+
+
+
+
+
+
+
+
 
 
 
@@ -159,6 +168,9 @@ public class Player : MonoBehaviour
 	
 		time = 0.0f;
 		shootState = 5;
+		if (num.enabled == true) {
+			num.enabled = false;
+		}
 	}
 
 	void Updatetarget ()
@@ -275,11 +287,11 @@ public class Player : MonoBehaviour
 			
 
 			weap.GetComponent<Image> ().sprite = imge4;
-		
+			num.enabled = true;
 
 			timer += Time.deltaTime;
 			filledimage.fillAmount = (8f - timer) / 8f;
-
+			num.text = Mathf.CeilToInt ((filledimage.fillAmount * timer)).ToString ();
 			if (timer == 8f) {
 				timer = 0;
 

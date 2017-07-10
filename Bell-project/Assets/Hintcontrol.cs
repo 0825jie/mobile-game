@@ -21,9 +21,6 @@ public class Hintcontrol : MonoBehaviour {
 	void Update () {
 
 
-		if (game.firetext != 1 && game.windtext != 1 && game.icetext != 1 && game.lightext != 1) {
-			hint3.text = "";
-		}
 
 
 
