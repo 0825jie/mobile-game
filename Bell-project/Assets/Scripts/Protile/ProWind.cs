@@ -118,32 +118,37 @@ public class ProWind : MonoBehaviour
 	}
 
 
-	public void OnTriggerEnter(Collision collison) {
-		if (collison.transform.tag == "enemy-fire") {
-			//Changeweap();
-			Damage (collison.gameObject);
-			Destroy (gameObject);
-
-		}
-		if (collison.transform.tag == "enemy-ice") 
+	public void OnTriggerEnter(Collider collison) {
+//		if (collison.transform.tag == "enemy-fire") {
+//			//Changeweap();
+//			Damage (collison.gameObject);
+//			Destroy (gameObject);
+//
+//		}
+//		if (collison.transform.tag == "enemy-ice") 
+//		{
+//			Damage (collison.gameObject);
+//			Destroy (gameObject);
+//		}
+//
+//
+//		if (collison.transform.tag == "enemy-lighting") 
+//		{
+//			Damage (collison.gameObject);
+//			Destroy (gameObject);
+//		}
+//
+//		if (collison.transform.tag == "enemy-wind") 
+//		{
+//			Damage (collison.gameObject);
+//			Destroy (gameObject);
+//		}
+		if (collison.transform.tag == "enemy" ||collison.transform.tag == "enemy"|| collison.transform.tag == "enemy-wind" || collison.transform.tag == "enemy-fire" ||collison.transform.tag == "enemy-boss"||collison.transform.tag == "enemy-fire" ||collison.transform.tag == "enemy-lighting") 
 		{
 			Damage (collison.gameObject);
 			Destroy (gameObject);
 		}
-
-
-		if (collison.transform.tag == "enemy-lighting") 
-		{
-			Damage (collison.gameObject);
-			Destroy (gameObject);
-		}
-
-		if (collison.transform.tag == "enemy-wind") 
-		{
-			Damage (collison.gameObject);
-			Destroy (gameObject);
-		}
-		gameObject.SetActive (false);
+//		gameObject.SetActive (false);
 
 	}
 

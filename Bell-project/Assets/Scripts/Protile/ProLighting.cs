@@ -105,11 +105,12 @@ public class ProLighting : MonoBehaviour
 
 
 	public void OnTriggerEnter(Collider collison) {
-		if (collison.transform.tag == "enemy-ice" ||
+		if (collison.transform.tag == "enemy-boss" ||
 			collison.transform.tag == "enemy-fire" ||
 			collison.transform.tag == "enemy-lighting"||
-			collison.transform.tag == "enemy-wind"  ) {
+			collison.transform.tag == "enemy-wind" || collison.transform.tag =="enemy" ) {
 
+			Damage (collison.gameObject);
 			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 			Destroy (hitParticleEffects, 2f);
 

@@ -62,22 +62,19 @@ public class ProExplode : MonoBehaviour
 
 	private void OnCollisionEnter(Collision collison)
 	{	
-		if (collison.transform.tag == "enemy-ice" ||
-			collison.transform.tag == "enemy-fire" ||
-			collison.transform.tag == "enemy-lighting"||
-			collison.transform.tag == "enemy-wind"  ) {
-			GameObject[] enermy = GameObject.FindGameObjectsWithTag("enemy");
+		if (collison.transform.tag == "enemy" ||collison.transform.tag == "enemy"|| collison.transform.tag == "enemy-wind" || collison.transform.tag == "enemy-fire" ||collison.transform.tag == "enemy-boss"||collison.transform.tag == "enemy-fire" ||collison.transform.tag == "enemy-lighting") {
+//			GameObject[] enermy = GameObject.FindGameObjectsWithTag("enemy");
 
-			foreach (GameObject eachEnermy in enermy) {
-				if (Vector3.Distance (collison.transform.position, eachEnermy.transform.position) < 40) {
-					//				Destroy (eachEnermy);
-					Enemy enemy = eachEnermy.GetComponentInParent<Enemy> ();
-					enemy.TakeDamage (50);
-				}
-			}
-						Destroy (gameObject);
-			Damage (collison.gameObject);
-						GameObject eggs = Instantiate (egg, collison.transform.position, collison.transform.rotation);
+//			foreach (GameObject eachEnermy in enermy) {
+//				if (Vector3.Distance (collison.transform.position, eachEnermy.transform.position) < 40) {
+//					//				Destroy (eachEnermy);
+//					Enemy enemy = eachEnermy.GetComponentInParent<Enemy> ();
+//					enemy.TakeDamage (50);
+//				}
+//			}
+			Destroy (gameObject);
+//			Damage (collison.gameObject);
+			GameObject eggs = Instantiate (egg, collison.transform.position, collison.transform.rotation);
 			Destroy (egg,3f);
 		}
 		//		if (collison.transform.tag != "Player") {

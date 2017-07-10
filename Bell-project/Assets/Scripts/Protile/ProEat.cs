@@ -63,7 +63,7 @@ public class ProEat : MonoBehaviour
 	{	
 
 
-		if (collison.transform.tag == "enemy-fire") {
+		if (collison.transform.tag == "enemy-lighting") {
 			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 			Destroy (hitParticleEffects, 3f);
 			GameObject player1 = GameObject.Find ("Player1");
@@ -74,7 +74,7 @@ public class ProEat : MonoBehaviour
 			Destroy (collison.gameObject);
 		}
 
-		if (collison.transform.tag == "enemy-lighting") {
+		if (collison.transform.tag == "enemy-wind") {
 			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 
 			GameObject player1 = GameObject.Find ("Player1");
@@ -85,7 +85,7 @@ public class ProEat : MonoBehaviour
 			Destroy (gameObject);
 			Destroy (collison.gameObject);
 		}
-		if (collison.transform.tag == "enemy-ice") {
+		if (collison.transform.tag == "enemy-boss") {
 			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 
 			GameObject player1 = GameObject.Find ("Player1");
@@ -96,7 +96,7 @@ public class ProEat : MonoBehaviour
 			Destroy (gameObject);
 			Destroy (collison.gameObject);
 		}
-		if (collison.transform.tag == "enemy-wind") {
+		if (collison.transform.tag == "enemy-fire") {
 			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 			Destroy (hitParticleEffects, 3f);
 			GameObject player1 = GameObject.Find ("Player1");

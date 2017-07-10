@@ -110,13 +110,13 @@ public class ProFire : MonoBehaviour
 	}
 
 
-	public void OnTriggerEnter(Collider other) {
+	public void OnTriggerEnter(Collider collison) {
 
-		if (other.transform.tag == "enemy") {
+		if (collison.transform.tag == "enemy" ||collison.transform.tag == "enemy"|| collison.transform.tag == "enemy-wind" || collison.transform.tag == "enemy-fire" ||collison.transform.tag == "enemy-boss"||collison.transform.tag == "enemy-fire" ||collison.transform.tag == "enemy-lighting") {
 
 			//			Destroy (gameObject);
-			Damage (other.gameObject);
-			GameObject hitParticleEffects = Instantiate (hitParticleEffect, other.transform.position, other.transform.rotation);
+			Damage (collison.gameObject);
+			GameObject hitParticleEffects = Instantiate (hitParticleEffect, collison.transform.position, collison.transform.rotation);
 
 		}
 

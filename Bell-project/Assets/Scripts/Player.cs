@@ -375,7 +375,7 @@ public class Player : MonoBehaviour
 
 
 		if (time > 8f && shootState == 2) {
-			
+			transform.position = transform.position - new Vector3 (0, 10, 0);
 			shootState = 5;
 			time = 0;
 		}
@@ -626,27 +626,27 @@ public class Player : MonoBehaviour
 		GameObject light = Instantiate (lighting, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 //		ProLighting lightScript = lighting.GetComponent<ProLighting>();	
 		Destroy (light, 2f);
-		GameObject[] enermy1 = GameObject.FindGameObjectsWithTag ("enemy-ice");
-
-		GameObject[] enermy2 = GameObject.FindGameObjectsWithTag ("enemy-fire");
-		GameObject[] enermy3 = GameObject.FindGameObjectsWithTag ("enemy-wind");
-		GameObject[] enermy4 = GameObject.FindGameObjectsWithTag ("enemy-lighting");
-
-		GameObject[] enermy = new GameObject[enermy1.Length + enermy2.Length + enermy3.Length + enermy4.Length];
-		enermy1.CopyTo (enermy, 0);
-		enermy2.CopyTo (enermy, enermy1.Length);
-		enermy3.CopyTo (enermy, enermy1.Length + enermy2.Length);
-		enermy4.CopyTo (enermy, enermy1.Length + enermy2.Length + enermy3.Length);
-	
-
-
-		foreach (GameObject eachEnermy in enermy) {
-			if (Vector3.Distance (game.player.transform.position, eachEnermy.transform.position) < 40) {
-//				Destroy (eachEnermy);
-				Enemy enemy = eachEnermy.GetComponent<Enemy> ();
-				enemy.TakeDamage (50);
-			}
-		}
+//		GameObject[] enermy1 = GameObject.FindGameObjectsWithTag ("enemy-ice");
+//
+//		GameObject[] enermy2 = GameObject.FindGameObjectsWithTag ("enemy-fire");
+//		GameObject[] enermy3 = GameObject.FindGameObjectsWithTag ("enemy-wind");
+//		GameObject[] enermy4 = GameObject.FindGameObjectsWithTag ("enemy-lighting");
+//
+//		GameObject[] enermy = new GameObject[enermy1.Length + enermy2.Length + enermy3.Length + enermy4.Length];
+//		enermy1.CopyTo (enermy, 0);
+//		enermy2.CopyTo (enermy, enermy1.Length);
+//		enermy3.CopyTo (enermy, enermy1.Length + enermy2.Length);
+//		enermy4.CopyTo (enermy, enermy1.Length + enermy2.Length + enermy3.Length);
+//	
+//
+//
+//		foreach (GameObject eachEnermy in enermy) {
+//			if (Vector3.Distance (game.player.transform.position, eachEnermy.transform.position) < 40) {
+////				Destroy (eachEnermy);
+//				Enemy enemy = eachEnermy.GetComponent<Enemy> ();
+//				enemy.TakeDamage (50);
+//			}
+//		}
 
 		if (energy - projectileConsume < 0) {
 			energy = 0;
@@ -712,8 +712,10 @@ public class Player : MonoBehaviour
 
 	public void changeState2 ()
 	{
+		transform.position = transform.position + new Vector3 (0, 10, 0);
 		GameObject windShields = Instantiate (windShield, gameObject.transform.Find("trojan").transform.position + new Vector3(0,3,0), Quaternion.identity) as GameObject;
 		windShields.transform.parent = gameObject.transform.Find("trojan").transform;
+
 		Destroy (windShields, 7f);
 	}
 
