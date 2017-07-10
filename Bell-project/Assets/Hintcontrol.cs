@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Hintcontrol : MonoBehaviour {
-	private float displayTime1 = 3f;
-	private float displayTime2 = 3f;
+	private float displayTime1 = 5f;
+	private float displayTime2 = 5f;
 	public Text hint1;
 	public Text hint2;
 	public Text hint3;
@@ -20,48 +20,10 @@ public class Hintcontrol : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (game.firetext == 1) {
-
-			hint3.text = "Fire trap is coming!!!!!";
-		}
-
-
-		if (game.windtext == 1) {
-
-			hint3.text = "Wind trap is coming!!!!!";
-		}
-
-
-
-
-
-		if (game.icetext == 1) {
-
-			hint3.text = "ice trap is coming!!!!!";
-		}
-
-
-
-		if (game.lightext == 1) {
-
-			hint3.text = "lighting trap is coming!!!!!";
-		}
-
 
 		if (game.firetext != 1 && game.windtext != 1 && game.icetext != 1 && game.lightext != 1) {
 			hint3.text = "";
 		}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -87,16 +49,16 @@ public class Hintcontrol : MonoBehaviour {
 	public void setText (string word) {
 		count++;
 		if (hint1.text == "") {
-			displayTime1 = 3f;
+			displayTime1 = 5f;
 			hint1.text = word;	
 		} else if (hint2.text == "") {
-			displayTime1 = 2f;
+			displayTime1 = 3f;
 			hint2.text = word;
 		} else {
 			hint1.text = hint2.text;
 			hint2.text = word;
-			displayTime1 = 2f;
 			displayTime1 = 3f;
+			displayTime2 = 5f;
 		}
 
 	}

@@ -118,6 +118,11 @@ public class Player : MonoBehaviour
 	private float timer = 0;
 	public Image filledimage;
 
+
+
+
+
+
 	void Updateweap( int stall)
 	{  
 		
@@ -201,45 +206,7 @@ public class Player : MonoBehaviour
 	}
 
 
-	void updatetrap(){
 
-		GameObject[] trap1 = GameObject.FindGameObjectsWithTag ("trap-fire");
-		GameObject[] trap2 = GameObject.FindGameObjectsWithTag ("trap-wind");
-		GameObject[] trap3 = GameObject.FindGameObjectsWithTag ("trap-ice");
-		GameObject[] trap4 = GameObject.FindGameObjectsWithTag ("trap-lighting");
-
-		if (trap1.Length > 0) {
-			firetext = 1;
-		} else {
-			firetext=0;
-		}
-
-
-		if (trap2.Length>0) {
-			windtext = 1;
-		}else {
-			windtext=0;
-		}
-
-
-
-
-
-
-		if (trap3.Length>0) {
-			icetext = 1;
-		}else {
-			icetext=0;
-		}
-
-		if (trap4.Length>0) {
-			lightext = 1;
-		}
-		else {
-			lightext=0;
-		}
-
-	}
 
 
 
@@ -292,10 +259,9 @@ public class Player : MonoBehaviour
 	//
 	void Update ( )
 	{   
+		
 
 
-
-		updatetrap ();
 
 
 		weap = GameObject.FindGameObjectWithTag ("ss");
@@ -390,26 +356,26 @@ public class Player : MonoBehaviour
 
 	
 
-		if (time > 5f && shootState == 1) {
+		if (time > 8f && shootState == 1) {
 			shootState = 5;
 			time = 0;
 		}
 
 
-		if (time > 5f && shootState == 2) {
+		if (time > 8f && shootState == 2) {
 			
 			shootState = 5;
 			time = 0;
 		}
 
-		if (time > 5f && shootState == 3) {
+		if (time > 8f && shootState == 3) {
 
 			shootState = 5;
 			time = 0;
 		}
 
 
-		if (time > 5f && shootState == 4) {
+		if (time > 8f && shootState == 4) {
 
 			shootState = 5;
 			time = 0;

@@ -13,10 +13,15 @@ public class trap : MonoBehaviour {
 	public GameObject fire;
 	public GameObject ice;
 	public GameObject wind;
+	private GameObject hints;
+	private Hintcontrol hintext;
 
 	//private GameObject;
 	// Use this for initialization
 	void Start () {
+		hints = GameObject.FindGameObjectWithTag ("hint");
+		hintext = hints.GetComponent<Hintcontrol> ();
+
 		lighting.SetActive(false);
 		fire.SetActive(false);
 		ice.SetActive(false);
@@ -83,6 +88,7 @@ public class trap : MonoBehaviour {
 
 	}
 	void lightingT(){
+		hintext.setText ("Lightning is comming !!!");
 		//GameObject lighting = GameObject.FindWithTag("trap-lighting");
 		lighting.SetActive(true);
 	}
@@ -91,6 +97,7 @@ public class trap : MonoBehaviour {
 		lighting.SetActive(false);
 	}
 	void fireT(){
+		hintext.setText ("Fire is comming !!!");
 		fire.SetActive(true);
 	}
 
@@ -98,6 +105,7 @@ public class trap : MonoBehaviour {
 		fire.SetActive(false);
 	}
 	void iceT(){
+		hintext.setText ("Iec is comming !!!");
 		ice.SetActive(true);
 	}
 
@@ -105,6 +113,7 @@ public class trap : MonoBehaviour {
 		ice.SetActive(false);
 	}
 	void windT(){
+		hintext.setText ("Wind is comming !!!");
 		wind.SetActive(true);
 	}
 
