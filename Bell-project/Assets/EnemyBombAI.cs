@@ -25,6 +25,9 @@ public class EnemyBombAI : MonoBehaviour
 	public int health;
 	private int flag = 0;
 
+	public GameObject Booming;
+	public Animator  dongzuo;
+
 
 	void Awake ()
 	{
@@ -37,7 +40,7 @@ public class EnemyBombAI : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-
+		dongzuo.SetTrigger ("Move");
 	}
 
 	// Update is called once per frame
@@ -60,6 +63,7 @@ public class EnemyBombAI : MonoBehaviour
 		if (Vector3.Distance (player.position, transform.position) < 35 || flag == 1) {
 			if (flag == 0) {
 				gameObject.GetComponent<NavMeshAgent>().enabled = false;
+				dongzuo.SetTrigger ("Take Damge");
 
 			}
 //			transform.GetComponent<NavMeshAgent> ().Stop(true);
@@ -67,17 +71,24 @@ public class EnemyBombAI : MonoBehaviour
 			CountDown -= Time.deltaTime;
 			Debug.Log (CountDown);
 			if (CountDown < 0) {
+				boomShoot ();
 				Destroy (gameObject);
-				if(Vector3.Distance (player.position, transform.position) <45) {
-					game.player.health = game.player.health - 1000;
-				}
+//				if(Vector3.Distance (player.position, transform.position) <45) {
+//					game.player.health = game.player.health - 1000;
+//				}
 			}
 
 		}
 	}
 
 
+	public void boomShoot ()
+	{
+		GameObject booming = Instantiate (Booming, transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		//		ProLighting lightScript = lighting.GetComponent<ProLighting>();	
+		Destroy (booming, 2f);
 
+	}
 
 	void shoot ()
 	{

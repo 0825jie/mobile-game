@@ -14,6 +14,7 @@ public class EnemyWindAI : MonoBehaviour
 
 	public GameObject BulletB;
 	public float shootDis;
+	public GameObject Winding;
 
 //	float ShootingNeedTime = 0.5f;
 //	float LocateTime = 0;
@@ -23,7 +24,10 @@ public class EnemyWindAI : MonoBehaviour
 //	float LocateNeedTime = 3;
 	float CountDown = 1f;
 	public int health;
-	private int flag = 0;
+	private int flag = 1;
+	private float countTime;
+
+	public Animator  dongzuo;
 
 
 	void Awake ()
@@ -37,7 +41,7 @@ public class EnemyWindAI : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-
+		dongzuo.SetTrigger ("Move");
 	}
 
 	// Update is called once per frame
@@ -57,6 +61,20 @@ public class EnemyWindAI : MonoBehaviour
 
 
 		nav.SetDestination (player.position);
+
+		if (Vector3.Distance (player.position, transform.position) < 20 && flag == 1) {
+			dongzuo.SetTrigger ("Attack");
+			windShoot ();
+			flag = 0;
+
+		}
+		if (flag == 0) {
+			countTime -= Time.deltaTime;
+			if (countTime <= 0.05f) {
+				flag = 1;
+				countTime = 1f;
+			}
+		}
 		if (Vector3.Distance (player.position, transform.position) < 35 || flag == 1) {
 			if (flag == 0) {
 				gameObject.GetComponent<NavMeshAgent>().enabled = false;
@@ -79,7 +97,13 @@ public class EnemyWindAI : MonoBehaviour
 	}
 
 
+	public void windShoot ()
+	{
+		GameObject wind = Instantiate (Winding, player.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
+		//		ProLighting lightScript = lighting.GetComponent<ProLighting>();	
+		Destroy (wind, 2f);
 
+	}
 
 	void shoot ()
 	{
