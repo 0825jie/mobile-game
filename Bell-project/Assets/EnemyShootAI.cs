@@ -75,6 +75,7 @@ public class EnemyShootAI : MonoBehaviour
 //			proj.GetComponent<enemy_bullet_collision>().setDamage (damage);
 
 			Vector3 bulletDirection = player.position - transform.position;  
+
 //			if (bulletDirection.x == 0 && bulletDirection.y == 0 && bulletDirection.z == 0) {
 //				return;
 //			}

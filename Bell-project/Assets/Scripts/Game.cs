@@ -14,8 +14,8 @@ public class Game : MonoBehaviour
 	public int maxProjectileBounces = 4;				//The maximum amount of times a projectile can bounce off walls.
 
 	[Space(10)]
-	public int playerStartHealth = 1000;						//The health the player tanks will get when the game starts.
-	public int playerStartEnergy = 1000;
+	public int playerStartHealth ;						//The health the player tanks will get when the game starts.
+	public int playerStartEnergy ;
 	public int playerStartDamage = 1;						//The damage the player tanks will get when the game starts.
 	public float playerStartMoveSpeed = 70;				//The move speed the player tanks will get when the game starts.
 	public float playerStartProNormalSpeed = 13;			//The projectile speed the player tanks will get when the game starts.

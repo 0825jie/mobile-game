@@ -38,9 +38,21 @@ public class enemyShooting : MonoBehaviour
 	private void OnCollisionEnter(Collision collison)
 	{
 
+        if (collison.transform.tag == "Player")
+        {
+            Player p = collison.gameObject.GetComponent<Player>();
+            if ((p.health - 100) >= 0)
+            {
+                p.health = p.health - 100;
+            }
+            else
+            {
+                p.health = 0;
+            }
+            Destroy(gameObject, 2f);
+        }
 
-
-	}
+    }
 
 
 	public void OnTriggerEnter(Collision collision) {

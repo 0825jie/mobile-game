@@ -71,7 +71,22 @@ public class EnemyStormingBullet : MonoBehaviour {
 //		}
 		if (collison.transform.tag == "Player") {
 			Player p = collison.gameObject.GetComponent<Player> ();
-			p.health -= p.health - 1000;
+
+
+
+            if ((p.health - 400) >= 0)
+            {
+                p.health = p.health - 400;
+            }
+            else
+            {
+                p.health = 0;
+            }
+
+
+
+
+
 			Destroy (gameObject,2f);
 		}
 	}

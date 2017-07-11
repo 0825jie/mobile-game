@@ -50,31 +50,31 @@ public class trap : MonoBehaviour {
 	void play(GameObject player){
 		Player p = player.GetComponent<Player>(); // 1 fire, 2 wind, 3 ice, 4 light
 
-		p.health = p.health - playerHealthDamage;
+		p.health = p.health - (int)(Time.deltaTime * 200);
 
 		if (p.shootState == 1 && gameObject.tag == "trap-fire") {
-			p.health = p.health + playerHealthRecover;
-			p.energy = p.energy + playerEnergyRecover;
+			p.health = p.health + (int)(Time.deltaTime * 400);
+			p.energy = p.energy + (int)(Time.deltaTime * 400);
 
 		}
 		if (p.shootState == 2 && gameObject.tag == "trap-wind") {
-			p.health = p.health + playerHealthRecover;
-			p.energy = p.energy + playerEnergyRecover;
-		}
+            p.health = p.health + (int)(Time.deltaTime * 400);
+            p.energy = p.energy + (int)(Time.deltaTime * 400);
+        }
 		if (p.shootState == 3 && gameObject.tag == "trap-ice") {
-			p.health = p.health + playerHealthRecover;
-			p.energy = p.energy + playerEnergyRecover;
-		}
+            p.health = p.health + (int)(Time.deltaTime * 400);
+            p.energy = p.energy + (int)(Time.deltaTime * 400);
+        }
 		if (p.shootState == 4 && gameObject.tag == "trap-lighting") {
-			p.health = p.health + playerHealthRecover;
-			p.energy = p.energy + playerEnergyRecover;
-		}
+            p.health = p.health + (int)(Time.deltaTime * 400);
+            p.energy = p.energy + (int)(Time.deltaTime * 400);
+        }
 	}
 
 	void OnTriggerStay(Collider col) {
 		
 		//Destroy (col.gameObject);
-		if (col.transform.tag == "enemy-lighting"  || col.transform.tag == "enemy-fire" || col.transform.tag == "enemy-wind" || col.transform.tag == "enemy-ice") {
+		if (col.transform.tag == "enemy-lighting"  || col.transform.tag == "enemy-fire" || col.transform.tag == "enemy-wind" || col.transform.tag == "enemy-boss") {
 			
 			Damage (col.gameObject);
 
@@ -88,7 +88,7 @@ public class trap : MonoBehaviour {
 
 	}
 	void lightingT(){
-		hintext.setText ("Lightning is comming !!!");
+		hintext.setText ("Lightning trap is comming !!!");
 		//GameObject lighting = GameObject.FindWithTag("trap-lighting");
 		lighting.SetActive(true);
 	}
@@ -97,7 +97,7 @@ public class trap : MonoBehaviour {
 		lighting.SetActive(false);
 	}
 	void fireT(){
-		hintext.setText ("Fire is comming !!!");
+		hintext.setText ("Fire trap is comming !!!");
 		fire.SetActive(true);
 	}
 
@@ -105,7 +105,7 @@ public class trap : MonoBehaviour {
 		fire.SetActive(false);
 	}
 	void iceT(){
-		hintext.setText ("Iec is comming !!!");
+		hintext.setText ("Ice trap is comming !!!");
 		ice.SetActive(true);
 	}
 
@@ -113,7 +113,7 @@ public class trap : MonoBehaviour {
 		ice.SetActive(false);
 	}
 	void windT(){
-		hintext.setText ("Wind is comming !!!");
+		hintext.setText ("Wind trap is comming !!!");
 		wind.SetActive(true);
 	}
 

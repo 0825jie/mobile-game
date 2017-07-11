@@ -23,7 +23,9 @@ public class attachedtreasure : MonoBehaviour {
 			GameObject hints = GameObject.FindGameObjectWithTag ("hint");
 			Hintcontrol hinttext = hints.GetComponent<Hintcontrol> ();
 			if (gameObject.tag == "box1") {
-				hinttext.setText (hinttext.getCount ().ToString () + "  Health");
+				hinttext.setText ( "Health+500");
+              
+                
 				GameObject effect = Instantiate (hitEffect1, collision.transform.position + new Vector3(0,-2,0), collision.transform.rotation);
 				effect.transform.parent = collision.gameObject.transform.Find("trojan").transform;
 				Destroy (effect, 2f);
@@ -35,8 +37,9 @@ public class attachedtreasure : MonoBehaviour {
 
 
 			else {
-				hinttext.setText (hinttext.getCount ().ToString () + "  Energy");
-				GameObject effect = Instantiate (hitEffect2, collision.transform.position + new Vector3(0,-2,0), collision.transform.rotation);
+				hinttext.setText ("Energy+500");
+              
+                GameObject effect = Instantiate (hitEffect2, collision.transform.position + new Vector3(0,-2,0), collision.transform.rotation);
 				effect.transform.parent = collision.gameObject.transform.Find("trojan").transform;
 				Destroy (effect, 2f);
 			}

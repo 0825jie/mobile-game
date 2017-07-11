@@ -71,7 +71,16 @@ public class EnemyWindBullet : MonoBehaviour {
 		//		}
 		if (collison.transform.tag == "Player") {
 			Player p = collison.gameObject.GetComponent<Player> ();
-			p.health -= p.health - 1000;
+            if ((p.health - 200) >=0)
+            {
+                p.health = p.health - 200;
+            }
+            else
+            {
+                p.health = 0;
+            }
+
+            
 			Destroy (gameObject,2f);
 		}
 	}

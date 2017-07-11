@@ -71,7 +71,7 @@ public class EnemyBoomBullet : MonoBehaviour {
 		//		}
 		if (collison.transform.tag == "Player") {
 			Player p = collison.gameObject.GetComponent<Player> ();
-			p.health -= p.health - 1000;
+			p.health = p.health - 500;
 			Destroy (gameObject,2f);
 		}
 	}

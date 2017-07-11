@@ -287,12 +287,12 @@ public class Player : MonoBehaviour
 			
 
 			weap.GetComponent<Image> ().sprite = imge4;
-			num.enabled = true;
+			
 
 			timer += Time.deltaTime;
-			filledimage.fillAmount = (8f - timer) / 8f;
-			num.text = Mathf.CeilToInt ((filledimage.fillAmount * timer)).ToString ();
-			if (timer == 8f) {
+			filledimage.fillAmount = (10f - timer) / 10f;
+		
+			if (timer == 10f) {
 				timer = 0;
 
 
@@ -311,9 +311,9 @@ public class Player : MonoBehaviour
 			isStartTimer = true;
 			clickstate = 0;
 			timer += Time.deltaTime;
-			filledimage.fillAmount = (8f - timer) / 8f;
+			filledimage.fillAmount = (10f - timer) / 10f;
 
-			if (timer == 8f) {
+			if (timer == 10f) {
 
 
 				timer = 0;
@@ -326,9 +326,9 @@ public class Player : MonoBehaviour
 			isStartTimer = true;
 			clickstate = 0;
 			timer += Time.deltaTime;
-			filledimage.fillAmount = (8f - timer) / 8f;
+			filledimage.fillAmount = (10f - timer) / 10f;
 
-			if (timer == 8f) {
+			if (timer == 10f) {
 
 
 				timer = 0;
@@ -343,9 +343,9 @@ public class Player : MonoBehaviour
 			isStartTimer = true;
 			clickstate = 0;
 			timer += Time.deltaTime;
-			filledimage.fillAmount = (8f - timer) / 8f;
+			filledimage.fillAmount = (10f - timer) / 10f;
 
-			if (timer == 8f) {
+			if (timer == 10f) {
 				filledimage.fillAmount = 1;
 
 				timer = 0;
@@ -358,39 +358,30 @@ public class Player : MonoBehaviour
 		lockontaget ();
 
 
-		if (shootState == 1 || shootState == 2 || shootState == 3 ||
-		   shootState == 4) {
-		
-			time += Time.deltaTime;
-		}
-	
 
-
-	
-
-		if (time > 8f && shootState == 1) {
+		if (timer > 10f && shootState == 1) {
 			shootState = 5;
-			time = 0;
+			timer = 0;
 		}
 
 
-		if (time > 8f && shootState == 2) {
+		if (timer > 10f && shootState == 2) {
 			transform.position = transform.position - new Vector3 (0, 10, 0);
 			shootState = 5;
-			time = 0;
+			timer = 0;
 		}
 
-		if (time > 8f && shootState == 3) {
+		if (timer > 10f && shootState == 3) {
 
 			shootState = 5;
-			time = 0;
+			timer = 0;
 		}
 
 
-		if (time > 8f && shootState == 4) {
+		if (timer > 10f && shootState == 4) {
 
 			shootState = 5;
-			time = 0;
+			timer = 0;
 		}
 
 
@@ -434,7 +425,7 @@ public class Player : MonoBehaviour
         }
 
 
-		if (game.player.health <= 2) {
+		if (game.player.health <= 0) {
 			animator.SetTrigger ("dead");	
 
 
@@ -675,31 +666,58 @@ public class Player : MonoBehaviour
 		Destroy (explodes, 5f);
 		projScript.rig.velocity = transform.forward.normalized * proExplodeSpeed * 2;
 
-	}
-	public void windShoot() {
+        if (energy - projectileConsume < 0)
+        {
+            energy = 0;
+        }
+        else
+        {
+            energy -= projectileConsume * 3;
+        }
+
+
+    }
+    public void windShoot() {
 //		GameObject winds = Instantiate (wind, transform.position, Quaternion.Euler(90, 0, 0)) as GameObject;
 		GameObject winds = Instantiate (wind, transform.position - new Vector3(0,10,0), Quaternion.Euler(0, 0, 0)) as GameObject;
 		ProWind projScript = winds.GetComponent<ProWind> ();
 		Destroy (winds, 5f);
 		projScript.rig.velocity = transform.forward.normalized * proWindSpeed * 2;
 
+        if (energy - projectileConsume < 0)
+        {
+            energy = 0;
+        }
+        else
+        {
+            energy -= projectileConsume * 3;
+        }
 
 
-//		Destroy (winds, 2f);
-	}
+        //		Destroy (winds, 2f);
+    }
 
 
 
-	public void eat ()
+    public void eat ()
 	{
 		
 		GameObject eatBullets = Instantiate (eatBullet, muzzle.transform.position, Quaternion.identity) as GameObject;	//Spawns the projectile at the muzzle.
 		ProEat projScript = eatBullets.GetComponent<ProEat> ();
 		Destroy (eatBullets, 7f);
 		projScript.rig.velocity = transform.forward.normalized * proEatSpeed;
-	}
+        if (energy - projectileConsume < 0)
+        {
+            energy = 0;
+        }
+        else
+        {
+            energy -= projectileConsume * 5;
+        }
 
-	public void changeState1 ()
+    }
+
+    public void changeState1 ()
 	{
 		
 		GameObject  fireShields= Instantiate (fireShield, gameObject.transform.Find("trojan").transform.position + new Vector3(0,3,0), Quaternion.identity) as GameObject;
@@ -748,33 +766,38 @@ public class Player : MonoBehaviour
 
 	private void OnCollisionEnter (Collision collision)
 	{
-		if (collision.transform.tag == "healthbox") {
-			float curNumber = Random.Range (0f, 10f);
-			if (curNumber < 6) {
-				health = health + 500;
-				GameObject g1 = Instantiate (healthIcon, collision.transform.position, collision.transform.rotation);
-				Destroy (g1, 0.1f);
-			} else {
-				energy = energy + 500;
-				GameObject g2 = Instantiate (energyIcon, collision.transform.position, collision.transform.rotation);
-				Destroy (g2, 0.1f);
+		if (collision.transform.tag == "box1") {
+		      health = health + 500;
+				
 			}
-//			else if (curNumber < 7) {
-//				moveSpeed = moveSpeed * 2;
-//			}
-//			else if (curNumber < 9) {
-//				moveSpeed = moveSpeed / 2;
-//			}
-//			else if (curNumber < 10) {
-//				health = health - 500;
-//			}
+        if (collision.transform.tag == "box2")
+        {
+            energy = energy + 500;
+
+        }
+        //			else if (curNumber < 7) {
+        //				moveSpeed = moveSpeed * 2;
+        //			}
+        //			else if (curNumber < 9) {
+        //				moveSpeed = moveSpeed / 2;
+        //			}
+        //			else if (curNumber < 10) {
+        //				health = health - 500;
+        //			}
+         if (collision.transform.tag!="box1" || collision.transform.tag != "box2") {
+        }
 
 			if (health > game.player.maxHealth) {
 				health = game.player.maxHealth;
 			}
-			Destroy (collision.gameObject);
+        if (energy > game.player.maxEnergy)
+        {
+            energy = game.player.maxEnergy;
+        }
+
+			
 //			gameObject.SetActive (false);
-		}
+		
 
 	}
 

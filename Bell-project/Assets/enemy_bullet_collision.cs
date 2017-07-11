@@ -44,9 +44,16 @@ public class enemy_bullet_collision : MonoBehaviour
 	private void OnTriggerEnter (Collider collision) {
 		if (collision.transform.tag == "player") {
 			Player e = collision.gameObject.GetComponent<Player>();
-			e.health = e.health - 3000;
+            if ((e.health - 100) >= 0)
+            {
+                e.health = e.health - 100;
+            }
+            else
+            {
+                e.health = 0;
+            }
 
-			gameObject.SetActive (false);
+            gameObject.SetActive (false);
 			Destroy (gameObject);
 		}
 	}

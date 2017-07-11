@@ -115,7 +115,7 @@ public class Controls : MonoBehaviour
 			if (game.player.rig.velocity.magnitude > 0.5 && game.player.health<game.playerStartHealth)
 			{
 
-				game.player.health = game.player.health +  (int)(Time.deltaTime *game.player.healthRecoverSpeed) ;
+				game.player.health = game.player.health + (int)(Time.deltaTime * game.player.healthRecoverSpeed * 3);
 			}
 
 
@@ -123,10 +123,10 @@ public class Controls : MonoBehaviour
 			if (game.player.rig.velocity.magnitude < 0.5 && game.player.energy < game.playerStartEnergy)
 		    {
 
-				game.player.energy = game.player.energy +(int)(Time.deltaTime * game.player.energyRecoverSpeed *5 );
+				game.player.energy = game.player.energy +(int)(Time.deltaTime*game.player.energyRecoverSpeed*3);
 			}
 			if (game.player.rig.velocity.magnitude < 0.5) {
-				game.player.health = game.player.health -  (int)(Time.deltaTime * game.player.healthRecoverSpeed * 4);
+				game.player.health = game.player.health -  (int)(Time.deltaTime * game.player.healthRecoverSpeed * 5);
 			}
 
 				
